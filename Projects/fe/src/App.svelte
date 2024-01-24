@@ -1,16 +1,10 @@
 <script>
   import svelteLogo from "./assets/svelte.svg";
-  import viteLogo from "/vite.svg";
-  import Counter from "./lib/Counter.svelte";
-  let src = "./image.gif";
+  import Mainpage from "./mainpage.svelte";
+  import Applypage from "./applypage.svelte";
+  import Apply from "./apply.svelte";
 </script>
 
-<p>This is a paragraph.</p>
-
-<style>
-  p {
-    color: purple;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 2em;
-  }
-</style>
+<Mainpage />
+<hr />
+<Apply />
