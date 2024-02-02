@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{svelte,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Paytone_One': ['Paytone One', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

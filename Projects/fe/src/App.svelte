@@ -1,1 +1,7 @@
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<script>
+  import MainPage from "./pages/mainPage.svelte";
+  import ApplyPage from "./pages/applyPage.svelte";
+</script>
+
+<!-- <MainPage /> -->
+<ApplyPage />
