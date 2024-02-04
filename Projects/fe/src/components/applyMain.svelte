@@ -1,5 +1,4 @@
 <script>
-  import ApplyForm from "./applyForm.svelte";
 </script>
 
 <div class="flex justify-start items-center relative gap-1">
@@ -14,4 +13,3 @@
     지원하기
   </p>
 </div>
-<ApplyForm />

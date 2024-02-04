@@ -1,7 +1,7 @@
 <script>
   import ApplyHeader from "../components/applyHeader.svelte";
   import ApplyMain from "../components/applyMain.svelte";
-  import ApplyButton from "../components/applyButton.svelte";
+  import ApplyForm from "../components/applyForm.svelte";
   import { onMount } from "svelte";
   import CompleteModal from "../components/completeModal.svelte";
 
@@ -27,5 +27,7 @@
   <br />
   <ApplyMain />
   <br />
-  <CompleteModal {showModal} {closeModal} />
+  <ApplyForm />
+  <br />
+  <CompleteModal />
 </div>

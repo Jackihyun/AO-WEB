@@ -1,7 +1,10 @@
 <!-- SupportForm.svelte -->
 
 <script>
-  import ApplyButton from "./applyButton.svelte";
+  import { createEventDispatcher } from "svelte";
+  import { showModal } from "../store";
+
+  const dispatch = createEventDispatcher();
 
   let studentId = "";
   let name = "";
@@ -9,6 +12,15 @@
   let message = "";
 
   function handleSubmit() {
+    if (
+      studentId.trim() === "" ||
+      name.trim() === "" ||
+      phoneNumber.trim() === "" ||
+      message.trim() === ""
+    ) {
+      alert("모든 항목을 작성해주세요!");
+      return false;
+    }
     // 여기에서 폼 데이터를 사용하여 필요한 작업 수행
     console.log("학번:", studentId);
     console.log("이름:", name);
@@ -17,6 +29,10 @@
 
     // 폼 제출 후 초기화 또는 다른 작업을 수행할 수 있음
     resetForm();
+
+    showModal.set(true);
+
+    return false;
   }
 
   function resetForm() {
@@ -24,6 +40,10 @@
     name = "";
     phoneNumber = "";
     message = "";
+  }
+
+  function handleClick() {
+    dispatch("click");
   }
 </script>
 
@@ -71,7 +91,7 @@
       type="tel"
       id="phoneNumber"
       bind:value={phoneNumber}
-      class="flex-grow-0 flex-shrink-0 text-base text-left text-[#7f7f7f] bg-transparent border-none focus:outline-none"
+      class="w-full flex-grow-0 flex-shrink-0 text-base text-left text-[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="전화번호를 입력해주세요."
     />
   </div>
@@ -86,11 +106,17 @@
     <textarea
       id="message"
       bind:value={message}
-      class="flex-grow-0 flex-shrink-0 text-base text-left text-[#7f7f7f] bg-transparent border-none focus:outline-none resize-none"
+      class="w-full flex-grow-0 flex-shrink-0 text-base text-left text-[#7f7f7f] bg-transparent border-none focus:outline-none resize-none"
       placeholder="자유롭게 한 마디를 남겨주세요."
     ></textarea>
   </div>
+  <br />
 
   <!-- "지원하기" 버튼 -->
-  <ApplyButton on:apply={handleSubmit} />
+  <button
+    type="submit"
+    on:click={handleClick}
+    class="flex justify-center items-center relative overflow-hidden gap-2.5 px-[126px] py-3.5 rounded-lg bg-[#333] flex-grow-0 flex-shrink-0 text-lg font-medium text-center text-neutral-200"
+    >지원하기</button
+  >
 </form>
