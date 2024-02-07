@@ -1,24 +1,20 @@
 <div
-  class="w-[375px] h-[60px] relative overflow-hidden bg-black border-t-0 border-r-0 border-b border-l-0 border-[#191919]"
+  class="w-full h-[60px] relative overflow-hidden bg-black border-t-0 border-r-0 border-b border-l-0 border-[#191919]"
 >
   <p class="absolute left-[19px] top-[9px] text-3xl text-left">
-    <span class="text-3xl text-left text-[#f2f2f2]">Fire </span><span
-      class="text-3xl text-left text-[#e45454]">A</span
+    <span class="text-3xl text-left text-[#f2f2f2]">Fire </span
+    ><span class="text-3xl text-left text-[#e45454]">A</span
     ><span class="text-3xl text-left text-[#8672f3]">O</span>
   </p>
   <div class="w-[129px] h-[38px]">
     <div
       class="flex flex-col justify-start items-start w-[126px] absolute left-[228px] top-[11px] gap-2.5"
     >
-      <div
-        class="flex-grow-0 flex-shrink-0 w-[126px] h-[38px] rounded-[50px] bg-[#191919]"
-      ></div>
+      <div class="flex-grow-0 flex-shrink-0 w-[126px] h-[38px] rounded-[50px] bg-[#191919]"></div>
       <div
         class="flex justify-center items-center flex-grow-0 flex-shrink-0 absolute left-[17px] top-[9px] gap-1"
       >
-        <p
-          class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#f2f2f2]"
-        >
+        <p class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#f2f2f2]">
           지원하러 가기
         </p>
         <svg
@@ -43,15 +39,11 @@
     <div
       class="flex flex-col justify-start items-start w-[126px] absolute left-[231px] top-[11px] gap-2.5"
     >
-      <div
-        class="flex-grow-0 flex-shrink-0 w-[126px] h-[38px] rounded-[50px] bg-[#191919]"
-      ></div>
+      <div class="flex-grow-0 flex-shrink-0 w-[126px] h-[38px] rounded-[50px] bg-[#191919]"></div>
       <div
         class="flex justify-center items-center flex-grow-0 flex-shrink-0 absolute left-[17px] top-[9px] gap-1"
       >
-        <p
-          class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#f2f2f2]"
-        >
+        <p class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#f2f2f2]">
           지원하러 가기
         </p>
         <svg

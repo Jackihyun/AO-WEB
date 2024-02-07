@@ -1,9 +1,17 @@
 <script>
-  import Header from "../components/header.svelte";
-  import Footer from "../components/footer.svelte";
+    import Header from "../components/header.svelte";
+    import Main from "../components/main.svelte";
+    import Footer from "../components/footer.svelte";
 </script>
 
-<Header />
-<main></main>
-<br />
-<Footer />
+<!-- <div class="w-[375px] h-[801px] relative  pr-6 pl-6 bg-black">
+    <Header />
+    <Main/>
+    <Footer/>
+</div> -->
+
+<div class="bg-black space-y-40">
+    <Header />
+    <Main/>
+    <Footer/>
+</div>

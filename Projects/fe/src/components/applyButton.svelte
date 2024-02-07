@@ -1,22 +1,8 @@
-<!-- applyButton.svelte
-<script>
-  import { createEventDispatcher } from "svelte";
-
-  const dispatch = createEventDispatcher();
-
-  function handleClick() {
-    console.log("Button Clicked!");
-    dispatch("click");
-  }
-</script>
-
-<div
-  class="flex justify-center items-center relative overflow-hidden gap-2.5 px-[136px] py-3.5 rounded-lg bg-[#333]"
->
-  <button
-    on:click={handleClick}
-    class="flex-grow-0 flex-shrink-0 text-lg font-medium text-center text-neutral-200"
-  >
-    지원하기
-  </button>
-</div> -->
+<a href="https://www.naver.com/" class="flex justify-center items-center w-[337px] mx-auto gap-2.5">
+  <div class="flex flex-grow relative overflow-hidden gap-2.5 px-5 py-3.5 rounded-[50px] bg-[#191919]">
+      <p class="flex-grow-0 flex-shrink-0 text-base text-center text-[#f2f2f2] mx-auto">
+          <span class="flex-grow-0 flex-shrink-0 text-base text-center text-[#f2f2f2]">Fire AO </span>
+          <span class="flex-grow-0 flex-shrink-0 text-base font-medium tcenterext- text-[#f2f2f2]">지원하러 가기</span>
+      </p>
+  </div>
+</a>

@@ -1,8 +1,8 @@
 <div class=" bg-neutral-900">
-  <div class="w-[375px] h-[254px] relative overflow-hidden mx-auto">
+<div class="w-[375px] h-[254px] relative overflow-hidden mx-auto">
     <p class="absolute left-[129px] top-[29px] text-[32px] text-center">
-      <span class="text-[32px] text-center text-[#f2f2f2]">Fire </span><span
-        class="text-[32px] text-center text-[#e45454]">A</span
+      <span class="text-[32px] text-center text-[#f2f2f2]">Fire </span
+      ><span class="text-[32px] text-center text-[#e45454]">A</span
       ><span class="text-[32px] text-center text-[#8672f3]">O</span>
     </p>
     <svg
@@ -20,14 +20,10 @@
         fill="#F2F2F2"
       ></path>
     </svg>
-    <p
-      class="w-[109px] absolute left-[151px] top-[120px] text-[15px] text-left text-neutral-200"
-    >
+    <p class="w-[109px] absolute left-[151px] top-[120px] text-[15px] text-left text-neutral-200">
       010-4939-1971
     </p>
-    <p
-      class="w-[241px] absolute left-[67px] top-[161px] text-sm text-center text-neutral-200"
-    >
+    <p class="w-[241px] absolute left-[67px] top-[161px] text-sm text-center text-neutral-200">
       ⓒ Fire AO. 2023 All rights reserved
     </p>
   </div>
