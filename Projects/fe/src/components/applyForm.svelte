@@ -54,7 +54,7 @@
     for="studentId">학번</label
   >
   <div
-    class="mb-3 flex justify-start items-center w-[339px] relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
+    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
   >
     <input
       type="text"
@@ -69,7 +69,7 @@
     >이름</label
   >
   <div
-    class="mb-3 flex justify-start items-center w-[339px] relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
+    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] [relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
   >
     <input
       type="text"
@@ -85,7 +85,7 @@
     for="phoneNumber">전화번호</label
   >
   <div
-    class="mb-3 flex justify-start items-center w-[339px] relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
+    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
   >
     <input
       type="tel"
@@ -101,7 +101,7 @@
     for="message">한 마디 남기기</label
   >
   <div
-    class="flex justify-start items-start w-[339px] h-24 relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
+    class="mt-[8px] mb-[63px] flex justify-start items-start w-[339px] h-24 relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
   >
     <textarea
       id="message"
@@ -110,7 +110,6 @@
       placeholder="자유롭게 한 마디를 남겨주세요."
     ></textarea>
   </div>
-  <br />
 
   <!-- "지원하기" 버튼 -->
   <button
