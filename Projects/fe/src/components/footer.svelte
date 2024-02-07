@@ -1,8 +1,10 @@
 <div class=" bg-neutral-900">
-<div class="w-[375px] h-[254px] relative overflow-hidden mx-auto">
-    <p class="absolute left-[129px] top-[29px] text-[32px] text-center">
-      <span class="text-[32px] text-center text-[#f2f2f2]">Fire </span
-      ><span class="text-[32px] text-center text-[#e45454]">A</span
+  <div class="w-[375px] h-[254px] relative overflow-hidden mx-auto">
+    <p
+      class="mb-[46px] font-['Paytone_One'] absolute left-[129px] top-[29px] text-[32px] text-center"
+    >
+      <span class="text-[32px] text-center text-[#f2f2f2]">Fire </span><span
+        class="text-[32px] text-center text-[#e45454]">A</span
       ><span class="text-[32px] text-center text-[#8672f3]">O</span>
     </p>
     <svg
@@ -11,7 +13,7 @@
       viewBox="0 0 29 29"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      class="w-[29px] h-[29px]"
+      class="w-[29px] h-[29px] absolute left-[115px] top-[115px]"
       preserveAspectRatio="none"
     >
       <circle cx="14.5" cy="14.5" r="14.5" fill="#313131"></circle>
@@ -20,10 +22,14 @@
         fill="#F2F2F2"
       ></path>
     </svg>
-    <p class="w-[109px] absolute left-[151px] top-[120px] text-[15px] text-left text-neutral-200">
+    <p
+      class="mb-[19px] w-[109px] absolute left-[151px] top-[120px] text-[15px] text-left text-neutral-200"
+    >
       010-4939-1971
     </p>
-    <p class="w-[241px] absolute left-[67px] top-[161px] text-sm text-center text-neutral-200">
+    <p
+      class="w-[241px] absolute left-[67px] top-[161px] text-sm text-center text-neutral-200"
+    >
       ⓒ Fire AO. 2023 All rights reserved
     </p>
   </div>
