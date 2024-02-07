@@ -11,4 +11,5 @@
 <Router>
   <Route path="/" component={MainPage} />
   <Route path="/applyPage" component={ApplyPage} />
+  <Route path="/mainPage" component={MainPage} />
 </Router>
