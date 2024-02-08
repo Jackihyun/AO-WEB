@@ -1,17 +1,38 @@
 <script>
   import { Link } from "svelte-routing";
+
+  function handleScroll() {
+    const header = document.querySelector(".sticky");
+    if (window.scrollY > 0) {
+      header.classList.add("bg-opacity-80");
+      header.classList.remove("bg-opacity-0");
+    } else {
+      header.classList.add("bg-opacity-0");
+      header.classList.remove("bg-opacity-80");
+    }
+  }
+  window.addEventListener("scroll", handleScroll);
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: window.innerWidth > 768 ? 0 : 44,
+      behavior: "smooth",
+    });
+  }
 </script>
 
 <div
-  class="w-full h-[60px] relative overflow-hidden bg-black border-t-0 border-r-0 border-b border-l-0 border-[#191919]"
+  class="sticky top-[44px] z-10 transition-all duration-300 cursor-pointer w-full h-[60px] overflow-hidden bg-black border-t-0 border-r-0 border-b border-l-0 border-[#191919]"
 >
-  <p
-    class="font-['Paytone_One'] absolute left-[19px] top-[9px] text-3xl text-left"
-  >
-    <span class="text-3xl text-left text-[#f2f2f2]">Fire </span><span
-      class="text-3xl text-left text-[#e45454]">A</span
-    ><span class="text-3xl text-left text-[#8672f3]">O</span>
-  </p>
+  <button on:click={scrollToTop}>
+    <p
+      class="font-['Paytone_One'] absolute left-[19px] top-[9px] text-3xl text-left"
+    >
+      <span class="text-3xl text-left text-[#f2f2f2]">Fire </span><span
+        class="text-3xl text-left text-[#e45454]">A</span
+      ><span class="text-3xl text-left text-[#8672f3]">O</span>
+    </p>
+  </button>
   <div class="w-[129px] h-[38px]">
     <div
       class="flex flex-col justify-start items-start w-[126px] absolute left-[228px] top-[11px] gap-2.5"
