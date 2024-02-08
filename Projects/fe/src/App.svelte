@@ -7,5 +7,5 @@
   let showModal = true;
 </script>
 
-<MainPage />
-<!-- <ApplyPage /> -->
+<!-- <MainPage /> -->
+<ApplyPage />
