@@ -31,3 +31,26 @@
     <ApplyButton />
   </div>
 </div>
+
+<!-- <div class="bg-black space-y-40">
+
+    <Intro1 />
+
+
+    <Intro2 />
+
+
+    <Activity1 />
+
+
+    <Activity2 />
+
+
+    <Article1 />
+
+
+    <Article2 />
+
+    <ApplyButton />
+
+</div> -->

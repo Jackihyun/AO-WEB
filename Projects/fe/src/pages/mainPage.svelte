@@ -10,7 +10,7 @@
     <Footer/>
 </div> -->
 
-<div class="bg-black">
+<div class="bg-black w-full h-full relative overflow-hidden">
   <div class="h-[44px]"></div>
   <Header />
   <div class="mt-[241px]">
