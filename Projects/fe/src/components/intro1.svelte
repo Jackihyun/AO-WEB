@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-start items-center relative gap-[18px] ">
+<div class="flex flex-col justify-start items-center relative gap-[18px]">
   <p
     class="font-['Paytone_One'] flex-grow-0 flex-shrink-0 text-2xl text-center"
   >
