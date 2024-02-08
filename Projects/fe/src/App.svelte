@@ -1,4 +1,5 @@
 <script>
+  import { Router, Route } from "svelte-routing";
   import MainPage from "./pages/mainPage.svelte";
   import ApplyPage from "./pages/applyPage.svelte";
   import "./App.css";
@@ -7,5 +8,8 @@
   let showModal = true;
 </script>
 
-<!-- <MainPage /> -->
-<ApplyPage />
+<Router>
+  <Route path="/" component={MainPage} />
+  <Route path="/applyPage" component={ApplyPage} />
+  <Route path="/mainPage" component={MainPage} />
+</Router>
