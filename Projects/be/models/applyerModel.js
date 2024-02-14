@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+//스키마
 const applyerSchema = new mongoose.Schema({
     id: {
         type: String,
