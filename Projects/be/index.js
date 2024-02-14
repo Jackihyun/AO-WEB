@@ -10,8 +10,11 @@ dbConnect();
 server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 
-//apply 라우팅
+//apply 
 server.use("/apply",require("./routes/applyRoutes"));
+
+//main
+server.use("/main",require("./routes/mainRoutes"));
 
 
 server.listen(3000, ()=>{

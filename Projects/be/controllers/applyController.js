@@ -15,7 +15,6 @@ const postApply = asyncHandler(async(req,res) => {
     //못받은 경우 
     if(!id || !name || !phoneNum || !aWord){
         return res.send("필수 값이 입력되지 않았습니다.")
-        //throw new Error();
     }
 
     //db에 저장
