@@ -19,6 +19,16 @@
       behavior: "smooth",
     });
   }
+
+  let isTouched = false;
+
+  function touchStart() {
+    isTouched = true;
+  }
+
+  function touchEnd() {
+    isTouched = false;
+  }
 </script>
 
 <div
@@ -35,71 +45,48 @@
   </button>
   <div class="w-[129px] h-[38px]">
     <div
-      class="flex flex-col justify-start items-start w-[126px] absolute left-[228px] top-[11px] gap-2.5"
+      on:touchstart={touchStart}
+      on:touchend={touchEnd}
+      on:touchcancel={touchEnd}
+      class="flex flex-col justify-start items-start w-[126px] absolute left-[228px] top-[11px] gap-2.5 ${isTouched
+        ? 'bg-opacity-75 scale-95'
+        : ''} "
     >
       <div
-        class="flex-grow-0 flex-shrink-0 w-[126px] h-[38px] rounded-[50px] bg-[#191919]"
+        class="flex-grow-0 flex-shrink-0 w-[126px] h-[38px] rounded-[50px] bg-[#191919] ${isTouched
+          ? ' bg-emerald-500 transition duration-100 ease-in-out'
+          : ''}"
       ></div>
-      <div
-        class="flex justify-center items-center flex-grow-0 flex-shrink-0 absolute left-[17px] top-[9px] gap-1"
-      >
-        <Link
-          to="/applyPage"
-          class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#f2f2f2]"
+      <Link to="/applyPage">
+        <div
+          class="flex justify-center items-center flex-grow-0 flex-shrink-0 absolute left-[17.5px] top-[8.5px] gap-1"
         >
-          지원하러 가기
-        </Link>
-        <svg
-          width="13"
-          height="11"
-          viewBox="0 0 13 11"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="flex-grow-0 flex-shrink-0 w-[13px] h-[9.84px] relative"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M6.26562 2.36999L9.92187 5.63975L6.26562 8.9095M9.41406 5.63975L2 5.63975"
-            stroke="#F2F2F2"
-            stroke-width="0.9375"
-            stroke-miterlimit="10"
-            stroke-linecap="square"
-          ></path>
-        </svg>
-      </div>
+          <p
+            to="/applyPage"
+            class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#f2f2f2]"
+          >
+            지원하러 가기
+          </p>
+          <svg
+            to="/applyPage"
+            width="13"
+            height="11"
+            viewBox="0 0 13 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0 w-[13px] h-[9.84px] relative"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M6.26562 2.36999L9.92187 5.63975L6.26562 8.9095M9.41406 5.63975L2 5.63975"
+              stroke="#F2F2F2"
+              stroke-width="0.9375"
+              stroke-miterlimit="10"
+              stroke-linecap="square"
+            ></path>
+          </svg>
+        </div>
+      </Link>
     </div>
-    <!-- <div
-      class="flex flex-col justify-start items-start w-[126px] absolute left-[231px] top-[11px] gap-2.5"
-    >
-      <div
-        class="flex-grow-0 flex-shrink-0 w-[126px] h-[38px] rounded-[50px] bg-[#191919]"
-      ></div>
-      <div
-        class="flex justify-center items-center flex-grow-0 flex-shrink-0 absolute left-[17px] top-[9px] gap-1"
-      >
-        <p
-          class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#f2f2f2]"
-        >
-          지원하러 가기
-        </p>
-        <svg
-          width="13"
-          height="11"
-          viewBox="0 0 13 11"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="flex-grow-0 flex-shrink-0 w-[13px] h-[9.84px] relative"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M6.26562 2.36999L9.92187 5.63975L6.26562 8.9095M9.41406 5.63975L2 5.63975"
-            stroke="#F2F2F2"
-            stroke-width="0.9375"
-            stroke-miterlimit="10"
-            stroke-linecap="square"
-          ></path>
-        </svg>
-      </div>
-    </div> -->
   </div>
 </div>
