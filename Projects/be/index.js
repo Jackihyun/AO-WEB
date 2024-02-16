@@ -4,6 +4,10 @@ const dbConnect = require("./config/dbConnect");
 //서버
 const server = express();
 
+//ejs세팅(머지해야함)
+server.set("view engine", "ejs");
+server.set("views", "../fe/views");
+
 //db연결
 dbConnect();
 

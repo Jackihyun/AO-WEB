@@ -12,7 +12,7 @@ const postApply = asyncHandler(async(req,res) => {
     const {id, name, phoneNum, aWord} = req.body;
     console.log(req.body);
 
-    //못받은 경우 
+    //못받은 경우, 중복 경우 예외처리 해야함
     if(!id || !name || !phoneNum || !aWord){
         return res.send("필수 값이 입력되지 않았습니다.")
     }
@@ -21,6 +21,8 @@ const postApply = asyncHandler(async(req,res) => {
     const applyer = await Applyer.create({
         id, name, phoneNum, aWord
     });
+
+    //확인페이지 띄우기
     res.send("apply post");
 })
 
