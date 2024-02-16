@@ -10,13 +10,18 @@
     <Footer/>
 </div> -->
 
-<div class="bg-black w-full h-full relative overflow-hidden">
-  <div class="h-[44px]"></div>
+<div class="bg-black vw-full vh-full relative overflow-hidden ">
+  <div class="vh-[44px]"></div>
   <Header />
-  <div class="mt-[241px]">
+  <div class="mt-[50vh]">
     <Main />
   </div>
-  <div class="mt-[155px]">
+  <div class="mt-[30vh]">
     <Footer />
   </div>
 </div>
+
+
+
+
+
