@@ -43,6 +43,22 @@
   }
 
   function handleClick() {
+    fetch("/apply", {
+      method: "POST",
+      body: JSON.stringify({
+        id: "60182228",
+        name: "천제희",
+        phoneNum: "010-9666-8460",
+        aWord: "안녕하세요"
+      })
+    })
+      .then((res) => {
+        console.log(res)
+      })
+      .catch((err) => {
+        console.error(err);
+      })
+
     dispatch("click");
   }
 </script>
