@@ -57,18 +57,18 @@
           ? ' bg-emerald-500 transition duration-100 ease-in-out'
           : ''}"
       ></div>
-      <Link to="/applyPage">
+      <Link to="/ao/applyPage">
         <div
           class="flex justify-center items-center flex-grow-0 flex-shrink-0 absolute left-[17.5px] top-[8.5px] gap-1"
         >
           <p
-            to="/applyPage"
+            to="/ao/applyPage"
             class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#f2f2f2]"
           >
             지원하러 가기
           </p>
           <svg
-            to="/applyPage"
+            to="/ao/applyPage"
             width="13"
             height="11"
             viewBox="0 0 13 11"

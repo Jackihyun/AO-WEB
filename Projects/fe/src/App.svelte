@@ -8,7 +8,7 @@
   let showModal = true;
 </script>
 
-<Router>
+<Router basepath="/ao">
   <Route path="/" component={MainPage} />
   <Route path="/applyPage" component={ApplyPage} />
   <Route path="/mainPage" component={MainPage} />
