@@ -1,5 +1,5 @@
 <a
-  href="/ao/applyPage"
+  href="/applyPage"
   class="flex justify-center items-center w-[337px] mx-auto gap-2.5"
 >
   <div
