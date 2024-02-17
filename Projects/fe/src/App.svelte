@@ -9,7 +9,7 @@
 </script>
 
 <Router>
-  <Route path="/" component={MainPage} />
-  <Route path="/applyPage" component={ApplyPage} />
-  <Route path="/mainPage" component={MainPage} />
+  <Route path="/ao" component={MainPage} />
+  <Route path="/ao/applyPage" component={ApplyPage} />
+  <Route path="/ao/mainPage" component={MainPage} />
 </Router>
