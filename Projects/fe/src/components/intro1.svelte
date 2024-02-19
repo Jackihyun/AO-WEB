@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-start items-center relative gap-[18px]">
+<!-- <div class="flex flex-col justify-start items-center relative gap-[18px]">
   <p
     class="font-['Paytone_One'] flex-grow-0 flex-shrink-0 text-2xl text-center"
   >
@@ -22,4 +22,6 @@
       >함께해 줄 Fire AO입니다.</span
     >
   </p>
-</div>
+</div> -->
+
+<p class="text-[110px] font-black text-center overflow-hidden whitespace-nowrap ml-[-10px] text-[#ff4a3f]/[0.35]">Fire AO</p>

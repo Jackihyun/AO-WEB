@@ -1,4 +1,4 @@
-<p
+<!-- <p
   class="font-['Paytone_One'] text-9xl text-center overflow-hidden whitespace-nowrap ml-[-25px]"
 >
   <span class="text-9xl text-center text-white/25 ml-[-15px]">Fire</span>
@@ -7,7 +7,7 @@
 </p>
 
 <div class="bg-black mt-[90px]">
-  <!-- 첫 번째 텍스트 -->
+
   <p class="w-full max-w-[339px] text-lg text-center text-[#f2f2f2] mx-auto">
     <span class="w-full text-lg text-center text-[#f2f2f2]">
       AO는 Alpha의 A, Omega의 O를 합친 것으로
@@ -22,7 +22,6 @@
     </span>
   </p>
 
-  <!-- 두 번째 텍스트 -->
   <p
     class="mt-[21px] w-full max-w-[339px] text-base text-center text-[#ccc] mx-[9px]"
   >
@@ -32,4 +31,14 @@
     선배님들이 닦아온 길과 AO가 가지고 있는 정보들을 공유하며 편하게 취업할 수
     있도록 최선을 다하겠습니다!
   </p>
-</div>
+</div> -->
+
+<p class=" text-[40px] font-black text-left mt-[-80px] translate-x-[30px]">
+  <span class="text-[40px] font-black text-left text-[#f2f2f2]">Welcome to</span><br />
+  <span class="text-[40px] font-black text-left text-[#f2f2f2]"
+    >Fire </span>
+  <span class="text-[40px] font-black text-left text-white">AO!</span>
+</p>
+
+
+

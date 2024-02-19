@@ -11,12 +11,12 @@
 </div> -->
 
 <div class="bg-black vw-full vh-full relative overflow-hidden ">
-  <div class="vh-[44px]"></div>
+  <div class="mt-[44px]"></div>
   <Header />
-  <div class="mt-[50vh]">
+  <div >
     <Main />
   </div>
-  <div class="mt-[30vh]">
+  <div >
     <Footer />
   </div>
 </div>

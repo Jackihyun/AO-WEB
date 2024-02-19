@@ -2,6 +2,8 @@
   import { Router, Route } from "svelte-routing";
   import MainPage from "./pages/mainPage.svelte";
   import ApplyPage from "./pages/applyPage.svelte";
+  import MenuPage from "./pages/menuPage.svelte";
+  import AboutAoPage from "./pages/aboutAoPage.svelte";
   import "./App.css";
   // import Modal from "./components/completeModal.svelte";
 
@@ -9,7 +11,9 @@
 </script>
 
 <Router>
-  <Route path="/" component={MainPage} />
+  <Route path="/" component={AboutAoPage} />
   <Route path="/applyPage" component={ApplyPage} />
   <Route path="/mainPage" component={MainPage} />
+  <Route path="/menuPage" component={MenuPage}/>
+  <Route path="/aboutAoPage" component={AboutAoPage}/>
 </Router>

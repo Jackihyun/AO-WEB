@@ -1,4 +1,4 @@
-<div class=" bg-neutral-900">
+<!-- <div class=" bg-neutral-900">
   <div class="w-[375px] h-[254px] relative overflow-hidden mx-auto">
     <p
       class="mb-[46px] font-['Paytone_One'] absolute left-[129px] top-[29px] text-[32px] text-center"
@@ -32,5 +32,43 @@
     >
       ⓒ Fire AO. 2023 All rights reserved
     </p>
+  </div>
+</div> -->
+
+<div class="w-[375px] h-[137px] relative overflow-hidden bg-black">
+  <div class="w-[241px] h-[76px]">
+    <p
+      class="w-[241px] absolute left-px top-[82px] text-[13px] font-light text-center text-neutral-200"
+    >
+      ⓒ Fire AO. 2024 All rights reserved
+    </p>
+    <div class="w-[138px] h-5">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="class=w-[29px] h-[20px] absolute left-[20px] top-[55px]"
+        preserveAspectRatio="none"
+      >
+        <circle cx="10" cy="10" r="10" fill="#686868"></circle>
+        <path
+          d="M15.3171 12.4098C15.2258 13.1034 14.8852 13.74 14.3589 14.2008C13.8325 14.6616 13.1564 14.915 12.4569 14.9138C8.39276 14.9138 5.08619 11.6072 5.08619 7.54309C5.08493 6.84354 5.33837 6.16745 5.79916 5.6411C6.25996 5.11474 6.8966 4.77412 7.59017 4.68286C7.76556 4.66144 7.94317 4.69732 8.09649 4.78515C8.24981 4.87297 8.37062 5.00802 8.44087 5.17014L9.52191 7.58353V7.58967C9.5757 7.71377 9.59791 7.84927 9.58657 7.98404C9.57523 8.11882 9.53068 8.2487 9.4569 8.36206C9.44769 8.37588 9.43796 8.38868 9.42773 8.40147L8.36205 9.66473C8.74543 10.4438 9.5603 11.2515 10.3496 11.6359L11.5954 10.5758C11.6077 10.5655 11.6205 10.556 11.6338 10.5472C11.7471 10.4716 11.8774 10.4255 12.013 10.413C12.1486 10.4005 12.2851 10.422 12.4103 10.4755L12.417 10.4786L14.8283 11.5591C14.9907 11.6291 15.1261 11.7498 15.2142 11.9031C15.3023 12.0565 15.3384 12.2342 15.3171 12.4098Z"
+          fill="#F2F2F2"
+        ></path>
+      </svg>
+      <p
+        class="w-[109px] absolute left-12 top-14 text-[13px] font-light text-left text-neutral-200"
+      >
+        010-4939-1971
+      </p>
+    </div>
+    <div class="w-[81px] h-[25px]">
+      <p class="absolute left-[19px] top-[25px] text-xl text-center">
+        <span class="text-xl text-center text-[#f2f2f2]">Fire </span
+        ><span class="text-xl text-center text-white">AO</span>
+      </p>
+    </div>
   </div>
 </div>
