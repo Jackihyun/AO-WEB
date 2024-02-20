@@ -3,7 +3,9 @@
 </script>
 
 <div class="w-screen h-[137px] bg-white text-left">
-  <p class="text-xl font-bold text-gray-800 mt-[25px] ml-[19px] mb-[6px]">
+  <p
+    class="text-xl font-['Helvetica95_Black'] text-black mt-[25px] ml-[19px] mb-[6px]"
+  >
     Fire AO
   </p>
 
@@ -23,10 +25,12 @@
         fill="#0D0D0D"
       ></path>
     </svg>
-    <p class="text-gray-700">010-4939-1971</p>
+    <p class="text-neutral-900 font-['Helvetical_Light]">010-4939-1971</p>
   </div>
 
-  <p class="text-sm text-gray-500 mt-[6px] ml-[18px]">
+  <p
+    class="text-sm text-neutral-900 font-['Helvetica_Light'] mt-[6px] ml-[18px]"
+  >
     ⓒ Fire AO. 2024 All rights reserved
   </p>
 </div>

@@ -1,5 +1,15 @@
+<script>
+  import Menu from "./menu.svelte";
+
+  let menuVisible = false;
+
+  function toggleMenu() {
+    menuVisible = !menuVisible;
+  }
+</script>
+
 <div
-  class="flex justify-between items-center w-screen relative overflow-hidden px-5 py-[7px] bg-white border-t-0 border-r-0 border-b border-l-0 border-[#0d0d0d]"
+  class="flex justify-between items-center w-screen relative overflow-hidden px-5 py-[11px] bg-white border-t-0 border-r-0 border-b border-l-0 border-[#0d0d0d]"
 >
   <svg
     width="27"
@@ -77,27 +87,30 @@
   </svg>
   <p class="flex-grow-0 flex-shrink-0 text-3xl text-left">
     <span
-      class="flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-[#0d0d0d]"
-      >Fire</span
-    ><span class="flex-grow-0 flex-shrink-0 text-3xl text-left text-[#0d0d0d]">
-    </span><span class="flex-grow-0 flex-shrink-0 text-3xl text-left text-black"
+      class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-[#0d0d0d]"
+      >Fire
+    </span><span
+      class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-black"
       >AO</span
     >
   </p>
-  <svg
-    width="27"
-    height="22"
-    viewBox="0 0 27 22"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    class="flex-grow-0 flex-shrink-0 w-[23px] h-[18px]"
-    preserveAspectRatio="none"
-  >
-    <path d="M2 2H25" stroke="black" stroke-width="3" stroke-linecap="round"
-    ></path>
-    <path d="M2 20H25" stroke="black" stroke-width="3" stroke-linecap="round"
-    ></path>
-    <path d="M2 11H25" stroke="black" stroke-width="3" stroke-linecap="round"
-    ></path>
-  </svg>
+  <button on:click={toggleMenu}>
+    <svg
+      width="27"
+      height="22"
+      viewBox="0 0 27 22"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="flex-grow-0 flex-shrink-0 w-[23px] h-[18px]"
+      preserveAspectRatio="none"
+    >
+      <path d="M2 2H25" stroke="black" stroke-width="3" stroke-linecap="round"
+      ></path>
+      <path d="M2 20H25" stroke="black" stroke-width="3" stroke-linecap="round"
+      ></path>
+      <path d="M2 11H25" stroke="black" stroke-width="3" stroke-linecap="round"
+      ></path>
+    </svg>
+  </button>
 </div>
+<Menu {menuVisible} />

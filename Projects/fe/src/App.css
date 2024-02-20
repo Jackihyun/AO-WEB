@@ -8,9 +8,52 @@
 html > body {
   font-family: "Noto Sans KR", sans-serif ;
 }
-/* 
-.sticky {
-  top: 0;
-  position: fixed;
-  width: 100%;
-} */
+
+@font-face {
+  font-family: Helvetica_Bold;
+  font-weight: 750;
+  src: local("HELVETICA BOLD"),
+  url(HELVETICA BOLD.TTF);
+}
+
+@font-face {
+  font-family: Helvetica_Light;
+  src: local("HELVETICA LIGHT"),
+  url(HELVETICA LIGHT.TTF);
+}
+
+@font-face {
+  font-family: Helvetica95_Black;
+  src: local("HELVETICA BLACK"),
+  url(HELVETICA BLACK.TTF);
+}
+
+@font-face {
+  font-family: 5MAL6LAMPEN;
+  src: local("5MAL6LAMPEN"),
+  url(5MAL6LAMPEN.TTF);
+}
+
+@font-face {
+  font-family: Pretendard_Bold;
+  src: local("PRETENDARD-BOLD"),
+  url(PRETENDARD-BOLD.OTF);
+}
+
+@font-face {
+  font-family: Pretendard_Semibold;
+  src: local("PRETENDARD-SEMIBOLD"),
+  url(PRETENDARD-SEMIBOLD.OTF);
+}
+
+@font-face {
+  font-family: Pretendard_Medium;
+  src: local("PRETENDARD-MEDIUM"),
+  url(PRETENDARD-MEDIUM.OTF);
+}
+
+@font-face {
+  font-family: Pretendard_Light;
+  src: local("PRETENDARD-LIGHT"),
+  url(PRETENDARD-LIGHT.OTF);
+}

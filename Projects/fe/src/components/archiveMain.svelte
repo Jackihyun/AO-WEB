@@ -23,10 +23,12 @@
   }
 </script>
 
-<div class="ml-[31px]">
-  <p class="text-2xl font-bold text-[#0d0d0d]">Archive AO</p>
+<div class="ml-[31px] mb-[40px]">
+  <p class="font-['Helvetica_Bold'] text-2xl font-bold text-[#0d0d0d]">
+    Archive AO
+  </p>
   <p
-    class="font-['Pretendard'] text-sm font-semibold text-left mt-[4px] text-[#313131]"
+    class="font-['Pretendard_Semibold'] text-sm text-left mt-[4px] text-[#313131]"
   >
     Fire AO 활동 모음집
   </p>
@@ -46,10 +48,12 @@
       <div
         class="absolute left-[85.5px] bottom-[56.7px] rounded-[15px] bg-white/[0.15] backdrop-blur-md w-[164px] h-[49px]"
       >
-        <p class=" text-[15px] font-bold text-white ml-[27px] mt-[5.5px] mb-0">
+        <p
+          class=" text-[15px] font-['Pretendard_Bold'] font-bold text-white ml-[27px] mt-[5.5px] mb-0"
+        >
           MT
         </p>
-        <p class="text-[10px] font-light text-white ml-[27px]">
+        <p class=" text-[10px] font-[Pretendard_Light] text-white ml-[27px]">
           신나게 놀고 먹는 전체 MT
         </p>
       </div>
@@ -61,10 +65,12 @@
       <div
         class="absolute left-[347.5px] bottom-[56.7px] rounded-[15px] bg-white/[0.15] backdrop-blur-md w-[164px] h-[49px]"
       >
-        <p class=" text-[15px] font-bold text-white ml-[27px] mt-[5.5px] mb-0">
+        <p
+          class=" text-[15px] font-['Pretendard_Bold'] font-bold text-white ml-[27px] mt-[5.5px] mb-0"
+        >
           MT
         </p>
-        <p class="text-[10px] font-light text-white ml-[27px]">
+        <p class="text-[10px] font-['Pretendard_Light'] text-white ml-[27px]">
           신나게 놀고 먹는 전체 MT
         </p>
       </div>
@@ -76,10 +82,12 @@
       <div
         class="absolute left-[607.5px] bottom-[56.7px] rounded-[15px] bg-white/[0.15] backdrop-blur-md w-[164px] h-[49px]"
       >
-        <p class=" text-[15px] font-bold text-white ml-[27px] mt-[5.5px] mb-0">
+        <p
+          class=" text-[15px] font-['Pretendard_Bold'] font-bold text-white ml-[27px] mt-[5.5px] mb-0"
+        >
           전체 회식
         </p>
-        <p class="text-[10px] font-light text-white ml-[27px]">
+        <p class="text-[10px] font-['Pretendard_Light'] text-white ml-[27px]">
           즐거운 FIRE AO 전체 회식
         </p>
       </div>
@@ -91,10 +99,12 @@
       <div
         class="absolute left-[867.5px] bottom-[56.7px] rounded-[15px] bg-white/[0.15] backdrop-blur-md w-[164px] h-[49px]"
       >
-        <p class=" text-[15px] font-bold text-white ml-[27px] mt-[5.5px] mb-0">
+        <p
+          class=" text-[15px] font-['Pretendard_Bold'] font-bold text-white ml-[27px] mt-[5.5px] mb-0"
+        >
           전체 회식
         </p>
-        <p class="text-[10px] font-light text-white ml-[27px]">
+        <p class="text-[10px] font-['Pretendard_Light'] text-white ml-[27px]">
           즐거운 FIRE AO 전체 회식
         </p>
       </div>
@@ -106,10 +116,12 @@
       <div
         class="absolute left-[1127.5px] bottom-[56.7px] rounded-[15px] bg-white/[0.15] backdrop-blur-md w-[164px] h-[49px]"
       >
-        <p class=" text-[15px] font-bold text-white ml-[27px] mt-[5.5px] mb-0">
+        <p
+          class=" text-[15px] font-['Pretendard_Bold'] font-bold text-white ml-[27px] mt-[5.5px] mb-0"
+        >
           서버파트 스터디
         </p>
-        <p class="text-[10px] font-light text-white ml-[27px]">
+        <p class="text-[10px] font-['Pretendard_Light'] text-white ml-[27px]">
           함께, 또 따로 열심히!
         </p>
       </div>
@@ -121,10 +133,12 @@
       <div
         class="absolute left-[1387.5px] bottom-[56.7px] rounded-[15px] bg-white/[0.15] backdrop-blur-md w-[164px] h-[49px]"
       >
-        <p class=" text-[15px] font-bold text-white ml-[27px] mt-[5.5px] mb-0">
+        <p
+          class=" text-[15px] font-['Pretendard_Bold'] font-bold text-white ml-[27px] mt-[5.5px] mb-0"
+        >
           서버파트 스터디
         </p>
-        <p class="text-[10px] font-light text-white ml-[27px]">
+        <p class="text-[10px] font-['Pretendard_Light'] text-white ml-[27px]">
           함께, 또 따로 열심히!
         </p>
       </div>
@@ -136,10 +150,12 @@
       <div
         class="absolute left-[1647.5px] bottom-[56.7px] rounded-[15px] bg-white/[0.15] backdrop-blur-md w-[164px] h-[49px]"
       >
-        <p class=" text-[15px] font-bold text-white ml-[27px] mt-[5.5px] mb-0">
+        <p
+          class=" text-[15px] font-['Pretendard_Bold'] font-bold text-white ml-[27px] mt-[5.5px] mb-0"
+        >
           AO 총회
         </p>
-        <p class="text-[10px] font-light text-white ml-[27px]">
+        <p class="text-[10px] font-['Pretendard_Light'] text-white ml-[27px]">
           선배들과 함께하는 AO 총회
         </p>
       </div>
@@ -151,10 +167,12 @@
       <div
         class="absolute left-[1907.5px] bottom-[56.7px] rounded-[15px] bg-white/[0.15] backdrop-blur-md w-[164px] h-[49px]"
       >
-        <p class=" text-[15px] font-bold text-white ml-[27px] mt-[5.5px] mb-0">
+        <p
+          class=" text-[15px] font-['Pretendard_Bold'] font-bold text-white ml-[27px] mt-[5.5px] mb-0"
+        >
           AO 총회
         </p>
-        <p class="text-[10px] font-light text-white ml-[27px]">
+        <p class="text-[10px] font-['Pretendard_Light'] text-white ml-[27px]">
           선배들과 함께하는 AO 총회
         </p>
       </div>
@@ -166,10 +184,12 @@
       <div
         class="absolute left-[2167.5px] bottom-[56.7px] rounded-[15px] bg-white/[0.15] backdrop-blur-md w-[164px] h-[49px]"
       >
-        <p class=" text-[15px] font-bold text-white ml-[27px] mt-[5.5px] mb-0">
+        <p
+          class=" text-[15px] font-['Pretendard_Bold'] font-bold text-white ml-[27px] mt-[5.5px] mb-0"
+        >
           AO 총회
         </p>
-        <p class="text-[10px] font-light text-white ml-[27px]">
+        <p class="text-[10px] font-['Pretendard_Light'] text-white ml-[27px]">
           선배들과 함께하는 AO 총회
         </p>
       </div>
@@ -185,17 +205,27 @@
       <div
         class="w-[35px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
       >
-        <p class="text-lg font-medium text-center text-[#191919]">#</p>
+        <p
+          class="text-lg font-['Pretendard_Medium'] text-center text-[#191919]"
+        >
+          #
+        </p>
       </div>
       <div
         class="w-[93px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
       >
-        <p class="text-lg font-semibold text-center text-[#191919]">전체 MT</p>
+        <p
+          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919]"
+        >
+          전체 MT
+        </p>
       </div>
       <div
         class="w-[124px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
       >
-        <p class="text-lg font-semibold text-center text-[#191919]">
+        <p
+          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919]"
+        >
           AO 전체 회식
         </p>
       </div>
@@ -205,7 +235,9 @@
       <div
         class="w-[164px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
       >
-        <p class="text-lg font-semibold text-center text-[#191919]">
+        <p
+          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919]"
+        >
           서버파트 스터디
         </p>
       </div>
@@ -244,12 +276,18 @@
       <div
         class="w-[89px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
       >
-        <p class="text-lg font-semibold text-center text-[#191919]">AO 총회</p>
+        <p
+          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919]"
+        >
+          AO 총회
+        </p>
       </div>
       <div
         class="w-[235px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
       >
-        <p class="text-lg font-semibold text-center text-[#191919]">
+        <p
+          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919]"
+        >
           Alpha부터 Omega까지!
         </p>
       </div>
