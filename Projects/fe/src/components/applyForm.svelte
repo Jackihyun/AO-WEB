@@ -45,6 +45,9 @@
   function handleClick() {
     fetch("/apply", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({
         id: "60182228",
         name: "천제희",
@@ -52,6 +55,12 @@
         aWord: "안녕하세요"
       })
     })
+      .then((res) => {
+        console.log(res)
+      })
+      .catch((err) => {
+        console.error(err);
+      })
       .then((res) => {
         console.log(res)
       })

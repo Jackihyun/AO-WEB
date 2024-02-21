@@ -1,12 +1,14 @@
 const express = require("express");
+const path = require('path');
 const dbConnect = require("./config/dbConnect");
+const cors = require("cors");
 
 //서버
 const server = express();
 
-//ejs세팅(머지해야함)
-server.set("view engine", "ejs");
-server.set("views", "../fe/views");
+server.use(cors());
+
+server.use(express.static(path.join(__dirname, '..','fe','dist')));
 
 //db연결
 dbConnect();
@@ -14,11 +16,12 @@ dbConnect();
 server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 
-//apply 
-server.use("/apply",require("./routes/applyRoutes"));
+server.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "fe", "dist", "index.html"));
+});
 
-//main
-server.use("/main",require("./routes/mainRoutes"));
+//apply 
+server.use("/applyPage",require("./routes/applyRoutes"));
 
 
 server.listen(3000, ()=>{
