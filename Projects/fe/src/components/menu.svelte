@@ -127,17 +127,17 @@
       <a
         href="/about"
         class="w-[95%] font-['Helvetica_Bold'] text-2xl border-t-0 border-r-0 border-b border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
-        >About AO</a
+        ><p class="active:font-semibold">About AO</p></a
       >
       <a
         href="./archivePage"
         class="w-[95%] font-['Helvetica_Bold'] text-2xl border-t-0 border-r-0 border-b-0 border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
-        >Archive AO</a
+        ><p class="active:font-semibold">Archive AO</p></a
       >
       <a
         href="/contact"
         class="w-[95%] font-['Helvetica_Bold'] text-2xl border-t border-r-0 border-b border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
-        >Contact</a
+        ><p class="active:font-semibold">Contact</p></a
       >
       <!-- ... 나머지 메뉴 항목 ... -->
     </div>
