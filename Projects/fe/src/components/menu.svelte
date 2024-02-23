@@ -1,4 +1,5 @@
 <script>
+  import { Link } from "svelte-routing";
   export let menuVisible = false;
   import { fade } from "svelte/transition";
 
@@ -124,21 +125,21 @@
 
     <!-- 메뉴 항목들 -->
     <div class="flex flex-col items-start justify-start h-full ml-[18px]">
-      <a
-        href="/about"
+      <Link
+        to="/aboutPage"
         class="w-[95%] font-['Helvetica_Bold'] text-2xl border-t-0 border-r-0 border-b border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
-        ><p class="active:font-semibold">About AO</p></a
-      >
-      <a
-        href="./archivePage"
+        ><p class="active:font-semibold">About AO</p>
+      </Link>
+      <Link
+        to="/archive"
         class="w-[95%] font-['Helvetica_Bold'] text-2xl border-t-0 border-r-0 border-b-0 border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
-        ><p class="active:font-semibold">Archive AO</p></a
-      >
-      <a
-        href="/contact"
+        ><p class="active:font-semibold">Archive AO</p>
+      </Link>
+      <Link
+        to="/contactPage"
         class="w-[95%] font-['Helvetica_Bold'] text-2xl border-t border-r-0 border-b border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
-        ><p class="active:font-semibold">Contact</p></a
-      >
+        ><p class="active:font-semibold">Contact</p>
+      </Link>
       <!-- ... 나머지 메뉴 항목 ... -->
     </div>
 

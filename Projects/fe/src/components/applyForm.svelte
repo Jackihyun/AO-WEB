@@ -49,15 +49,15 @@
         id: "60182228",
         name: "천제희",
         phoneNum: "010-9666-8460",
-        aWord: "안녕하세요"
-      })
+        aWord: "안녕하세요",
+      }),
     })
       .then((res) => {
-        console.log(res)
+        console.log(res);
       })
       .catch((err) => {
         console.error(err);
-      })
+      });
 
     dispatch("click");
   }
@@ -66,42 +66,42 @@
 <form on:submit|preventDefault={handleSubmit}>
   <!-- 학번 입력 -->
   <label
-    class="w-[32px] text-base font-medium text-left text-[#ccc]"
+    class="w-[32px] text-base font-medium text-left text-neutral-800"
     for="studentId">학번</label
   >
   <div
-    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
+    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#dcdcdc]"
   >
     <input
       type="text"
       id="studentId"
       bind:value={studentId}
-      class="flex-grow-0 flex-shrink-0 text-base text-left text-[#7f7f7f] bg-transparent border-none focus:outline-none"
+      class="flex-grow-0 flex-shrink-0 text-base text-left text-neutral-500 bg-transparent border-none focus:outline-none"
       placeholder="학번을 입력해주세요."
     />
   </div>
 
-  <label class="w-[32px] text-base font-medium text-left text-[#ccc]" for="name"
+  <label class="w-[32px] text-base font-medium text-left text-[#000]" for="name"
     >이름</label
   >
   <div
-    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] [relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
+    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] [relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#dcdcdc]"
   >
     <input
       type="text"
       id="name"
       bind:value={name}
-      class="flex-grow-0 flex-shrink-0 text-base text-left text-[#7f7f7f] bg-transparent border-none focus:outline-none"
+      class="flex-grow-0 flex-shrink-0 text-base text-left text-neutral-500 bg-transparent border-none focus:outline-none"
       placeholder="이름을 입력해주세요."
     />
   </div>
 
   <label
-    class="w-[64px] text-base font-medium text-left text-[#ccc]"
+    class="w-[64px] text-base font-medium text-left text-[#000]"
     for="phoneNumber">전화번호</label
   >
   <div
-    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
+    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#dcdcdc]"
   >
     <input
       type="tel"
@@ -113,11 +113,11 @@
   </div>
 
   <label
-    class="w-[127px] text-base font-medium text-left text-[#ccc]"
+    class="w-[127px] text-base font-medium text-left text-[#000]"
     for="message">한 마디 남기기</label
   >
   <div
-    class="mt-[8px] mb-[63px] flex justify-start items-start w-[339px] h-24 relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#0d0d0d]"
+    class="mt-[8px] mb-[63px] flex justify-start items-start w-[339px] h-24 relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#dcdcdc]"
   >
     <textarea
       id="message"
@@ -131,7 +131,7 @@
   <button
     type="submit"
     on:click={handleClick}
-    class="flex justify-center items-center relative overflow-hidden px-[126px] py-3.5 rounded-lg bg-[#333] flex-grow-0 flex-shrink-0 text-lg font-medium text-center text-neutral-200"
+    class="flex justify-center items-center relative overflow-hidden px-[126px] py-3.5 rounded-3xl bg-[#333] flex-grow-0 flex-shrink-0 text-lg font-medium text-center text-neutral-200"
     >지원하기</button
   >
 </form>

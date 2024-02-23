@@ -1,5 +1,9 @@
-<a
-  href="/applyPage"
+<script>
+  import { Link } from "svelte-routing";
+</script>
+
+<Link
+  to="/apply"
   class="flex justify-center items-center w-[337px] mx-auto gap-2.5"
 >
   <div
@@ -18,4 +22,4 @@
       >
     </p>
   </div>
-</a>
+</Link>

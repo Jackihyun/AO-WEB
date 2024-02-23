@@ -1,5 +1,6 @@
 <script>
   import Menu from "./menu.svelte";
+  import { Router, Link } from "svelte-routing";
 
   let menuVisible = false;
 
@@ -85,15 +86,19 @@
       stroke-linejoin="round"
     ></path>
   </svg>
-  <p class="flex-grow-0 flex-shrink-0 text-3xl text-left">
-    <span
-      class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-[#0d0d0d]"
-      >Fire
-    </span><span
-      class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-black"
-      >AO</span
-    >
-  </p>
+  <Link to="/">
+    <p class="flex-grow-0 flex-shrink-0 text-3xl text-left">
+      <span
+        class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-[#0d0d0d]"
+        >Fire
+      </span>
+      <span
+        class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-black"
+        >AO
+      </span>
+    </p>
+  </Link>
+
   <button on:click={toggleMenu}>
     <svg
       width="27"
