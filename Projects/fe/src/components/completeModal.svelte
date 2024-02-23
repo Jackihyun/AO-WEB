@@ -10,10 +10,10 @@
 
 {#if $showModal}
   <div class="fixed inset-0 flex items-center justify-center">
-    <div class="absolute inset-0 bg-black opacity-70"></div>
+    <div class="absolute inset-0 bg-neutral-800 opacity-70"></div>
     <div class="z-10 p-6 rounded-xl">
       <div
-        class="flex flex-col justify-start items-start w-[300px] gap-2.5 p-6 rounded-xl bg-[#191919] border border-[#1e1e1e]"
+        class="flex flex-col justify-start items-start w-[300px] gap-2.5 p-6 rounded-xl bg-[#dcdcdc] border border-[#dcdcdc]"
       >
         <div
           class="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 gap-[18px]"
@@ -22,7 +22,7 @@
             class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-3"
           >
             <p
-              class="flex-grow-0 flex-shrink-0 text-lg font-medium text-center text-[#f2f2f2]"
+              class="flex-grow-0 flex-shrink-0 text-lg font-medium text-center text-neutral-950"
             >
               성공적으로 지원되었습니다!
             </p>
@@ -32,7 +32,7 @@
           >
             <button
               type="button"
-              class="flex justify-center items-center flex-grow relative overflow-hidden gap-2.5 px-5 py-3.5 rounded-lg bg-[#e45454]"
+              class="flex justify-center items-center flex-grow relative overflow-hidden gap-2.5 px-5 py-3.5 rounded-lg bg-[#684def]"
               on:click={handleClick}
             >
               <p
