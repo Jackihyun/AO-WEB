@@ -1,12 +1,14 @@
-const express = require("express");
-const path = require('path');
-const dbConnect = require("./config/dbConnect");
-const cors = require("cors");
+import express from "express";
+import path from 'path';
+import dbConnect from "./config/dbConnect.js";
+import cors from "cors";
 
 //서버
 const server = express();
 
 server.use(cors());
+
+const __dirname = path.resolve();
 
 server.use(express.static(path.join(__dirname, '..','fe','dist')));
 
@@ -16,12 +18,13 @@ dbConnect();
 server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 
-server.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "fe", "dist", "index.html"));
+server.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'fe', 'dist', 'index.html'));
 });
 
 //apply 
-server.use("/applyPage",require("./routes/applyRoutes"));
+import applyRoutes from "./routes/applyRoutes.js";
+server.use("/applyPage", applyRoutes);
 
 
 server.listen(3000, ()=>{

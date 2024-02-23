@@ -1,24 +1,24 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
-//스키마
+// 스키마
 const applyerSchema = new mongoose.Schema({
     id: {
         type: String,
-        require: true
+        required: true
     },
     name: {
         type: String,
-        require: true
+        required: true
     },
     phoneNum: {
         type: String,
-        require: true
+        required: true
     },
     aWord: {
         type: String,
-        require: true
+        required: true
     }
-})
+});
 
-const applyer = mongoose.model("applyer", applyerSchema);
-module.exports = applyer;
+const Applyer = mongoose.model("Applyer", applyerSchema);
+export default Applyer;

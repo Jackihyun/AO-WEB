@@ -1,10 +1,9 @@
-const express = require("express");
+import express from "express";
+import postApply from "../controllers/applyController.js";
+
 const router = express.Router();
-const postApply = require("../controllers/applyController");
-
-
 
 router.route("/")
-.post(postApply);
+      .post(postApply);
 
-module.exports = router;
+export default router;
