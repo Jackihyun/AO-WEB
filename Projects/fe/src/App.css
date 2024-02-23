@@ -12,20 +12,20 @@ html > body {
 @font-face {
   font-family: Helvetica_Bold;
   font-weight: 750;
-  src: local("HELVETICA BOLD"),
-  url(HELVETICA BOLD.TTF);
+  src: local("HELVETICA-BOLD"),
+  url(HELVETICA-BOLD.TTF);
 }
 
 @font-face {
   font-family: Helvetica_Light;
-  src: local("HELVETICA LIGHT"),
-  url(HELVETICA LIGHT.TTF);
+  src: local("HELVETICA-LIGHT"),
+  url(HELVETICA-LIGHT.TTF);
 }
 
 @font-face {
   font-family: Helvetica95_Black;
-  src: local("HELVETICA BLACK"),
-  url(HELVETICA BLACK.TTF);
+  src: local("HELVETICA-BLACK"),
+  url(HELVETICA-BLACK.TTF);
 }
 
 @font-face {

@@ -1,5 +1,5 @@
 <script>
-  import NewHeader from "../components/newheader.svelte";
+  import NewHeader from "../components/newHeader.svelte";
   import AboutAoIntro1 from "../components/aboutAoIntro1.svelte";
   import AboutAoIntro2 from "../components/aboutAoIntro2.svelte";
   import AboutAoIntro3 from "../components/aboutAoIntro3.svelte";
