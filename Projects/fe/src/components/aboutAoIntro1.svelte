@@ -4,7 +4,7 @@
 
 <div class="flex flex-col justify-start items-center w-screen h-20">
     <p
-      class="w-screen h-12 absolute left-[31px] top-[165px] text-sm font-['Pretendard'] text-left text-black"
+      class="w-screen h-12 absolute left-[31px] top-[165px] text-sm font-semibold font-['Pretendard'] text-left text-black"
     >
       대학 생활의 처음부터 끝까지 함께해 줄 Fire AO입니다.
     </p>

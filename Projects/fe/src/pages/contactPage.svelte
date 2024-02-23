@@ -1,38 +1,36 @@
 <script>
     import Header from "../components/header.svelte";
-    import AboutAoIntro1 from "../components/aboutAoIntro1.svelte";
-    import AboutAoIntro2 from "../components/aboutAoIntro2.svelte";
-    import AboutAoIntro3 from "../components/aboutAoIntro3.svelte";
-    import AboutAoArticle1 from "../components/aboutAoArticle1.svelte";
-    import AboutAoActivity from "../components/aboutAoActivity.svelte";
-    import NewApplyButton from "../components/newApplyButton.svelte";
+    import ContactIntro from "../components/contactIntro.svelte";
+    import ContactMain from "../components/contactMain.svelte";
+    import Footer from "../components/footer.svelte";
   </script>
-  
-  <div class="bg-white relative overflow-hidden">
+
+<div class="bg-white relative overflow-hidden">
     <Header/>
-    <div class="mt-[89px]">
-        <AboutAoIntro1/>
+    <div class="mt-[77px]">
+        <ContactIntro/>
     </div>
     <svg
         width="100%"
         height="100%"
-        viewBox="0 -190 375 1472"
+        viewBox="0 0 375 467"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none"
-        class="absolute inset-0 w-full h-full">
-        <g filter="url(#filter0_d_3496_1015)">
+        class="inset-0 w-full h-full mt-[29px]"
+        preserveAspectRatio="none">
+        <g filter="url(#filter0_d_3496_513)">
             <path
-                d="M0 30C0 13.4315 13.4315 0 30 0H345C361.569 0 375 13.4315 375 30V1472H0V30Z"
+                d="M0 90C0 73.4315 13.4315 60 30 60H345C361.569 60 375 73.4315 375 90V459H0V90Z"
                 fill="#E4E4E4"></path>
         </g>
+        <circle cx="187" cy="65" r="65" fill="#E4E4E4"></circle>
         <defs>
             <filter
-                id="filter0_d_3496_1015"
+                id="filter0_d_3496_513"
                 x="-4"
-                y="0"
+                y="60"
                 width="383"
-                height="1480"
+                height="407"
                 filterUnits="userSpaceOnUse"
                 color-interpolation-filters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
@@ -50,33 +48,19 @@
                 <feBlend
                     mode="normal"
                     in2="BackgroundImageFix"
-                    result="effect1_dropShadow_3496_1015"></feBlend>
+                    result="effect1_dropShadow_3496_513"></feBlend>
                 <feBlend
                     mode="normal"
                     in="SourceGraphic"
-                    in2="effect1_dropShadow_3496_1015"
+                    in2="effect1_dropShadow_3496_513"
                     result="shape"></feBlend>
             </filter>
         </defs>
     </svg>
-
-    <div class="mt-[51px]">
-        <AboutAoIntro2/>
+    <div class="flex-grow">
+        <ContactMain/>
     </div>
-    <div class="mt-[43px]">
-        <AboutAoIntro3/>
+    <div>
+        <Footer/>
     </div>
-    <div class="mt-[287px]">
-        <AboutAoArticle1/>
-    </div>
-    <div class="mt-[51px] ">
-        <AboutAoActivity/>
-    </div>
-    <div class="mt-[51px]">
-        <NewApplyButton/>
-    </div>
-    <div class="mt-[61px]"></div>
 </div>
-  
-  
-  
