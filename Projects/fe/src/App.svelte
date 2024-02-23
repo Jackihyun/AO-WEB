@@ -6,9 +6,18 @@
   import AboutAOPage from "./pages/aboutAoPage.svelte";
   import ContactPage from "./pages/contactPage.svelte";
   import "./App.css";
+  import { darkMode } from "./store";
   // import Modal from "./components/completeModal.svelte";
 
   let showModal = true;
+
+  darkMode.subscribe((isDark) => {
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  });
 </script>
 
 <Router>

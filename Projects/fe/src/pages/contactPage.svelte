@@ -5,7 +5,9 @@
   import NewFooter from "../components/newFooter.svelte";
 </script>
 
-<div class="bg-white relative overflow-hidden flex flex-col min-h-screen">
+<div
+  class="bg-white dark:bg-black relative overflow-hidden flex flex-col min-h-screen"
+>
   <NewHeader />
   <div class="mt-[77px] flex-grow">
     <ContactIntro />

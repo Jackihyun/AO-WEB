@@ -2,9 +2,9 @@
   import "../App.css";
 </script>
 
-<div class="w-screen h-[137px] bg-white text-left">
+<div class="w-screen h-[137px] bg-white dark:bg-black text-left">
   <p
-    class="text-xl font-['Helvetica95_Black'] text-black mt-[25px] ml-[19px] mb-[6px]"
+    class="text-xl font-['Helvetica95_Black'] text-black dark:text-white mt-[25px] ml-[19px] mb-[6px]"
   >
     Fire AO
   </p>
@@ -25,11 +25,13 @@
         fill="#0D0D0D"
       ></path>
     </svg>
-    <p class="text-neutral-900 font-['Helvetical_Light]">010-4939-1971</p>
+    <p class="text-neutral-900 dark:text-[#e5e5e5] font-['Helvetical_Light]">
+      010-4939-1971
+    </p>
   </div>
 
   <p
-    class="text-sm text-neutral-900 font-['Helvetica_Light'] mt-[6px] ml-[18px]"
+    class="text-sm text-neutral-900 dark:text-[#E5E5E5] font-['Helvetica_Light'] mt-[6px] ml-[18px]"
   >
     ⓒ Fire AO. 2024 All rights reserved
   </p>

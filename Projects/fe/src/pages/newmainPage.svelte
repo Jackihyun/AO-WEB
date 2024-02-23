@@ -5,9 +5,11 @@
   import ApplyButton from "../components/applyButton.svelte";
 </script>
 
-<div class="overflow-y-auto flex flex-col min-h-screen">
+<div
+  class="bg-white dark:bg-black overflow-y-auto flex flex-col min-h-screen h-[2000px]"
+>
   <NewHeader />
-  <main class="mb-[43px] flex-grow">
+  <main class="mt-[35px] mb-[43px] flex-grow">
     <NewMain />
     <ApplyButton />
   </main>

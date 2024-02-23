@@ -22,15 +22,19 @@
   onMount(() => {});
 </script>
 
-<div class=" mb-[52px]">
-  <ApplyHeader />
-</div>
-<div class="w-screen overflow-hidden pr-4 pl-4 bg-white mx-auto">
-  <div class="mb-[42px]">
-    <ApplyMain />
+<div class="bg-white dark:bg-black">
+  <div class=" mb-[52px]">
+    <ApplyHeader />
   </div>
-  <div class="mb-[34px]">
-    <ApplyForm />
+  <div
+    class="w-screen overflow-hidden pr-4 pl-4 bg-white dark:bg-black mx-auto"
+  >
+    <div class="mb-[42px]">
+      <ApplyMain />
+    </div>
+    <div class="mb-[34px]">
+      <ApplyForm />
+    </div>
+    <CompleteModal />
   </div>
-  <CompleteModal />
 </div>

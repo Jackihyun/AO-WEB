@@ -10,7 +10,7 @@
 
 {#if menuVisible}
   <div
-    class="menu overflow-hidden fixed top-0 left-0 bg-[#684DFF] w-screen h-screen text-white z-50"
+    class="menu overflow-hidden fixed top-0 left-0 bg-[#684DFF] dark:bg-[#FF4A3F] w-screen h-screen text-white z-50"
     transition:fade
   >
     <header class="mb-[27px]">

@@ -9,7 +9,9 @@
 </script>
 
 <NewHeader />
-<div class="bg-white relative overflow-hidden flex flex-col min-h-screen">
+<div
+  class="bg-white dark:bg-black relative overflow-hidden flex flex-col min-h-screen"
+>
   <div class="mt-[89px] flex-grow">
     <AboutAoIntro1 />
   </div>
@@ -20,7 +22,7 @@
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="none"
-    class="absolute inset-0 w-full h-full"
+    class="absolute inset-0 w-full h-full icon"
   >
     <g filter="url(#filter0_d_3496_1015)">
       <path
@@ -84,3 +86,9 @@
   </div>
   <div class="mt-[61px]"></div>
 </div>
+
+<!-- <style>
+  .dark .icon {
+    fill: #ffffff; /* 다크 모드에서의 색상 */
+  }
+</style> -->
