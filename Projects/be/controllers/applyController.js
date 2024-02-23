@@ -13,10 +13,10 @@ const postApply = asyncHandler(async (req, res) => {
             return res.status(400).send("필수 값이 입력되지 않았습니다.");
         }
 
-        // 학번 중복 확인 401
-        const existingApplyer = await Applyer.findOne({ id });
+        // 중복지원 401
+        const existingApplyer = await Applyer.findOne({ $or: [{ id }, { phoneNum }] });
         if (existingApplyer) {
-            return res.status(401).send("이미 지원하셨습니다.");
+             return res.status(401).send("이미 지원하셨습니다.");
         }
 
         // 학번이 8자리가 아닌 경우 402
