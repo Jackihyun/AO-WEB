@@ -126,7 +126,7 @@
     <!-- 메뉴 항목들 -->
     <div class="flex flex-col items-start justify-start h-full ml-[18px]">
       <Link
-        to="/aboutPage"
+        to="/about"
         class="w-[95%] font-['Helvetica_Bold'] text-2xl border-t-0 border-r-0 border-b border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
         ><p class="active:font-semibold">About AO</p>
       </Link>
@@ -136,7 +136,7 @@
         ><p class="active:font-semibold">Archive AO</p>
       </Link>
       <Link
-        to="/contactPage"
+        to="/contact"
         class="w-[95%] font-['Helvetica_Bold'] text-2xl border-t border-r-0 border-b border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
         ><p class="active:font-semibold">Contact</p>
       </Link>
