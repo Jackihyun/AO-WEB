@@ -24,11 +24,13 @@
 </script>
 
 <div class="ml-[31px] mb-[40px]">
-  <p class="font-['Helvetica_Bold'] text-2xl font-bold text-[#0d0d0d]">
+  <p
+    class="font-['Helvetica_Bold'] text-2xl font-bold text-[#0d0d0d] dark:text-neutral-50"
+  >
     Archive AO
   </p>
   <p
-    class="font-['Pretendard_Semibold'] text-sm text-left mt-[4px] text-[#313131]"
+    class="font-['Pretendard_Semibold'] text-sm text-left mt-[4px] text-[#313131] dark:text-neutral-200"
   >
     Fire AO 활동 모음집
   </p>
@@ -199,32 +201,34 @@
 
 <!-- 해시태그들 -->
 <div class="max-w-4xl mx-auto px-[21px] flex justify-center">
-  <div class="bg-white flex flex-col justify-center items-start gap-[10px]">
+  <div
+    class="bg-white dark:bg-black flex flex-col justify-center items-start gap-[10px]"
+  >
     <!-- 첫줄 -->
     <div class="flex justify-center items-center gap-[10px]">
       <div
-        class="w-[35px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
+        class="w-[35px] h-[35px] rounded-full border border-[#2c2c2c] dark:border-[#d9d9d9] px-1 py-0.5"
       >
         <p
-          class="text-lg font-['Pretendard_Medium'] text-center text-[#191919]"
+          class="text-lg font-['Pretendard_Medium'] text-center text-[#191919] dark:text-[#d9d9d9]"
         >
           #
         </p>
       </div>
       <div
-        class="w-[93px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
+        class="w-[93px] h-[35px] rounded-full border border-[#2c2c2c] dark:border-[#d9d9d9] px-1 py-0.5"
       >
         <p
-          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919]"
+          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919] dark:text-[#d9d9d9]"
         >
           전체 MT
         </p>
       </div>
       <div
-        class="w-[124px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
+        class="w-[124px] h-[35px] rounded-full border border-[#2c2c2c] dark:border-[#d9d9d9] px-1 py-0.5"
       >
         <p
-          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919]"
+          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919] dark:text-[#d9d9d9]"
         >
           AO 전체 회식
         </p>
@@ -233,16 +237,16 @@
     <!-- 두번째줄 -->
     <div class="flex justify-center items-center gap-[10px]">
       <div
-        class="w-[164px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
+        class="w-[164px] h-[35px] rounded-full border border-[#2c2c2c] dark:border-[#d9d9d9] px-1 py-0.5"
       >
         <p
-          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919]"
+          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919] dark:text-[#d9d9d9]"
         >
           서버파트 스터디
         </p>
       </div>
       <div
-        class="w-[35px] h-[35px] rounded-full border border-[#2c2c2c] flex justify-center items-center"
+        class="w-[35px] h-[35px] rounded-full border border-[#2c2c2c] dark:border-[#d9d9d9] flex justify-center items-center"
       >
         <svg
           width="18"
@@ -274,19 +278,19 @@
     <!-- 세번째줄 -->
     <div class="flex items-center justify-center gap-[10px]">
       <div
-        class="w-[89px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
+        class="w-[89px] h-[35px] rounded-full border border-[#2c2c2c] dark:border-[#d9d9d9] px-1 py-0.5"
       >
         <p
-          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919]"
+          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919] dark:text-[#d9d9d9]"
         >
           AO 총회
         </p>
       </div>
       <div
-        class="w-[235px] h-[35px] rounded-full border border-[#2c2c2c] px-1 py-0.5"
+        class="w-[235px] h-[35px] rounded-full border border-[#2c2c2c] dark:border-[#d9d9d9] px-1 py-0.5"
       >
         <p
-          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919]"
+          class="text-lg font-['Pretendard_Semibold'] text-center text-[#191919] dark:text-[#d9d9d9]"
         >
           Alpha부터 Omega까지!
         </p>
