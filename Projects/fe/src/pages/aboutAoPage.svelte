@@ -1,5 +1,5 @@
 <script>
-  import NewHeader from "../components/newheader.svelte";
+  import NewHeader from "../components/newHeader.svelte";
   import AboutAoIntro1 from "../components/aboutAoIntro1.svelte";
   import AboutAoIntro2 from "../components/aboutAoIntro2.svelte";
   import AboutAoIntro3 from "../components/aboutAoIntro3.svelte";
@@ -10,13 +10,13 @@
 
 <NewHeader />
 <div class="bg-white relative overflow-hidden flex flex-col min-h-screen">
-  <div class="mt-[89px] flex-grow">
+  <div class="mt-[100px] flex-grow">
     <AboutAoIntro1 />
   </div>
   <svg
     width="100%"
     height="100%"
-    viewBox="0 -190 375 1472"
+    viewBox="0 -90 375 1472"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="none"

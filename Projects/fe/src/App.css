@@ -13,19 +13,19 @@ html > body {
   font-family: Helvetica_Bold;
   font-weight: 750;
   src: local("HELVETICA BOLD"),
-  url(HELVETICA BOLD.TTF);
+  url(HELVETICABOLD.TTF)
 }
 
 @font-face {
   font-family: Helvetica_Light;
   src: local("HELVETICA LIGHT"),
-  url(HELVETICA LIGHT.TTF);
+  url(HELVETICALIGHT.TTF);
 }
 
 @font-face {
   font-family: Helvetica95_Black;
   src: local("HELVETICA BLACK"),
-  url(HELVETICA BLACK.TTF);
+  url(HELVETICABLACK.TTF);
 }
 
 @font-face {
