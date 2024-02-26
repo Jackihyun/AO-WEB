@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [svelte()],
   server: {
     proxy: {
-      "/apply": {
+      "/api": {
         target: "http://localhost:3000",
         secure: false,
         changeOrigin: true,

@@ -43,16 +43,17 @@
   }
 
   function handleClick() {
-    fetch("/apply", {
+    console.log("호출됨.");
+    fetch("/api/apply", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        id: "60182228",
-        name: "천제희",
-        phoneNum: "010-9666-8460",
-        aWord: "안녕하세요",
+        id: studentId,
+        name: name,
+        phoneNum: phoneNumber,
+        aWord: message,
       }),
     })
       .then((res) => {
