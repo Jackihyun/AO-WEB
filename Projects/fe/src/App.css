@@ -36,7 +36,7 @@ html > body {
 @font-face {
   font-family: 5MAL6LAMPEN;
   src: local("5MAL6LAMPEN"),
-  url(5MAL6LAMPEN.TTF);
+  url('./fonts/5MAL6LAMPEN.TTF') format('truetype');
 }
 
 @font-face {
