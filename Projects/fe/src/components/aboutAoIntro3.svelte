@@ -8,7 +8,7 @@
     style="box-shadow: 0px 0px 15px 0.20000000298023224px rgba(0,0,0,0.1);"
   >
     <p
-      class="flex-grow-0 flex-shrink-0 w-[339px] text-xs text-center font-['Pretendard'] text-[#191919] mt-10"
+      class="flex-grow-0 flex-shrink-0 w-[339px] text-xs text-center font-['Pretendard'] text-[#191919] leading-[10px]  flex flex-col justify-center items-center mt-5"
     >
       <span
         class="flex-grow-0 flex-shrink-0 w-[339px] text-xs text-center text-[#191919]"

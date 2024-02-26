@@ -5,18 +5,18 @@
     import emblaCarouselSvelte from 'embla-carousel-svelte'
     import Autoplay from 'embla-carousel-autoplay'
 
-    let options = {
-        loop: false
-    }
-    function onInit(event) {
-    emblaApi = event.detail
-    console.log(emblaApi.slideNodes()) // Access API
-  }
+    let emblaApi;
+    let options = { loop: false };
+    let plugins = [Autoplay()];
 
-    let plugins = [Autoplay()]
+  function onInit(event) {
+    emblaApi = event.detail;
+    console.log(emblaApi.slideNodes()); // Access API
+  }
+  
 </script>
 
-<p class="absolute text-lg font-semibold  text-black w-screen ml-[44px]">깃허브로 관리되는 체계적인 스터디!</p>
+<p class="absolute text-lg font-semibold font-['Pretendard'] text-black w-screen flex flex-col justify-center items-center ml-[-30px]">깃허브로 관리되는 체계적인 스터디!</p>
 <br>
 <br>
 <div
