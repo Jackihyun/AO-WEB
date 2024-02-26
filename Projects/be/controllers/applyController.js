@@ -8,26 +8,37 @@ const postApply = asyncHandler(async (req, res) => {
         const { id, name, phoneNum, aWord } = req.body;
         console.log(req.body);
 
-        // 필수 입력이 되지 않은 경우 400 반환
-        if (!id || !name || !phoneNum || !aWord) {
-            return res.status(400).json({ 
-                message: "필수입력사항을 전부 적어주세요."
-            });
+        let errors = {}; // 에러 객체
+
+        // 1. 공백 검사
+        if (!id.trim()) {
+            errors.stuIdErrorMessage = "학번을 입력해 주세요.";
+        }
+        if (!name.trim()) {
+            errors.nameErrorMessage = "이름을 입력해 주세요.";
+        }
+        if (!phoneNum.trim()) {
+            errors.phoneNumErrorMessage = "전화번호를 입력해 주세요.";
         }
 
-        // 중복지원 401
+        // 2. 길이 및 타입 검사
+        if (id.length !== 8 || isNaN(Number(id))) {
+            errors.stuIdErrorMessage = "학번을 확인해 주세요.";
+        }
+        if (!/^(\d{3}-?\d{3,4}-?\d{4})$/.test(phoneNum)) {
+            errors.phoneNumErrorMessage = "전화번호를 확인해 주세요.";
+        }
+        
+        // 중복지원 확인
         const existingApplyer = await Applyer.findOne({ $or: [{ id }, { phoneNum }] });
         if (existingApplyer) {
-             return res.status(400).json({ 
-                message: "중복지원 하셨습니다."
-            });
+            errors.stuIdErrorMessage = "중복된 학번입니다.";
+            errors.phoneNumErrorMessage = "중복된 전화번호입니다.";
         }
 
-        // 학번이 8자리가 아닌 경우 402
-        if (id.length !== 8) {
-            return res.status(400).json({ 
-                message: "학번을 확인해 주세요."
-            });
+        // 에러가 하나라도 존재하면 400 반환
+        if (Object.keys(errors).length !== 0) {
+            return res.status(400).json(errors);
         }
 
         // DB에 저장
@@ -36,14 +47,10 @@ const postApply = asyncHandler(async (req, res) => {
         });
 
         // 성공시 201 반환
-        res.status(201).json({ 
-            message: "지원이 완료되었습니다."
-        });
+        res.status(201).json({ message: "지원이 완료되었습니다." });
     } catch (err) {
         console.log(err);
-        res.status(500).json({ 
-            message: "서버 오류입니다."
-        });
+        res.status(500).json({ message: "서버 오류입니다." });
     }
 });
 
