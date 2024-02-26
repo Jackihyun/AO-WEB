@@ -10,6 +10,11 @@ html > body {
 }
 
 @font-face {
+  font-family: 'Noto Sans KR';
+  src: url('../../../../common/assets/font/NotoSansKR-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
   font-family: Helvetica_Bold;
   font-weight: 750;
   src: local("HELVETICA BOLD"),
@@ -21,6 +26,12 @@ html > body {
   src: local("HELVETICA LIGHT"),
   url(HELVETICALIGHT.TTF);
 }
+
+/* @font-face {
+  font-family: Helvetica95_Black;
+  src: url("../../../../../AOProjectFr/AO-official-website/Projects/fe/src/fonts/HELVETICA BLACK.TTF");
+  
+} */
 
 @font-face {
   font-family: Helvetica95_Black;

@@ -2,7 +2,7 @@
   import "../App.css"
 </script>
 
-<div class="flex flex-col justify-start items-center w-screen h-20 ">
+<div class="flex flex-col justify-start items-center w-screen h-5 ">
     <p
       class="w-screen h-12 absolute left-[31px] top-[50px] text-sm font-semibold font-['Pretendard'] text-left text-black"
     >
