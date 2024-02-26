@@ -29,10 +29,10 @@
   <div
     class="w-screen overflow-hidden pr-4 pl-4 bg-white dark:bg-black mx-auto"
   >
-    <div class="mb-[42px]">
+    <div class="mb-[42px] flex justify-center">
       <ApplyMain />
     </div>
-    <div class="mb-[34px]">
+    <div class="mb-[34px] flex justify-center">
       <ApplyForm />
     </div>
     <CompleteModal />

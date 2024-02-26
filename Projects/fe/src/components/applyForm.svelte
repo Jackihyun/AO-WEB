@@ -6,6 +6,10 @@
 
   const dispatch = createEventDispatcher();
 
+  let stuIdErrorMessage = "";
+  let nameErrorMessage = "";
+  let phoneErrorMessage = "";
+
   let studentId = "";
   let name = "";
   let phoneNumber = "";
@@ -18,7 +22,6 @@
       phoneNumber.trim() === "" ||
       message.trim() === ""
     ) {
-      alert("모든 항목을 작성해주세요!");
       return false;
     }
     // 여기에서 폼 데이터를 사용하여 필요한 작업 수행
@@ -29,8 +32,6 @@
 
     // 폼 제출 후 초기화 또는 다른 작업을 수행할 수 있음
     resetForm();
-
-    showModal.set(true);
 
     return false;
   }
@@ -43,7 +44,7 @@
   }
 
   function handleClick() {
-    console.log("호출됨.");
+    console.log("");
     fetch("/api/apply", {
       method: "POST",
       headers: {
@@ -58,6 +59,36 @@
     })
       .then((res) => {
         console.log(res);
+        if (res.status === 400) {
+          return res.json(); //body에 있는 것을 js 객체로 바꿔서 반환. 반환값은 프로미스객체라 다시 받을수 있음.
+        } else if (res.ok) {
+          showModal.set(true);
+        }
+      })
+      .then((json) => {
+        if (json !== undefined && json !== null) {
+          if (
+            json.stuIdErrorMessage !== undefined &&
+            json.stuIdErrorMessage !== null &&
+            json.stuIdErrorMessage !== ""
+          ) {
+            stuIdErrorMessage = json.stuIdErrorMessage;
+          }
+          if (
+            json.nameErrorMessage !== undefined &&
+            json.nameErrorMessage !== null &&
+            json.nameErrorMessage !== ""
+          ) {
+            nameErrorMessage = json.nameErrorMessage;
+          }
+          if (
+            json.phoneNumErrorMessage !== undefined &&
+            json.phoneNumErrorMessage !== null &&
+            json.phoneNumErrorMessage !== ""
+          ) {
+            phoneErrorMessage = json.phoneNumErrorMessage;
+          }
+        }
       })
       .catch((err) => {
         console.error(err);
@@ -83,6 +114,7 @@
       class="flex-grow-0 flex-shrink-0 text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="학번을 입력해주세요."
     />
+    <p class="text-red-400">{stuIdErrorMessage}</p>
   </div>
 
   <label
@@ -99,6 +131,7 @@
       class="flex-grow-0 flex-shrink-0 text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="이름을 입력해주세요."
     />
+    <p class="text-red-400">{nameErrorMessage}</p>
   </div>
 
   <label
@@ -115,6 +148,7 @@
       class="w-full flex-grow-0 flex-shrink-0 text-base text-left text-[#7f7f7f] dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="전화번호를 입력해주세요."
     />
+    <p class="text-red-400">{phoneErrorMessage}</p>
   </div>
 
   <label
