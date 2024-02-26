@@ -34,6 +34,7 @@
   >
     Fire AO 활동 모음집
   </p>
+  <p class="font-['HELVETICA-LIGHT'] text-white">test test</p>
 </div>
 
 <!-- 이미지 캐로우셀 -->
