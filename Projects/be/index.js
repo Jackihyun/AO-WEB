@@ -24,7 +24,7 @@ server.get('/*', (req, res) => {
 
 //apply 
 import applyRoutes from "./routes/applyRoutes.js";
-server.use("/ao/applyPage", applyRoutes);
+server.use("/api/apply", applyRoutes);
 
 
 server.listen(3000, ()=>{
