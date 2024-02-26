@@ -1,15 +1,29 @@
 <script>
   import { Router, Route } from "svelte-routing";
-  import MainPage from "./pages/mainPage.svelte";
+  import NewmainPage from "./pages/newmainPage.svelte";
+  import ArchivePage from "./pages/archivePage.svelte";
   import ApplyPage from "./pages/applyPage.svelte";
+  import AboutAOPage from "./pages/aboutAoPage.svelte";
+  import ContactPage from "./pages/contactPage.svelte";
   import "./App.css";
+  import { darkMode } from "./store";
   // import Modal from "./components/completeModal.svelte";
 
   let showModal = true;
+
+  darkMode.subscribe((isDark) => {
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  });
 </script>
 
-<Router basepath="/ao">
-  <Route path="/" component={MainPage} />
-  <Route path="/applyPage" component={ApplyPage} />
-  <Route path="/mainPage" component={MainPage} />
+<Router>
+  <Route path="/" component={NewmainPage} />
+  <Route path="/archive" component={ArchivePage} />
+  <Route path="/about" component={AboutAOPage} />
+  <Route path="/contact" component={ContactPage} />
+  <Route path="/apply" component={ApplyPage} />
 </Router>
