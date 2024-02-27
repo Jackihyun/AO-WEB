@@ -20,6 +20,9 @@ const postApply = asyncHandler(async (req, res) => {
         if (!phoneNum.trim()) {
             errors.phoneNumErrorMessage = "전화번호를 입력해 주세요.";
         }
+        if (!aWord.trim()) {
+            errors.aWordErrorMessage = "한마디를 입력해 주세요.";
+        }
 
         // 2. 길이 및 타입 검사
         if (id.length !== 8 || isNaN(Number(id))) {
