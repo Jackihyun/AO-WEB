@@ -136,16 +136,16 @@
     </p>
   </Link>
 
-  <button on:click={toggleMenu} class="focus:outline-none">
+  <button on:click={toggleMenu} class=" z-[100]">
     <!-- 햄버거 메뉴 버튼 -->
     <div
-      class="relative w-[23px] h-[18px] flex flex-col justify-between items-center"
+      class="relative w-[23px] h-[18px] gap-[4.7px] flex flex-col justify-between items-center"
     >
       <!-- 상단 선 -->
       <div
         class={`w-full h-[3px] bg-black rounded-md dark:bg-white transform transition duration-300 ${
           menuVisible
-            ? "-rotate-45 translate-y-[7.9px] translate-x-[10.4px]"
+            ? "-rotate-45 translate-y-[7px] translate-x-[0.1px] bg-white"
             : ""
         }`}
       ></div>
@@ -159,7 +159,7 @@
       <div
         class={`w-full h-[3px] bg-black rounded-md dark:bg-white transform transition duration-300 ${
           menuVisible
-            ? "rotate-45 -translate-y-[7.9px] -translate-x-[10.4px]"
+            ? "rotate-45 -translate-y-[7.9px] -translate-x-[0.2px] bg-white"
             : ""
         }`}
       ></div>
