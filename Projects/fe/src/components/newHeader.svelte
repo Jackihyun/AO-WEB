@@ -2,6 +2,7 @@
   import Menu from "./menu.svelte";
   import { Router, Link } from "svelte-routing";
   import { darkMode } from "../store";
+  import "../App.css";
 
   let menuVisible = false;
 
@@ -129,13 +130,42 @@
         >Fire
       </span>
       <span
-        class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-black dark:text-white"
+        class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left font-black text-black dark:text-white"
         >AO
       </span>
     </p>
   </Link>
 
-  <button on:click={toggleMenu}>
+  <button on:click={toggleMenu} class="focus:outline-none">
+    <!-- 햄버거 메뉴 버튼 -->
+    <div
+      class="relative w-[23px] h-[18px] flex flex-col justify-between items-center"
+    >
+      <!-- 상단 선 -->
+      <div
+        class={`w-full h-[3px] bg-black rounded-md dark:bg-white transform transition duration-300 ${
+          menuVisible
+            ? "-rotate-45 translate-y-[7.9px] translate-x-[10.4px]"
+            : ""
+        }`}
+      ></div>
+      <!-- 중간 선 (메뉴 열림 시 사라짐) -->
+      <div
+        class={`w-full h-[3px] bg-black rounded-md dark:bg-white transition-opacity duration-300 ${
+          menuVisible ? "opacity-0" : ""
+        }`}
+      ></div>
+      <!-- 하단 선 -->
+      <div
+        class={`w-full h-[3px] bg-black rounded-md dark:bg-white transform transition duration-300 ${
+          menuVisible
+            ? "rotate-45 -translate-y-[7.9px] -translate-x-[10.4px]"
+            : ""
+        }`}
+      ></div>
+    </div>
+  </button>
+  <!-- <button on:click={toggleMenu}>
     {#if $darkMode}
       <svg
         width="27"
@@ -187,6 +217,6 @@
         ></path>
       </svg>
     {/if}
-  </button>
+  </button> -->
 </div>
 <Menu {menuVisible} />

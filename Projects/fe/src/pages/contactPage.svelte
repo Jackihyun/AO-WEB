@@ -15,7 +15,5 @@
   <div class="mt-[77px]">
     <ContactMain />
   </div>
-  <div class="">
   <NewFooter />
-</div>
 </div>

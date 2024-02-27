@@ -1,14 +1,19 @@
-<!-- SupportForm.svelte -->
-
 <script>
   import { createEventDispatcher } from "svelte";
   import { showModal } from "../store";
+
+  const hypenTel = (event) => {
+    event.target.value = event.target.value
+      .replace(/[^0-9]/g, "")
+      .replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, `$1-$2-$3`);
+  };
 
   const dispatch = createEventDispatcher();
 
   let stuIdErrorMessage = "";
   let nameErrorMessage = "";
   let phoneErrorMessage = "";
+  let awordErrorMessage = "";
 
   let studentId = "";
   let name = "";
@@ -30,9 +35,6 @@
     console.log("전화번호:", phoneNumber);
     console.log("한 마디:", message);
 
-    // 폼 제출 후 초기화 또는 다른 작업을 수행할 수 있음
-    resetForm();
-
     return false;
   }
 
@@ -44,7 +46,9 @@
   }
 
   function handleClick() {
-    console.log("");
+    stuIdErrorMessage = "";
+    nameErrorMessage = "";
+    phoneErrorMessage = "";
     fetch("/api/apply", {
       method: "POST",
       headers: {
@@ -62,11 +66,13 @@
         if (res.status === 400) {
           return res.json(); //body에 있는 것을 js 객체로 바꿔서 반환. 반환값은 프로미스객체라 다시 받을수 있음.
         } else if (res.ok) {
+          resetForm();
           showModal.set(true);
         }
       })
       .then((json) => {
         if (json !== undefined && json !== null) {
+          console.log(json);
           if (
             json.stuIdErrorMessage !== undefined &&
             json.stuIdErrorMessage !== null &&
@@ -87,6 +93,13 @@
             json.phoneNumErrorMessage !== ""
           ) {
             phoneErrorMessage = json.phoneNumErrorMessage;
+          }
+          if (
+            json.aWordErrorMessage !== undefined &&
+            json.aWordErrorMessage !== null &&
+            json.aWordErrorMessage !== ""
+          ) {
+            awordErrorMessage = json.aWordErrorMessage;
           }
         }
       })
@@ -114,9 +127,10 @@
       class="flex-grow-0 flex-shrink-0 text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="학번을 입력해주세요."
     />
-    <p class="text-red-400">{stuIdErrorMessage}</p>
   </div>
-
+  <p class="ml-[18px] text-[11px] text-left text-[#d64142]">
+    {stuIdErrorMessage}
+  </p>
   <label
     class="w-[32px] text-base font-medium text-left text-[#000] dark:text-[#CCC]"
     for="name">이름</label
@@ -131,9 +145,10 @@
       class="flex-grow-0 flex-shrink-0 text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="이름을 입력해주세요."
     />
-    <p class="text-red-400">{nameErrorMessage}</p>
   </div>
-
+  <p class="ml-[18px] text-[11px] text-left text-[#d64142]">
+    {nameErrorMessage}
+  </p>
   <label
     class="w-[64px] text-base font-medium text-left text-[#000] dark:text-[#CCC]"
     for="phoneNumber">전화번호</label
@@ -143,14 +158,17 @@
   >
     <input
       type="tel"
+      on:input={hypenTel}
+      maxlength="13"
       id="phoneNumber"
       bind:value={phoneNumber}
       class="w-full flex-grow-0 flex-shrink-0 text-base text-left text-[#7f7f7f] dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="전화번호를 입력해주세요."
     />
-    <p class="text-red-400">{phoneErrorMessage}</p>
   </div>
-
+  <p class="ml-[18px] text-[11px] text-left text-[#d64142]">
+    {phoneErrorMessage}
+  </p>
   <label
     class="w-[127px] text-base font-medium text-left text-[#000] dark:text-[#CCC]"
     for="message">한 마디 남기기</label
@@ -165,7 +183,9 @@
       placeholder="자유롭게 한 마디를 남겨주세요."
     ></textarea>
   </div>
-
+  <p class="ml-[18px] text-[11px] text-left text-[#d64142]">
+    {awordErrorMessage}
+  </p>
   <!-- "지원하기" 버튼 -->
   <button
     type="submit"

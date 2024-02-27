@@ -91,15 +91,17 @@
             stroke-linejoin="round"
           ></path>
         </svg>
-        <p class="flex-grow-0 flex-shrink-0 text-3xl text-left">
-          <span
-            class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-white"
-            >Fire
-          </span><span
-            class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-white"
-            >AO</span
-          >
-        </p>
+        <Link to="/">
+          <p class="flex-grow-0 flex-shrink-0 text-3xl text-left">
+            <span
+              class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-white"
+              >Fire
+            </span><span
+              class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-white"
+              >AO</span
+            >
+          </p>
+        </Link>
         <button on:click={closeMenu}>
           <svg
             width="22"
