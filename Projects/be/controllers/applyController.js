@@ -53,7 +53,7 @@ const postApply = asyncHandler(async (req, res) => {
         res.status(201).json({ message: "지원이 완료되었습니다." });
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: "서버 오류입니다." });
+        res.status(500).json({ serverErrorMessage: "서버 오류입니다." });
     }
 });
 
