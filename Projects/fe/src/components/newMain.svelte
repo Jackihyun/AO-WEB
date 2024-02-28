@@ -21,12 +21,15 @@
     ];
 
     textElements.forEach(function (textElement, index) {
-      if (scrollValue < stopPositions[index]) {
-        textElement.style.top = scrollValue + "px";
-        //textElement.style.right = startPositionsX[index] + "px";
-      } else {
-        textElement.style.top = stopPositions[index] + "px";
-        //textElement.style.right = stopPositionsX[index] + "px";
+      if (textElement) {
+        // null 체크
+        if (scrollValue < stopPositions[index]) {
+          textElement.style.top = scrollValue + "px";
+          //textElement.style.right = startPositionsX[index] + "px";
+        } else {
+          textElement.style.top = stopPositions[index] + "px";
+          //textElement.style.right = stopPositionsX[index] + "px";
+        }
       }
     });
   });
@@ -43,7 +46,7 @@
 <div class="flex-col">
   <div class="flex justify-center items-center whitespace-nowrap">
     <p
-      class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white mr-[10.67px]"
+      class=" text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white mr-[10.67px]"
     >
       &lt;PROGRAMMING
     </p>

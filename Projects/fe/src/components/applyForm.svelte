@@ -59,6 +59,10 @@
         name: name,
         phoneNum: phoneNumber,
         aWord: message,
+        id: studentId,
+        name: name,
+        phoneNum: phoneNumber,
+        aWord: message,
       }),
     })
       .then((res) => {
