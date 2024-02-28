@@ -166,7 +166,7 @@
     for="phoneNumber">전화번호</label
   >
   <div
-    class="mt-[10px] mb-[26px] mb-[{phoneErrorMessage
+    class="mt-[10px] mb-[{phoneErrorMessage
       ? '3px'
       : '26px'}] flex justify-start items-center w-[339px] h-[47px] relative overflow-hidden px-3.5 py-3 rounded-lg bg-[#dcdcdc] dark:bg-[#0D0D0D]"
   >
