@@ -52,5 +52,16 @@ html > body {
 
 @font-face {
   font-family: 'PRETENDARD-LIGHT';
-  src: url('./fonts/PRETENDARD-LIGHT.TTF') format('truetype');
+  src: url('./fonts/PRETENDARD-LIGHT.OTF') format('truetype');
 }
+
+@font-face {
+  font-family: 'PRETENDARD-REGULAR';
+  src: url('./fonts/PRETENDARD-REGULAR.OTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'PRETENDARD-BLACK';
+  src: url('./fonts/PRETENDARD-BLACK.OTF') format('truetype');
+}
+
