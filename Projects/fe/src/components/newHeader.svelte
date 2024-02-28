@@ -126,11 +126,11 @@
   <Link to="/">
     <p class="flex-grow-0 flex-shrink-0 text-3xl text-left">
       <span
-        class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-[#0d0d0d] dark:text-white"
-        >Fire
+        class="font-['Helvetica_Black'] font-extrabold flex-grow-0 flex-shrink-0 text-3xl text-left text-[#0d0d0d] dark:text-white"
+        >FIRE
       </span>
       <span
-        class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left font-black text-black dark:text-white"
+        class="font-['Helvetica_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-black dark:text-white"
         >AO
       </span>
     </p>

@@ -24,8 +24,8 @@ html > body {
 }
 
 @font-face {
-  font-family: 'Helvetica95_Black';
-  src: url('./fonts/Helvetica95 Black.ttf') format('truetype');
+  font-family: 'Helvetica Black';
+  src: url('./fonts/Helvetica Black.ttf') format('truetype');
 }
 
 
