@@ -2,6 +2,8 @@
   import Menu from "./menu.svelte";
   import { Router, Link } from "svelte-routing";
   import { darkMode } from "../store";
+  import { onMount } from "svelte";
+  
 
   let menuVisible = false;
 
@@ -20,6 +22,8 @@
       return newValue;
     });
   }
+
+
 </script>
 
 <div
@@ -135,58 +139,20 @@
     </p>
   </Link>
 
-  <button on:click={toggleMenu}>
+  <button on:click={() => {toggleMenu();}}
+    class="flex flex-col justify-between w-6 h-6 cursor-pointer">
     {#if $darkMode}
-      <svg
-        width="27"
-        height="22"
-        viewBox="0 0 27 22"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="flex-grow-0 flex-shrink-0 w-[23px] h-[18px]"
-        preserveAspectRatio="none"
-      >
-        <path d="M2 2H25" stroke="white" stroke-width="3" stroke-linecap="round"
-        ></path>
-        <path
-          d="M2 20H25"
-          stroke="white"
-          stroke-width="3"
-          stroke-linecap="round"
-        ></path>
-        <path
-          d="M2 11H25"
-          stroke="white"
-          stroke-width="3"
-          stroke-linecap="round"
-        ></path>
-      </svg>
+      <div class="w-full h-1 bg-white "></div>
+      <div class="w-full h-1 bg-white "></div>
+      <div class="w-full h-1 bg-white "></div>
     {:else}
-      <svg
-        width="27"
-        height="22"
-        viewBox="0 0 27 22"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="flex-grow-0 flex-shrink-0 w-[23px] h-[18px]"
-        preserveAspectRatio="none"
-      >
-        <path d="M2 2H25" stroke="black" stroke-width="3" stroke-linecap="round"
-        ></path>
-        <path
-          d="M2 20H25"
-          stroke="black"
-          stroke-width="3"
-          stroke-linecap="round"
-        ></path>
-        <path
-          d="M2 11H25"
-          stroke="black"
-          stroke-width="3"
-          stroke-linecap="round"
-        ></path>
-      </svg>
+      <div class="w-full h-1 bg-black"></div>
+      <div class="w-full h-1 bg-black"></div>
+      <div class="w-full h-1 bg-black"></div>
     {/if}
   </button>
+
+  
+  
 </div>
-<Menu {menuVisible} />
+<Menu {menuVisible}/>

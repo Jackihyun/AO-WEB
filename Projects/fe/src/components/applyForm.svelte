@@ -43,16 +43,16 @@
   }
 
   function handleClick() {
-    fetch("/apply", {
+    fetch("/api/apply", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        id: "60182228",
-        name: "천제희",
-        phoneNum: "010-9666-8460",
-        aWord: "안녕하세요",
+        id: studentId,
+        name: name,
+        phoneNum: phoneNumber,
+        aWord: message,
       }),
     })
       .then((res) => {
@@ -68,8 +68,9 @@
 
 <form on:submit|preventDefault={handleSubmit}>
   <!-- 학번 입력 -->
+  <div class="flex flex-col justify-start items-center">
   <label
-    class="w-[32px] text-base font-medium text-left text-[#000] dark:text-[#CCC]"
+    class="w-[32px] text-base font-medium text-left text-[#000] dark:text-[#CCC] mr-[300px]"
     for="studentId">학번</label
   >
   <div
@@ -83,9 +84,11 @@
       placeholder="학번을 입력해주세요."
     />
   </div>
+</div>
 
+<div class="flex flex-col justify-start items-center">
   <label
-    class="w-[32px] text-base font-medium text-left text-[#000] dark:text-[#CCC]"
+    class="w-[32px] text-base font-medium text-left text-[#000] dark:text-[#CCC] mr-[300px]"
     for="name">이름</label
   >
   <div
@@ -99,9 +102,11 @@
       placeholder="이름을 입력해주세요."
     />
   </div>
+</div>
 
+<div class="flex flex-col justify-start items-center">
   <label
-    class="w-[64px] text-base font-medium text-left text-[#000] dark:text-[#CCC]"
+    class="w-[64px] text-base font-medium text-left text-[#000] dark:text-[#CCC] mr-[270px]"
     for="phoneNumber">전화번호</label
   >
   <div
@@ -115,9 +120,11 @@
       placeholder="전화번호를 입력해주세요."
     />
   </div>
+</div>
 
+<div class="flex flex-col justify-start items-center">
   <label
-    class="w-[127px] text-base font-medium text-left text-[#000] dark:text-[#CCC]"
+    class="w-[127px] text-base font-medium text-left text-[#000] dark:text-[#CCC] mr-[200px]"
     for="message">한 마디 남기기</label
   >
   <div
@@ -130,12 +137,15 @@
       placeholder="자유롭게 한 마디를 남겨주세요."
     ></textarea>
   </div>
+</div>
 
   <!-- "지원하기" 버튼 -->
+  <div class="flex flex-col justify-start items-center">
   <button
     type="submit"
     on:click={handleClick}
     class="flex justify-center items-center relative overflow-hidden px-[126px] py-3.5 rounded-3xl bg-[#333] flex-grow-0 flex-shrink-0 text-lg font-medium text-center text-neutral-200"
     >지원하기</button
   >
+</div>
 </form>

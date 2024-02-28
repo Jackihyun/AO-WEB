@@ -11,7 +11,6 @@
   <NewHeader />
   <main class="mt-[35px] mb-[43px] flex-grow">
     <NewMain />
-    <ApplyButton />
   </main>
   <NewFooter />
 </div>

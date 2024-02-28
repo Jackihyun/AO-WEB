@@ -21,16 +21,9 @@ html > body {
   url(HELVETICA-BOLD.TTF);
 }
 
-/* @font-face {
-  font-family: Helvetica_Light;
-  src: local("HELVETICA-LIGHT"),
-  url(HELVETICA-LIGHT.TTF);
-} */
-
 @font-face {
-  font-family: Helvetica95_Black;
-  src: local("HELVETICA-BLACK"),
-  url(HELVETICA-BLACK.TTF);
+  font-family: 'Helvetica95_Black';
+  src: url('./fonts/HELVETICA-BLACK.TTF') format('truetype');
 }
 
 @font-face {

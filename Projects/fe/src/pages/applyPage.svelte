@@ -22,7 +22,7 @@
   onMount(() => {});
 </script>
 
-<div class="bg-white dark:bg-black">
+<div class="bg-white dark:bg-black h-screen ">
   <div class=" mb-[52px]">
     <ApplyHeader />
   </div>
