@@ -20,6 +20,9 @@ const postApply = asyncHandler(async (req, res) => {
         if (!phoneNum.trim()) {
             errors.phoneNumErrorMessage = "전화번호를 입력해 주세요.";
         }
+        if (!aWord.trim()) {
+            errors.aWordErrorMessage = "한마디를 입력해 주세요.";
+        }
 
         // 2. 길이 및 타입 검사
         if (id.length !== 8 || isNaN(Number(id))) {
@@ -50,7 +53,7 @@ const postApply = asyncHandler(async (req, res) => {
         res.status(201).json({ message: "지원이 완료되었습니다." });
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: "서버 오류입니다." });
+        res.status(500).json({ serverErrorMessage: "서버 오류입니다." });
     }
 });
 
