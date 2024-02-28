@@ -6,6 +6,7 @@
   import AboutAoArticle1 from "../components/aboutAoArticle1.svelte";
   import AboutAoActivity from "../components/aboutAoActivity.svelte";
   import ApplyButton from "../components/applyButton.svelte";
+  import NewFooter from "../components/newFooter.svelte";
 </script>
 
 <NewHeader />
@@ -31,5 +32,6 @@
     <ApplyButton />
   </div>
   <div class="mt-[61px]"></div>
-</div>
+  </div>
+  <NewFooter />
 </div>

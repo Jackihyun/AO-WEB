@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,48 +8,62 @@ html > body {
 }
 
 @font-face {
+  font-family: 'HELVETICA';
+  src: url('./fonts/Helvetica.ttf') format('truetype');
+}
+
+
+@font-face {
   font-family: 'HELVETICA-LIGHT';
   src: url('./fonts/HELVETICA-LIGHT.TTF') format('truetype');
 }
 
 @font-face {
-  font-family: Helvetica_Bold;
-  font-weight: 750;
-  src: local("HELVETICA-BOLD"),
-  url(HELVETICA-BOLD.TTF);
+  font-family: 'HELVETICA-BOLD';
+  src: url('./fonts/HELVETICA-BOLD.TTF') format('truetype');
 }
 
 @font-face {
+  font-family: 'Helvetica Black';
+  src: url('./fonts/Helvetica Black.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: '5MAL6LAMPEN';
+  src: url('./fonts/5MAL6LAMPEN.TTF') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'PRETENDARD-BOLD';
+  src: url('./fonts/PRETENDARD-BOLD.OTF') format('truetype');
   font-family: 'Helvetica95_Black';
   src: url('./fonts/HELVETICA-BLACK.TTF') format('truetype');
 }
 
 @font-face {
-  font-family: 5MAL6LAMPEN;
-  src: local("5MAL6LAMPEN"),
-  url('./fonts/5MAL6LAMPEN.TTF') format('truetype');
+  font-family: 'PRETENDARD-SEMIBOLD';
+  src: url('./fonts/PRETENDARD-SEMIBOLD.OTF') format('truetype');
 }
 
 @font-face {
-  font-family: Pretendard_Bold;
-  src: local("PRETENDARD-BOLD"),
-  url(PRETENDARD-BOLD.OTF);
+  font-family: 'PRETENDARD-MEDIUM';
+  src: url('./fonts/PRETENDARD-MEDIUM.OTF') format('truetype');
 }
 
 @font-face {
-  font-family: Pretendard_Semibold;
-  src: local("PRETENDARD-SEMIBOLD"),
-  url(PRETENDARD-SEMIBOLD.OTF);
+  font-family: 'PRETENDARD-LIGHT';
+  src: url('./fonts/PRETENDARD-LIGHT.OTF') format('truetype');
 }
 
 @font-face {
-  font-family: Pretendard_Medium;
-  src: local("PRETENDARD-MEDIUM"),
-  url(PRETENDARD-MEDIUM.OTF);
+  font-family: 'PRETENDARD-REGULAR';
+  src: url('./fonts/PRETENDARD-REGULAR.OTF') format('truetype');
 }
 
 @font-face {
-  font-family: Pretendard_Light;
-  src: local("PRETENDARD-LIGHT"),
-  url(PRETENDARD-LIGHT.OTF);
+  font-family: 'PRETENDARD-BLACK';
+  src: url('./fonts/PRETENDARD-BLACK.OTF') format('truetype');
 }
+

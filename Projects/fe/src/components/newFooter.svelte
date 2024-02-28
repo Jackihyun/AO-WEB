@@ -1,14 +1,16 @@
 <script>
   import "../App.css";
+  import { Link } from "svelte-routing";
 </script>
 
 <div class="w-screen h-[137px] bg-white dark:bg-black text-left">
-  <p
-    class="text-xl font-['Helvetica95_Black'] text-black dark:text-white mt-[25px] ml-[19px] mb-[6px]"
-  >
-    Fire AO
-  </p>
-
+  <Link to="/">
+    <p
+      class="text-xl font-['Helvetica95_Black'] text-black dark:text-white mt-[25px] ml-[19px] mb-[6px]"
+    >
+      Fire AO
+    </p>
+  </Link>
   <div class="flex items-center ml-[19px]">
     <svg
       width="20"

@@ -2,8 +2,7 @@
   import Menu from "./menu.svelte";
   import { Router, Link } from "svelte-routing";
   import { darkMode } from "../store";
-  import { onMount } from "svelte";
-  
+  import "../App.css";
 
   let menuVisible = false;
 
@@ -108,8 +107,8 @@
     {:else}
       <svg
         width="27"
-        height="27"
-        viewBox="0 0 27 27"
+        height="28"
+        viewBox="0 0 27 28"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         class="w-[27px] h-[27px]"
@@ -129,18 +128,46 @@
   <Link to="/">
     <p class="flex-grow-0 flex-shrink-0 text-3xl text-left">
       <span
-        class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-[#0d0d0d] dark:text-white"
-        >Fire
+        class="font-['Helvetica_Black'] font-extrabold flex-grow-0 flex-shrink-0 text-3xl text-left text-[#0d0d0d] dark:text-white"
+        >FIRE
       </span>
       <span
-        class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-black dark:text-white"
+        class="font-['Helvetica_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-black dark:text-white"
         >AO
       </span>
     </p>
   </Link>
 
-  <button on:click={() => {toggleMenu();}}
-    class="flex flex-col justify-between w-6 h-6 cursor-pointer">
+  <button on:click={toggleMenu} class=" z-[100]">
+    <!-- 햄버거 메뉴 버튼 -->
+    <div
+      class="relative w-[23px] h-[18px] gap-[4.7px] flex flex-col justify-between items-center"
+    >
+      <!-- 상단 선 -->
+      <div
+        class={`w-full h-[3px] bg-black rounded-md dark:bg-white transform transition duration-300 ${
+          menuVisible
+            ? "-rotate-45 translate-y-[7px] translate-x-[0.1px] bg-white"
+            : ""
+        }`}
+      ></div>
+      <!-- 중간 선 (메뉴 열림 시 사라짐) -->
+      <div
+        class={`w-full h-[3px] bg-black rounded-md dark:bg-white transition-opacity duration-300 ${
+          menuVisible ? "opacity-0" : ""
+        }`}
+      ></div>
+      <!-- 하단 선 -->
+      <div
+        class={`w-full h-[3px] bg-black rounded-md dark:bg-white transform transition duration-300 ${
+          menuVisible
+            ? "rotate-45 -translate-y-[7.9px] -translate-x-[0.2px] bg-white"
+            : ""
+        }`}
+      ></div>
+    </div>
+  </button>
+  <!-- <button on:click={toggleMenu}>
     {#if $darkMode}
       <div class="w-full h-1 bg-white "></div>
       <div class="w-full h-1 bg-white "></div>
@@ -150,9 +177,6 @@
       <div class="w-full h-1 bg-black"></div>
       <div class="w-full h-1 bg-black"></div>
     {/if}
-  </button>
-
-  
-  
+  </button> -->
 </div>
 <Menu {menuVisible}/>

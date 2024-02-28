@@ -1,10 +1,19 @@
-<!-- SupportForm.svelte -->
-
 <script>
   import { createEventDispatcher } from "svelte";
   import { showModal } from "../store";
 
+  const hypenTel = (event) => {
+    event.target.value = event.target.value
+      .replace(/[^0-9]/g, "")
+      .replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, `$1-$2-$3`);
+  };
+
   const dispatch = createEventDispatcher();
+
+  let stuIdErrorMessage = "";
+  let nameErrorMessage = "";
+  let phoneErrorMessage = "";
+  let awordErrorMessage = "";
 
   let studentId = "";
   let name = "";
@@ -18,7 +27,6 @@
       phoneNumber.trim() === "" ||
       message.trim() === ""
     ) {
-      alert("모든 항목을 작성해주세요!");
       return false;
     }
     // 여기에서 폼 데이터를 사용하여 필요한 작업 수행
@@ -26,11 +34,6 @@
     console.log("이름:", name);
     console.log("전화번호:", phoneNumber);
     console.log("한 마디:", message);
-
-    // 폼 제출 후 초기화 또는 다른 작업을 수행할 수 있음
-    resetForm();
-
-    showModal.set(true);
 
     return false;
   }
@@ -43,10 +46,13 @@
   }
 
   function handleClick() {
+    stuIdErrorMessage = "";
+    nameErrorMessage = "";
+    phoneErrorMessage = "";
     fetch("/api/apply", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         id: studentId,
@@ -57,6 +63,45 @@
     })
       .then((res) => {
         console.log(res);
+        if (res.status === 400) {
+          return res.json(); //body에 있는 것을 js 객체로 바꿔서 반환. 반환값은 프로미스객체라 다시 받을수 있음.
+        } else if (res.ok) {
+          resetForm();
+          showModal.set(true);
+        }
+      })
+      .then((json) => {
+        if (json !== undefined && json !== null) {
+          console.log(json);
+          if (
+            json.stuIdErrorMessage !== undefined &&
+            json.stuIdErrorMessage !== null &&
+            json.stuIdErrorMessage !== ""
+          ) {
+            stuIdErrorMessage = json.stuIdErrorMessage;
+          }
+          if (
+            json.nameErrorMessage !== undefined &&
+            json.nameErrorMessage !== null &&
+            json.nameErrorMessage !== ""
+          ) {
+            nameErrorMessage = json.nameErrorMessage;
+          }
+          if (
+            json.phoneNumErrorMessage !== undefined &&
+            json.phoneNumErrorMessage !== null &&
+            json.phoneNumErrorMessage !== ""
+          ) {
+            phoneErrorMessage = json.phoneNumErrorMessage;
+          }
+          if (
+            json.aWordErrorMessage !== undefined &&
+            json.aWordErrorMessage !== null &&
+            json.aWordErrorMessage !== ""
+          ) {
+            awordErrorMessage = json.aWordErrorMessage;
+          }
+        }
       })
       .catch((err) => {
         console.error(err);
@@ -70,81 +115,100 @@
   <!-- 학번 입력 -->
   <div class="flex flex-col justify-start items-center">
   <label
-    class="w-[32px] text-base font-medium text-left text-[#000] dark:text-[#CCC] mr-[300px]"
+    class="w-[32px] font-['PRETENDARD'] text-base font-semibold text-left text-[#000] dark:text-[#CCC]"
     for="studentId">학번</label
   >
   <div
-    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#dcdcdc] dark:bg-[#0d0d0d]"
+    class="mt-[10px] mb-[{stuIdErrorMessage
+      ? '3px'
+      : '26px'}] flex justify-start items-center w-[339px] h-[47px] relative overflow-hidden px-3.5 py-3 rounded-lg bg-[#dcdcdc] dark:bg-[#0d0d0d]"
   >
     <input
       type="text"
       id="studentId"
       bind:value={studentId}
-      class="flex-grow-0 flex-shrink-0 text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
+      class="flex-grow-0 flex-shrink-0 font-['PRETENDARD'] font-light text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="학번을 입력해주세요."
     />
   </div>
-</div>
-
-<div class="flex flex-col justify-start items-center">
+  <p
+    class="font-['PRETENDARD-REGULAR'] mb-[10px] text-[11px] text-left text-[#d64142]"
+  >
+    {stuIdErrorMessage}
+  </p>
   <label
-    class="w-[32px] text-base font-medium text-left text-[#000] dark:text-[#CCC] mr-[300px]"
+    class=" font-['PRETENDARD'] w-[32px] text-base font-semibold text-left text-[#000] dark:text-[#CCC]"
     for="name">이름</label
   >
   <div
-    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] [relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#dcdcdc] dark:bg-[#0D0D0D]"
+    class="mt-[10px] mb-[{nameErrorMessage
+      ? '3px'
+      : '26px'}] flex justify-start items-center w-[339px] h-[47px] [relative overflow-hidden px-3.5 py-3 rounded-lg bg-[#dcdcdc] dark:bg-[#0D0D0D]"
   >
     <input
       type="text"
       id="name"
       bind:value={name}
-      class="flex-grow-0 flex-shrink-0 text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
+      class="flex-grow-0 flex-shrink-0 font-['PRETENDARD'] font-light text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="이름을 입력해주세요."
     />
   </div>
-</div>
-
-<div class="flex flex-col justify-start items-center">
+  <p
+    class="mb-[10px] font-['PRETENDARD-REGULAR'] text-[11px] text-left text-[#d64142]"
+  >
+    {nameErrorMessage}
+  </p>
   <label
-    class="w-[64px] text-base font-medium text-left text-[#000] dark:text-[#CCC] mr-[270px]"
+    class=" w-[64px] font-['PRETENDARD'] text-base font-semibold text-left text-[#000] dark:text-[#CCC]"
     for="phoneNumber">전화번호</label
   >
   <div
-    class="mt-[8px] mb-[20px] flex justify-start items-center w-[339px] h-[47px] relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#dcdcdc] dark:bg-[#0D0D0D]"
+    class="mt-[10px] mb-[26px] mb-[{phoneErrorMessage
+      ? '3px'
+      : '26px'}] flex justify-start items-center w-[339px] h-[47px] relative overflow-hidden px-3.5 py-3 rounded-lg bg-[#dcdcdc] dark:bg-[#0D0D0D]"
   >
     <input
       type="tel"
+      on:input={hypenTel}
+      maxlength="13"
       id="phoneNumber"
       bind:value={phoneNumber}
-      class="w-full flex-grow-0 flex-shrink-0 text-base text-left text-[#7f7f7f] dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
+      class="w-full flex-grow-0 flex-shrink-0 font-['PRETENDARD'] font-light text-base text-left text-[#7f7f7f] dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="전화번호를 입력해주세요."
     />
   </div>
-</div>
+  <p
+    class="mb-[10px] font-['PRETENDARD-REGULAR'] font- text-[11px] text-left text-[#d64142]"
+  >
+    {phoneErrorMessage}
+  </p>
 
 <div class="flex flex-col justify-start items-center">
   <label
-    class="w-[127px] text-base font-medium text-left text-[#000] dark:text-[#CCC] mr-[200px]"
+    class=" w-[127px] font-['PRETENDARD'] text-base font-semibold text-left text-[#000] dark:text-[#CCC]"
     for="message">한 마디 남기기</label
   >
   <div
-    class="mt-[8px] mb-[63px] flex justify-start items-start w-[339px] h-24 relative overflow-hidden gap-2.5 px-3.5 py-3 rounded-lg bg-[#dcdcdc] dark:bg-[#0D0D0D]"
+    class="mt-[10px] mb-[{awordErrorMessage
+      ? '3px'
+      : '26px'}] flex justify-start items-start w-[339px] h-24 relative overflow-hidden px-3.5 py-3 rounded-lg bg-[#dcdcdc] dark:bg-[#0D0D0D]"
   >
     <textarea
       id="message"
       bind:value={message}
-      class="w-full flex-grow-0 flex-shrink-0 text-base text-left text-[#7f7f7f] dark:[#7f7f7f] bg-transparent border-none focus:outline-none resize-none"
+      class="w-full flex-grow-0 font-['PRETENDARD'] font-light flex-shrink-0 text-base text-left text-[#7f7f7f] dark:[#7f7f7f] bg-transparent border-none focus:outline-none resize-none"
       placeholder="자유롭게 한 마디를 남겨주세요."
     ></textarea>
   </div>
-</div>
-
+  <p class="font-['PRETENDARD-REGULAR'] text-[11px] text-left text-[#d64142]">
+    {awordErrorMessage}
+  </p>
   <!-- "지원하기" 버튼 -->
   <div class="flex flex-col justify-start items-center">
   <button
     type="submit"
     on:click={handleClick}
-    class="flex justify-center items-center relative overflow-hidden px-[126px] py-3.5 rounded-3xl bg-[#333] flex-grow-0 flex-shrink-0 text-lg font-medium text-center text-neutral-200"
+    class="mt-[63px] flex justify-center items-center relative overflow-hidden px-[126px] py-3.5 rounded-3xl bg-[#333] flex-grow-0 flex-shrink-0 text-lg font-medium text-center text-neutral-200"
     >지원하기</button
   >
 </div>
