@@ -12,7 +12,7 @@
   <div class=" flex-grow">
     <TeamIntro />
   </div>
-  <div class="mt-[20px]">
+  <div class="mt-[20px] mb-[48px]">
     <TeamMain />
   </div>
   <NewFooter />
