@@ -9,10 +9,10 @@
   class="bg-white dark:bg-black relative overflow-hidden flex flex-col h-full"
 >
   <NewHeader />
-  <div class="mt-[77px] flex-grow">
+  <div class=" flex-grow">
     <TeamIntro />
   </div>
-  <div class="mt-[77px]">
+  <div class="mt-[20px]">
     <TeamMain />
   </div>
   <NewFooter />

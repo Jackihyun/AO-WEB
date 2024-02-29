@@ -130,7 +130,7 @@
       type="text"
       id="studentId"
       bind:value={studentId}
-      class="flex-grow-0 flex-shrink-0 font-['PRETENDARD-LIGHT'] text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
+      class="flex-grow-0 w-full flex-shrink-0 font-['PRETENDARD-LIGHT'] text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="학번을 입력해주세요."
     />
   </div>
@@ -152,7 +152,7 @@
       type="text"
       id="name"
       bind:value={name}
-      class="flex-grow-0 flex-shrink-0 font-['PRETENDARD-LIGHT'] text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
+      class="flex-grow-0 flex-shrink-0 w-full font-['PRETENDARD-LIGHT'] text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="이름을 입력해주세요."
     />
   </div>
