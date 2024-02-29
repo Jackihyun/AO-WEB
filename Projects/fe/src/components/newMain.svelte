@@ -6,7 +6,7 @@
   window.addEventListener("scroll", function () {
     var scrollValue = window.scrollY; // 스크롤 위치
 
-    var stopPositions = [780, 660, 840, 720, 600, 900];
+    var stopPositions = [480, 360, 540, 420, 300, 600];
     var stopPositionsX = [-35, -10, 15, 30, 10, 30];
     var startPositionsX = [0, 0, 0, 0, 0, 0];
 

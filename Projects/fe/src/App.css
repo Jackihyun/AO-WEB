@@ -38,8 +38,6 @@ html > body {
 @font-face {
   font-family: 'PRETENDARD-BOLD';
   src: url('./fonts/PRETENDARD-BOLD.OTF') format('truetype');
-  font-family: 'Helvetica95_Black';
-  src: url('./fonts/HELVETICA-BLACK.TTF') format('truetype');
 }
 
 @font-face {

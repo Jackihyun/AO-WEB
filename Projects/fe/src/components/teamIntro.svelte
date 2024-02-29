@@ -14,7 +14,7 @@
     <p
       class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-center text-[#313131] dark:text-neutral-50"
     >
-      Contact
+      AO Team
     </p>
   </div>
 </div>

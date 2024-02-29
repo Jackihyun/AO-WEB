@@ -59,6 +59,10 @@
         name: name,
         phoneNum: phoneNumber,
         aWord: message,
+        id: studentId,
+        name: name,
+        phoneNum: phoneNumber,
+        aWord: message,
       }),
     })
       .then((res) => {
@@ -113,7 +117,6 @@
 
 <form on:submit|preventDefault={handleSubmit}>
   <!-- 학번 입력 -->
-  <div class="flex flex-col justify-start items-center">
   <label
     class="w-[32px] font-['PRETENDARD'] text-base font-semibold text-left text-[#000] dark:text-[#CCC]"
     for="studentId">학번</label
@@ -183,7 +186,6 @@
     {phoneErrorMessage}
   </p>
 
-<div class="flex flex-col justify-start items-center">
   <label
     class=" w-[127px] font-['PRETENDARD'] text-base font-semibold text-left text-[#000] dark:text-[#CCC]"
     for="message">한 마디 남기기</label
@@ -204,12 +206,10 @@
     {awordErrorMessage}
   </p>
   <!-- "지원하기" 버튼 -->
-  <div class="flex flex-col justify-start items-center">
   <button
     type="submit"
     on:click={handleClick}
     class="mt-[63px] flex justify-center items-center relative overflow-hidden px-[126px] py-3.5 rounded-3xl bg-[#333] flex-grow-0 flex-shrink-0 text-lg font-medium text-center text-neutral-200"
     >지원하기</button
   >
-</div>
 </form>

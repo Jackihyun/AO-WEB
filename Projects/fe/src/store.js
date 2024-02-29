@@ -3,6 +3,7 @@ import { writable } from "svelte/store";
 export const showModal = writable(false);
 
 const initialValue = localStorage.getItem('darkMode') === 'true';
+export let checkNum = writable(1);
 
 export const darkMode = writable(initialValue);
 
@@ -10,3 +11,4 @@ export const darkMode = writable(initialValue);
 darkMode.subscribe((value) => {
   localStorage.setItem('darkMode', value);
 });
+

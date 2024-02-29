@@ -22,7 +22,7 @@
         <Link to="/">
           <p class="flex-grow-0 flex-shrink-0 text-3xl text-left">
             <span
-              class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-white"
+              class="font-['PRETENDARD-BOLD'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-white"
               >Fire
             </span><span
               class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-white"

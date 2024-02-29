@@ -4,7 +4,7 @@
   import ArchivePage from "./pages/archivePage.svelte";
   import ApplyPage from "./pages/applyPage.svelte";
   import AboutAOPage from "./pages/aboutAoPage.svelte";
-  import ContactPage from "./pages/contactPage.svelte";
+  import TeamPage from "./pages/teamPage.svelte";
   import "./App.css";
   import { darkMode } from "./store";
   // import Modal from "./components/completeModal.svelte";
@@ -24,6 +24,6 @@
   <Route path="/" component={NewmainPage} />
   <Route path="/archive" component={ArchivePage} />
   <Route path="/about" component={AboutAOPage} />
-  <Route path="/contact" component={ContactPage} />
+  <Route path="/contact" component={TeamPage} />
   <Route path="/apply" component={ApplyPage} />
 </Router>
