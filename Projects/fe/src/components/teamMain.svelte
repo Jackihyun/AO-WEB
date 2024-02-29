@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import IconPhoto from "../images/IconPhoto.png";
+  import JcIcon from "../images/ao김종찬아바타.jpg";
   import Photo from "../images/photo.png";
   import AoJc from "../images/new종찬형님.png";
   import Aosj from "../images/ao 세진형님.jpg";
@@ -24,11 +24,12 @@
   function showChange() {
     isFlipped = !isFlipped;
     if (showImg == AoJc) {
-      showImg = IconPhoto;
-    } else if (showImg == IconPhoto) {
+      showImg = JcIcon;
+    } else if (showImg == JcIcon) {
       showImg = AoJc;
     } else if (showImg == Aosj) {
       showImg = SjIcon;
+      JCIcon;
     } else if (showImg == SjIcon) {
       showImg = Aosj;
     } else if (showImg == Aojh) {
