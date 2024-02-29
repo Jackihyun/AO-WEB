@@ -6,7 +6,7 @@
 </script>
 
 <div
-  class="bg-white dark:bg-black relative overflow-hidden flex flex-col min-h-screen"
+  class="bg-white dark:bg-black relative overflow-hidden flex flex-col h-full"
 >
   <NewHeader />
   <div class="mt-[77px] flex-grow">

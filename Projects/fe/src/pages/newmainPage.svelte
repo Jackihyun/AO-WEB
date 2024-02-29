@@ -4,7 +4,9 @@
   import NewFooter from "../components/newFooter.svelte";
 </script>
 
-<div class="bg-white dark:bg-black overflow-y-auto flex flex-col min-h-screen">
+<div
+  class="bg-white dark:bg-black overflow-y-auto flex flex-col min-h-screen h-auto"
+>
   <NewHeader />
   <main class="mt-[35px] flex-grow">
     <NewMain />
