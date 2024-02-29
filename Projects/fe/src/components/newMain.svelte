@@ -2,14 +2,14 @@
   import { Link } from "svelte-routing";
   import { darkMode } from "../store";
   import Aosimbol from "../images/AO simbol.png";
+
   // 스크롤 이벤트에 반응하여 요소 이동
   window.addEventListener("scroll", function () {
     var scrollValue = window.scrollY; // 스크롤 위치
 
     var stopPositions = [480, 360, 540, 420, 300, 600];
-    var stopPositions = [480, 360, 540, 420, 300, 600];
-    var stopPositionsX = [-35, -10, 15, 30, 10, 30];
-    var startPositionsX = [0, 0, 0, 0, 0, 0];
+    //var stopPositionsX = [-35, -10, 15, 30, 10, 30];
+    //var startPositionsX = [0, 0, 0, 0, 0, 0];
 
     var content = document.querySelector(".content"); // 콘텐츠 부분 선택
 
@@ -35,50 +35,37 @@
         }
       }
     });
-
-    var fireaoWrapper = document.getElementById("zoomTarget");
-    var threshold = 600; // 원 확장 시작 스크롤 위치
-
-    // if (scrollValue > threshold) {
-    //   var scaleValue = Math.min(1 + (scrollValue - threshold) / 500, 5); // 5배까지 확대 예시
-    //   fireaoWrapper.style.transform = `scale(${scaleValue})`;
-    //   fireaoWrapper.style.backgroundColor = `rgba(0, 0, 255, ${Math.min(
-    //     (scrollValue - threshold) / 500,
-    //     1,
-    //   )})`; // 배경색 점차 파란색으로
-    // } else {
-    //   fireaoWrapper.style.transform = "scale(1)";
-    //   fireaoWrapper.style.backgroundColor = "rgba(0, 0, 255, 0)";
-    // }
-
-    if (scrollValue > threshold) {
-      content.style.transform = "translateY(80)"; // 콘텐츠 올라오기
-    } else {
-      content.style.transform = "translateY(100%)"; // 원래 위치
-    }
   });
 </script>
 
-<!-- // window.addEventListener("scroll", () => {
-  //   const zoomTarget = document.getElementById("zoomTarget");
-  //   // `window.scrollY`를 사용하여 스크롤 양 가져오기
-  //   const scale = Math.min(100, 1 + window.scrollY / 1);
-  //   zoomTarget.style.transform = `scale(${scale})`; // 확대 효과 적용
-  // });
-</scrip> -->
-
 <div class="flex-col">
-  <div class="flex justify-center items-center whitespace-nowrap">
-    <p
-      class=" text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white mr-[10.67px]"
-    >
-      &lt;PROGRAMMING
-    </p>
-    <div class="flex justify-center items-center">
+  <div class="flex justify-center items-center whitespace-nowrap w-screen">
+    <div class="flex animate-marquee whitespace-nowrap w-[100%]">
       <p
-        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white"
+        id="first"
+        class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white"
       >
-        C<span
+        &lt;PROGRAMMING C<span
+          id="scrollingTextO"
+          class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F]"
+          >O</span
+        >DE
+      </p>
+      <p
+        id="second"
+        class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white"
+      >
+        &lt;PROGRAMMING C<span
+          id="scrollingTextO"
+          class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F]"
+          >O</span
+        >DE
+      </p>
+      <p
+        id="third"
+        class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white"
+      >
+        &lt;PROGRAMMING C<span
           id="scrollingTextO"
           class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F]"
           >O</span
@@ -88,61 +75,99 @@
   </div>
 
   <div class="flex justify-center items-center whitespace-nowrap">
-    <p
-      class="text-[40px] mr-[11.29px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white whitespace-nowrap"
-    >
-      BACKEND
-    </p>
-    <div class="flex justify-center items-center">
+    <div class="flex animate-marquee2 whitespace-nowrap w-[100%]">
       <p
-        class="text-[40px] font-['5MAL6LAMPEN'] text-left mr-[10.29px] text-black dark:text-white"
+        class="text-[40px] mr-4 font-['5MAL6LAMPEN'] text-left text-black dark:text-white whitespace-nowrap"
       >
+        BACKEND
         <span
           id="scrollingTextR"
           class=" relative text-[#684DFF] dark:text-[#FF4A3F]">R</span
-        >UNNING
+        >UNNING DEV
       </p>
       <p
-        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white"
+        class="text-[40px] mr-4 font-['5MAL6LAMPEN'] text-left text-black dark:text-white whitespace-nowrap"
       >
-        DEV
+        BACKEND
+        <span
+          id="scrollingTextR"
+          class=" relative text-[#684DFF] dark:text-[#FF4A3F]">R</span
+        >UNNING DEV
+      </p>
+      <p
+        class="text-[40px] mr-4 font-['5MAL6LAMPEN'] text-left text-black dark:text-white whitespace-nowrap"
+      >
+        BACKEND
+        <span
+          id="scrollingTextR"
+          class=" relative text-[#684DFF] dark:text-[#FF4A3F]">R</span
+        >UNNING DEV
+      </p>
+      <p
+        class="text-[40px] mr-4 font-['5MAL6LAMPEN'] text-left text-black dark:text-white whitespace-nowrap"
+      >
+        BACKEND
+        <span
+          id="scrollingTextR"
+          class=" relative text-[#684DFF] dark:text-[#FF4A3F]">R</span
+        >UNNING DEV
       </p>
     </div>
   </div>
 
   <div class="flex justify-center items-center whitespace-nowrap">
-    <p
-      class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white mr-[7.97px]"
-    >
-      AO
-    </p>
-    <div class="flex justify-center items-center">
+    <div class="flex animate-marquee3 whitespace-nowrap w-[100%]">
       <p
-        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white mr-[3.36px]"
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white mr-4"
       >
+        AO
         <span
           id="scrollingTextF"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">F</span
-        >RONTEND
+        >RONTEND'CLASS'
       </p>
       <p
-        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white"
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white mr-4"
       >
-        'CLASS'
+        AO
+        <span
+          id="scrollingTextF"
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">F</span
+        >RONTEND'CLASS'
+      </p>
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white mr-4"
+      >
+        AO
+        <span
+          id="scrollingTextF"
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">F</span
+        >RONTEND'CLASS'
       </p>
     </div>
   </div>
   <div class="flex justify-center items-center whitespace-nowrap">
-    <p
-      class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[20px] mr-[12.77px]"
-    >
-      CREATING
-    </p>
-    <div class="flex justify-center items-center">
+    <div class="flex animate-marquee4 whitespace-nowrap w-[100%]">
       <p
-        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white"
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[20px] mr-[12.77px]"
       >
-        D<span
+        CREATING D<span
+          id="scrollingTextE"
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">E</span
+        >VELOPING
+      </p>
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[20px] mr-[12.77px]"
+      >
+        CREATING D<span
+          id="scrollingTextE"
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">E</span
+        >VELOPING
+      </p>
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[20px] mr-[12.77px]"
+      >
+        CREATING D<span
           id="scrollingTextE"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">E</span
         >VELOPING
@@ -151,15 +176,29 @@
   </div>
 
   <div class="flex justify-center items-center whitespace-nowrap">
-    <p
-      class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[30.97px] mr-[13.98px]"
-    >
-      WEB
-    </p>
-    <div class="flex justify-center items-center">
+    <div class="flex animate-marquee5 whitespace-nowrap w-[100%]">
       <p
-        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white"
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[30.97px] mr-[13.98px]"
       >
+        WEB
+        <span
+          id="scrollingTextI"
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">I</span
+        >NTERACTION/&gt;
+      </p>
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[30.97px] mr-[13.98px]"
+      >
+        WEB
+        <span
+          id="scrollingTextI"
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">I</span
+        >NTERACTION/&gt;
+      </p>
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[30.97px] mr-[13.98px]"
+      >
+        WEB
         <span
           id="scrollingTextI"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">I</span
@@ -169,16 +208,27 @@
   </div>
 
   <div class="flex justify-center items-center whitespace-nowrap">
-    <p
-      class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[25px] mr-[15.77px]"
-    >
-      MJUSTUDY
-    </p>
-    <div class="flex justify-center items-center">
+    <div class="flex animate-marquee6 whitespace-nowrap w-[100%]">
       <p
-        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white"
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[25px] mr-[15.77px]"
       >
-        LE<span
+        MJUSTUDY LE<span
+          id="scrollingTextA"
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">A</span
+        >RNING
+      </p>
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[25px] mr-[15.77px]"
+      >
+        MJUSTUDY LE<span
+          id="scrollingTextA"
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">A</span
+        >RNING
+      </p>
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[25px] mr-[15.77px]"
+      >
+        MJUSTUDY LE<span
           id="scrollingTextA"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">A</span
         >RNING
@@ -187,11 +237,33 @@
   </div>
 
   <div class="flex justify-center items-center ml-[15px] whitespace-nowrap">
-    <p
-      class="text-[40px] font-['5MAL6LAMPEN'] ml-[4px] text-left text-black dark:text-white"
-    >
-      COME AND JOINUS..
-    </p>
+    <div class="flex animate-marquee7 whitespace-nowrap w-[100%] gap-4">
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] ml-[4px] text-left text-black dark:text-white"
+      >
+        COME AND JOINUS..
+      </p>
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] ml-[4px] text-left text-black dark:text-white"
+      >
+        COME AND JOINUS..
+      </p>
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] ml-[4px] text-left text-black dark:text-white"
+      >
+        COME AND JOINUS..
+      </p>
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] ml-[4px] text-left text-black dark:text-white"
+      >
+        COME AND JOINUS..
+      </p>
+      <p
+        class="text-[40px] font-['5MAL6LAMPEN'] ml-[4px] text-left text-black dark:text-white"
+      >
+        COME AND JOINUS..
+      </p>
+    </div>
   </div>
 </div>
 
@@ -422,3 +494,51 @@
     </div>
   </Link>
 </div>
+
+<style>
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-90.33333%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(-100.33333%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 10s linear infinite;
+  }
+
+  .animate-marquee2 {
+    animation: marquee2 20s linear infinite;
+  }
+
+  .animate-marquee3 {
+    animation: marquee 7s linear infinite;
+  }
+
+  .animate-marquee4 {
+    animation: marquee2 10s linear infinite;
+  }
+
+  .animate-marquee5 {
+    animation: marquee 10s linear infinite;
+  }
+
+  .animate-marquee6 {
+    animation: marquee2 25s linear infinite;
+  }
+
+  .animate-marquee7 {
+    animation: marquee 40s linear infinite;
+  }
+</style>
