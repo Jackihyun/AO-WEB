@@ -1,7 +1,7 @@
 <script>
   import { Link } from "svelte-routing";
   import { darkMode } from "../store";
-  import Aosimbol from "../images/AO simbol.png";
+  import Aosimbol from "../images/AOsimbol.png";
   // 스크롤 이벤트에 반응하여 요소 이동
   window.addEventListener("scroll", function () {
     var scrollValue = window.scrollY; // 스크롤 위치
