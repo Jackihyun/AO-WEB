@@ -126,11 +126,11 @@
   <Link to="/">
     <p class="flex-grow-0 flex-shrink-0 text-3xl text-left">
       <span
-        class="font-['Helvetica_Black'] font-extrabold flex-grow-0 flex-shrink-0 text-3xl text-left text-[#0d0d0d] dark:text-white"
-        >FIRE
+        class="font-['Montserrat'] font-black flex-grow-0 flex-shrink-0 text-3xl text-left text-[#0d0d0d] dark:text-white"
+        >Fire
       </span>
       <span
-        class="font-['Helvetica_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-black dark:text-white"
+        class="font-['Montserrat'] font-black flex-grow-0 flex-shrink-0 text-3xl text-left text-black dark:text-white"
         >AO
       </span>
     </p>
@@ -165,58 +165,5 @@
       ></div>
     </div>
   </button>
-  <!-- <button on:click={toggleMenu}>
-    {#if $darkMode}
-      <svg
-        width="27"
-        height="22"
-        viewBox="0 0 27 22"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="flex-grow-0 flex-shrink-0 w-[23px] h-[18px]"
-        preserveAspectRatio="none"
-      >
-        <path d="M2 2H25" stroke="white" stroke-width="3" stroke-linecap="round"
-        ></path>
-        <path
-          d="M2 20H25"
-          stroke="white"
-          stroke-width="3"
-          stroke-linecap="round"
-        ></path>
-        <path
-          d="M2 11H25"
-          stroke="white"
-          stroke-width="3"
-          stroke-linecap="round"
-        ></path>
-      </svg>
-    {:else}
-      <svg
-        width="27"
-        height="22"
-        viewBox="0 0 27 22"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="flex-grow-0 flex-shrink-0 w-[23px] h-[18px]"
-        preserveAspectRatio="none"
-      >
-        <path d="M2 2H25" stroke="black" stroke-width="3" stroke-linecap="round"
-        ></path>
-        <path
-          d="M2 20H25"
-          stroke="black"
-          stroke-width="3"
-          stroke-linecap="round"
-        ></path>
-        <path
-          d="M2 11H25"
-          stroke="black"
-          stroke-width="3"
-          stroke-linecap="round"
-        ></path>
-      </svg>
-    {/if}
-  </button> -->
 </div>
 <Menu {menuVisible} />

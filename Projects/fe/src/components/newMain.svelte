@@ -6,9 +6,11 @@
   window.addEventListener("scroll", function () {
     var scrollValue = window.scrollY; // 스크롤 위치
 
-    var stopPositions = [780, 660, 840, 720, 600, 900];
+    var stopPositions = [480, 360, 540, 420, 300, 600];
     var stopPositionsX = [-35, -10, 15, 30, 10, 30];
     var startPositionsX = [0, 0, 0, 0, 0, 0];
+
+    var content = document.querySelector(".content"); // 콘텐츠 부분 선택
 
     // 각 글자에 대한 참조를 가져옵니다.
     var textElements = [
@@ -32,6 +34,27 @@
         }
       }
     });
+
+    var fireaoWrapper = document.getElementById("zoomTarget");
+    var threshold = 600; // 원 확장 시작 스크롤 위치
+
+    // if (scrollValue > threshold) {
+    //   var scaleValue = Math.min(1 + (scrollValue - threshold) / 500, 5); // 5배까지 확대 예시
+    //   fireaoWrapper.style.transform = `scale(${scaleValue})`;
+    //   fireaoWrapper.style.backgroundColor = `rgba(0, 0, 255, ${Math.min(
+    //     (scrollValue - threshold) / 500,
+    //     1,
+    //   )})`; // 배경색 점차 파란색으로
+    // } else {
+    //   fireaoWrapper.style.transform = "scale(1)";
+    //   fireaoWrapper.style.backgroundColor = "rgba(0, 0, 255, 0)";
+    // }
+
+    if (scrollValue > threshold) {
+      content.style.transform = "translateY(80)"; // 콘텐츠 올라오기
+    } else {
+      content.style.transform = "translateY(100%)"; // 원래 위치
+    }
   });
 </script>
 
@@ -171,48 +194,44 @@
   </div>
 </div>
 
-<div class="flex-col justify-center mt-[600px]">
-  <div
-    class="flex font-['5MAL6LAMPEN'] justify-center items-center text-[#684DEF] dark:text-[#FF4A3F] text-[40px]"
-  >
-    F I R E A O
-  </div>
+<div class="flex-col justify-center">
   <div
     id="zoomTarget"
-    class="absolute top-[1140px] left-[53.5%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full"
+    class="relative inline-block w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full"
   ></div>
 </div>
 
+<div class="mb-[600px]"></div>
 <!-- 밑에 내용들 -->
 <div
-  class="flex flex-col bg-[#684DEF] dark:bg-[#FF4A3F] w-full h-auto text-white dark:text-black mt-96 mx-auto"
+  class="content flex flex-col bg-[#684DEF] dark:bg-[#FF4A3F] w-full h-auto text-white dark:text-black mt-96 mx-auto"
 >
   <div class="pl-[46px] mb-[100px]">
     <span
-      class="font-['PRETENDARD'] text-3xl font-black text-left text-white dark:text-black"
+      class="font-['PRETENDARD-BLACK'] text-3xl text-left text-white dark:text-black"
       >Welcome to</span
     ><br /><span
-      class="font-['PRETENDARD'] text-3xl font-black text-left text-white dark:text-black"
+      class="font-['PRETENDARD-BLACK'] text-3xl text-left text-white dark:text-black"
       >Fire AO!</span
     >
 
     <p class="mt-[14px] flex-grow-0 flex-shrink-0 text-xl text-left">
       <span
-        class="font-['PRETENDARD'] flex-grow-0 flex-shrink-0 text-xl font-black text-center text-white dark:text-black"
+        class="font-['PRETENDARD-BLACK'] flex-grow-0 flex-shrink-0 text-xl text-center text-white dark:text-black"
         >Alpha</span
       ><span
-        class="font-['PRETENDARD'] flex-grow-0 flex-shrink-0 text-xl font-bold text-center text-white dark:text-black"
+        class="font-['PRETENDARD-BOLD'] flex-grow-0 flex-shrink-0 text-xl text-center text-white dark:text-black"
         >부터
       </span><span
-        class="font-['PRETENDARD'] flex-grow-0 flex-shrink-0 text-xl font-black text-center text-white dark:text-black"
+        class="font-['PRETENDARD-BLACK'] flex-grow-0 flex-shrink-0 text-xl text-center text-white dark:text-black"
         >Omega</span
       ><span
-        class="font-['PRETENDARD'] flex-grow-0 flex-shrink-0 text-xl font-bold text-center text-white dark:text-black"
+        class="font-['PRETENDARD-BOLD'] flex-grow-0 flex-shrink-0 text-xl text-center text-white dark:text-black"
         >까지!</span
       >
     </p>
     <span
-      class="font-['PRETENDARD'] text-[13px] font-semibold text-left text-white dark:text-black"
+      class="font-['PRETENDARD-SEMIBOLD'] text-[13px] text-left text-white dark:text-black"
     >
       대학 생활의 처음부터 끝까지 함께해 줄 Fire AO입니다.
     </span>
@@ -226,15 +245,15 @@
       class="w-[45px] h-[45px] object-cover mb-[10px]"
     />
     <p
-      class="font-['Helvetica95_Black'] text-[30px] mb-[10px] text-center text-white dark:text-black"
+      class="font-['Montserrat'] font-black text-[30px] mb-[10px] text-center text-white dark:text-black"
     >
       Fire AO
     </p>
     <span
-      class="font-['PRETENDARD'] text-[13px] font-medium text-center text-white dark:text-black"
+      class="font-['PRETENDARD-MEDIUM'] text-[13px] text-center text-white dark:text-black"
       >AO는 Alpha의 A, Omega의 O를 합친 것으로<br /></span
     ><span
-      class="font-['PRETENDARD'] text-[13px] font-medium text-center text-white dark:text-black"
+      class="font-['PRETENDARD-MEDIUM'] text-[13px] text-center text-white dark:text-black"
       >처음부터 끝까지 함께하겠다는 의미를 담고 있습니다.</span
     >
   </div>
@@ -242,24 +261,24 @@
   <!-- 주요활동 내용 -->
   <div class="ml-[24px] px-[8px]">
     <span
-      class="font-['Helvetica95_Black'] text-[30px] mb-[10px] text-lfet text-white dark:text-black"
+      class="font-['Montserrat'] font-black text-[30px] mb-[10px] text-lfet text-white dark:text-black"
     >
       Fire AO<br />
     </span>
     <span
-      class="font-['PRETENDARD'] text-[18px] font-bold text-left text-white dark:text-black"
+      class="font-['PRETENDARD-BOLD'] text-[18px] text-left text-white dark:text-black"
       >주요 활동 내용</span
     >
   </div>
 
   <div class="ml-[24px] px-[8px] mt-[46px]">
     <p
-      class="font-['PRETENDARD'] text-[20px] font-bold text-left text-white dark:text-black"
+      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
     >
       1. 스터디 활동
     </p>
     <p
-      class="ml-[20px] font-['NOTO SANS KR'] mb-[17px] text-[14px] text-left font-normal"
+      class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
     >
       알고리즘, 책 스터디등
     </p>
@@ -270,12 +289,12 @@
 
   <div class="ml-[24px] px-[8px] mt-[17px]">
     <p
-      class="font-['PRETENDARD'] text-[20px] font-bold text-left text-white dark:text-black"
+      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
     >
       2. 세미나
     </p>
     <p
-      class="ml-[20px] font-['NOTO SANS KR'] mb-[17px] text-[14px] text-left font-normal"
+      class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
     >
       개발 관련 주제 선정 후 발표 (2주에 한 번)
     </p>
@@ -286,12 +305,12 @@
 
   <div class="ml-[24px] px-[8px] mt-[17px]">
     <p
-      class="font-['PRETENDARD'] text-[20px] font-bold text-left text-white dark:text-black"
+      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
     >
       3. 프로젝트
     </p>
     <p
-      class="ml-[20px] font-['NOTO SANS KR'] mb-[17px] text-[14px] text-left font-normal"
+      class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
     >
       직접 앱이나 웹을 멘토링 받으면서 만들어보기<br />(2학기)
     </p>
@@ -302,7 +321,7 @@
 
   <div class="ml-[24px] px-[8px] mt-[17px] mb-[17px]">
     <p
-      class="font-['PRETENDARD'] text-[20px] font-bold text-left text-white dark:text-black"
+      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
     >
       4. 학기 별 개강 파티 및 종강 파티
     </p>
@@ -313,12 +332,12 @@
 
   <div class="ml-[24px] px-[8px] mt-[17px]">
     <p
-      class="font-['PRETENDARD'] text-[20px] font-bold text-left text-white dark:text-black"
+      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
     >
       5. MT
     </p>
     <p
-      class="ml-[20px] font-['NOTO SANS KR'] mb-[17px] text-[14px] text-left font-normal"
+      class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
     >
       4월 중순 쯤 AO 전체 MT 진행
     </p>
@@ -329,12 +348,12 @@
 
   <div class="ml-[24px] px-[8px] mt-[17px]">
     <p
-      class="font-['PRETENDARD'] text-[20px] font-bold text-left text-white dark:text-black"
+      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
     >
       6. 총회
     </p>
     <p
-      class="ml-[20px] font-['NOTO SANS KR'] mb-[17px] text-[14px] text-left font-normal"
+      class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
     >
       11월 말 쯤 AO 선배님들과의 총회 진행
     </p>
@@ -352,11 +371,11 @@
         class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
       >
         <span
-          class="font-['HELVETICA95_Black'] font-bold flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
+          class="font-['Montserrat'] font-black flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
           >FIRE AO
         </span>
         <span
-          class="font-['PRETENDARD'] flex-grow-0 flex-shrink-0 text-[13px] font-bold text-center text-[#684dff] dark:text-[#FF4A3F]"
+          class="font-['PRETENDARD-BOLD'] flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
           >지원하러 가기</span
         >
       </p>

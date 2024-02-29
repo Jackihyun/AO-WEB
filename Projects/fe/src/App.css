@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,61 +8,39 @@ html > body {
   font-family: "Noto Sans KR", sans-serif ;
 }
 
-@font-face {
-  font-family: 'HELVETICA';
-  src: url('./fonts/Helvetica.ttf') format('truetype');
-}
-
-
-@font-face {
-  font-family: 'HELVETICA-LIGHT';
-  src: url('./fonts/HELVETICA-LIGHT.TTF') format('truetype');
-}
-
-@font-face {
-  font-family: 'HELVETICA-BOLD';
-  src: url('./fonts/HELVETICA-BOLD.TTF') format('truetype');
-}
-
-@font-face {
-  font-family: 'Helvetica Black';
-  src: url('./fonts/Helvetica Black.ttf') format('truetype');
-}
-
 
 @font-face {
   font-family: '5MAL6LAMPEN';
   src: url('./fonts/5MAL6LAMPEN.TTF') format('truetype');
 }
 
+@font-face {
+  font-family: 'PRETENDARD-BLACK';
+  src: url('./fonts/PRETENDARD-BLACK.OTF') format('opentype');
+}
 
 @font-face {
   font-family: 'PRETENDARD-BOLD';
-  src: url('./fonts/PRETENDARD-BOLD.OTF') format('truetype');
+  src: url('./fonts/PRETENDARD-BOLD.OTF') format('opentype');
 }
 
 @font-face {
   font-family: 'PRETENDARD-SEMIBOLD';
-  src: url('./fonts/PRETENDARD-SEMIBOLD.OTF') format('truetype');
+  src: url('./fonts/PRETENDARD-SEMIBOLD.OTF') format('opentype');
 }
 
 @font-face {
   font-family: 'PRETENDARD-MEDIUM';
-  src: url('./fonts/PRETENDARD-MEDIUM.OTF') format('truetype');
+  src: url('./fonts/PRETENDARD-MEDIUM.OTF') format('opentype');
 }
 
 @font-face {
   font-family: 'PRETENDARD-LIGHT';
-  src: url('./fonts/PRETENDARD-LIGHT.OTF') format('truetype');
+  src: url('./fonts/PRETENDARD-LIGHT.OTF') format('opentype');
 }
 
 @font-face {
   font-family: 'PRETENDARD-REGULAR';
-  src: url('./fonts/PRETENDARD-REGULAR.OTF') format('truetype');
-}
-
-@font-face {
-  font-family: 'PRETENDARD-BLACK';
-  src: url('./fonts/PRETENDARD-BLACK.OTF') format('truetype');
+  src: url('./fonts/PRETENDARD-REGULAR.OTF') format('opentype');
 }
 

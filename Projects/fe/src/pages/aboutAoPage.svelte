@@ -13,11 +13,11 @@
 <div
   class="bg-white dark:bg-black relative overflow-hidden flex flex-col min-h-screen"
 >
-  <div class="mt-[89px] flex-grow">
+  <div class="flex-grow mb-[10px]">
     <AboutAoIntro1 />
   </div>
   <div
-    class="w-screen h-full dark:bg-gray-100 bg-gray-200 rounded-tl-lg rounded-tr-lg"
+    class="w-screen h-full dark:bg-[#EEEEEE] bg-[#E4E4E4] rounded-tl-lg rounded-tr-lg"
     style="border-top-left-radius: 30px; border-top-right-radius: 30px;"
   >
     <div class="mt-[51px]">
@@ -26,7 +26,7 @@
     <div class="mt-[43px]">
       <AboutAoIntro3 />
     </div>
-    <div class="mt-[287px]">
+    <div class="mt-[56px]">
       <AboutAoArticle1 />
     </div>
     <div class="mt-[51px]">
@@ -35,7 +35,7 @@
     <div class="mt-[51px]">
       <ApplyButton />
     </div>
-    <div class="mt-[61px]"></div>
+    <div class="mt-[65px]"></div>
   </div>
   <NewFooter />
 </div>

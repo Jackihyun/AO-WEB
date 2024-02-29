@@ -1,7 +1,7 @@
 <script>
   import NewHeader from "../components/newHeader.svelte";
-  import ContactIntro from "../components/contactIntro.svelte";
-  import ContactMain from "../components/contactMain.svelte";
+  import TeamIntro from "../components/teamIntro.svelte";
+  import TeamMain from "../components/teamMain.svelte";
   import NewFooter from "../components/newFooter.svelte";
 </script>
 
@@ -10,10 +10,10 @@
 >
   <NewHeader />
   <div class="mt-[77px] flex-grow">
-    <ContactIntro />
+    <TeamIntro />
   </div>
   <div class="mt-[77px]">
-    <ContactMain />
+    <TeamMain />
   </div>
   <NewFooter />
 </div>

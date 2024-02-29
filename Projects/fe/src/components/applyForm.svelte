@@ -118,7 +118,7 @@
 <form on:submit|preventDefault={handleSubmit}>
   <!-- 학번 입력 -->
   <label
-    class="w-[32px] font-['PRETENDARD'] text-base font-semibold text-left text-[#000] dark:text-[#CCC]"
+    class="w-[32px] font-['PRETENDARD-SEMIBOLD'] text-base text-left text-[#000] dark:text-[#CCC]"
     for="studentId">학번</label
   >
   <div
@@ -130,7 +130,7 @@
       type="text"
       id="studentId"
       bind:value={studentId}
-      class="flex-grow-0 flex-shrink-0 font-['PRETENDARD'] font-light text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
+      class="flex-grow-0 flex-shrink-0 font-['PRETENDARD-LIGHT'] text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="학번을 입력해주세요."
     />
   </div>
@@ -140,7 +140,7 @@
     {stuIdErrorMessage}
   </p>
   <label
-    class=" font-['PRETENDARD'] w-[32px] text-base font-semibold text-left text-[#000] dark:text-[#CCC]"
+    class=" font-['PRETENDARD-SEMIBOLD'] w-[32px] text-base text-left text-[#000] dark:text-[#CCC]"
     for="name">이름</label
   >
   <div
@@ -152,7 +152,7 @@
       type="text"
       id="name"
       bind:value={name}
-      class="flex-grow-0 flex-shrink-0 font-['PRETENDARD'] font-light text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
+      class="flex-grow-0 flex-shrink-0 font-['PRETENDARD-LIGHT'] text-base text-left text-neutral-500 dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="이름을 입력해주세요."
     />
   </div>
@@ -162,7 +162,7 @@
     {nameErrorMessage}
   </p>
   <label
-    class=" w-[64px] font-['PRETENDARD'] text-base font-semibold text-left text-[#000] dark:text-[#CCC]"
+    class=" w-[64px] font-['PRETENDARD-SEMIBOLD'] text-base text-left text-[#000] dark:text-[#CCC]"
     for="phoneNumber">전화번호</label
   >
   <div
@@ -176,7 +176,7 @@
       maxlength="13"
       id="phoneNumber"
       bind:value={phoneNumber}
-      class="w-full flex-grow-0 flex-shrink-0 font-['PRETENDARD'] font-light text-base text-left text-[#7f7f7f] dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
+      class="w-full flex-grow-0 flex-shrink-0 font-['PRETENDARD-LIGHT'] text-base text-left text-[#7f7f7f] dark:[#7f7f7f] bg-transparent border-none focus:outline-none"
       placeholder="전화번호를 입력해주세요."
     />
   </div>
@@ -187,7 +187,7 @@
   </p>
 
   <label
-    class=" w-[127px] font-['PRETENDARD'] text-base font-semibold text-left text-[#000] dark:text-[#CCC]"
+    class=" w-[127px] font-['PRETENDARD-SEMIBOLD'] text-base text-left text-[#000] dark:text-[#CCC]"
     for="message">한 마디 남기기</label
   >
   <div
@@ -198,7 +198,7 @@
     <textarea
       id="message"
       bind:value={message}
-      class="w-full flex-grow-0 font-['PRETENDARD'] font-light flex-shrink-0 text-base text-left text-[#7f7f7f] dark:[#7f7f7f] bg-transparent border-none focus:outline-none resize-none"
+      class="w-full flex-grow-0 font-['PRETENDARD-LIGHT'] flex-shrink-0 text-base text-left text-[#7f7f7f] dark:[#7f7f7f] bg-transparent border-none focus:outline-none resize-none"
       placeholder="자유롭게 한 마디를 남겨주세요."
     ></textarea>
   </div>
@@ -209,7 +209,7 @@
   <button
     type="submit"
     on:click={handleClick}
-    class="mt-[63px] flex justify-center items-center relative overflow-hidden px-[126px] py-3.5 rounded-3xl bg-[#333] flex-grow-0 flex-shrink-0 text-lg font-medium text-center text-neutral-200"
+    class="mt-[63px] flex justify-center items-center relative overflow-hidden px-[136px] py-3.5 rounded-3xl bg-[#333] flex-grow-0 flex-shrink-0 font-['PRETENDARD-SEMIBOLD'] active:scale-95 text-[18px] text-center text-neutral-200"
     >지원하기</button
   >
 </form>
