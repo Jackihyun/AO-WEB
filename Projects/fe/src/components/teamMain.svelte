@@ -116,7 +116,7 @@
     class="flex flex-col justify-center items-center h-[338px] gap-2.5 w-screen bg-gray-100 rounded-tl-lg rounded-tr-lg"
     style="border-top-left-radius: 30px; border-top-right-radius: 30px;"
   >
-    <div class="w-[131px] h-[129px] absolute top-[220px] mr-[180px]">
+    <div class="w-[131px] h-[129px] absolute top-[300px] mr-[195px]">
       <svg
         width="86"
         height="86"
@@ -250,7 +250,7 @@
 
     {#if $checkNum == 1}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px] top-[10px] mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px]  mr-[-80px]"
       >
         <div
           class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
@@ -300,7 +300,7 @@
       </div>
     {:else if $checkNum == 2}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px] top-[10px] mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px]  mr-[-80px]"
       >
         <div
           class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
@@ -352,7 +352,7 @@
       </div>
     {:else if $checkNum == 3}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px] top-[-20px] mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px] top-[-30px] mr-[-80px]"
       >
         <div
           class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
@@ -396,7 +396,7 @@
       </div>
     {:else if $checkNum == 4}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px] top-[-20px] mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px] top-[-30px] mr-[-80px]"
       >
         <div
           class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
@@ -441,7 +441,7 @@
       </div>
     {:else if $checkNum == 5}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px] top-[10px] mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px]  mr-[-80px]"
       >
         <div
           class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
@@ -496,7 +496,7 @@
     class="flex flex-col justify-center items-center h-[338px] gap-2.5 w-screen bg-gray-200 rounded-tl-lg rounded-tr-lg"
     style="border-top-left-radius: 30px; border-top-right-radius: 30px;"
   >
-    <div class="w-[131px] h-[129px] absolute top-[220px] mr-[180px]">
+    <div class="w-[131px] h-[129px] absolute top-[300px] mr-[195px]">
       <svg
         width="86"
         height="86"
@@ -630,7 +630,7 @@
 
     {#if $checkNum == 1}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px] top-[10px] mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px] mr-[-80px]"
       >
         <div
           class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
@@ -680,7 +680,7 @@
       </div>
     {:else if $checkNum == 2}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px] top-[10px] mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px]  mr-[-80px]"
       >
         <div
           class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
@@ -732,7 +732,7 @@
       </div>
     {:else if $checkNum == 3}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px] top-[-20px] mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px] top-[-30px] mr-[-80px]"
       >
         <div
           class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
@@ -776,7 +776,7 @@
       </div>
     {:else if $checkNum == 4}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px] top-[-20px] mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px] top-[-30px] mr-[-80px]"
       >
         <div
           class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
@@ -821,7 +821,7 @@
       </div>
     {:else if $checkNum == 5}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px] top-[10px] mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px]  mr-[-80px]"
       >
         <div
           class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
