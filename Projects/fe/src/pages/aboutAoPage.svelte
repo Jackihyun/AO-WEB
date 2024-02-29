@@ -10,12 +10,14 @@
 </script>
 
 <NewHeader />
-<div class="bg-white relative overflow-hidden flex flex-col min-h-screen">
+<div
+  class="bg-white dark:bg-black relative overflow-hidden flex flex-col min-h-screen"
+>
   <div class="mt-[89px] flex-grow">
     <AboutAoIntro1 />
   </div>
   <div
-    class="w-screen h-full bg-gray-200 rounded-tl-lg rounded-tr-lg"
+    class="w-screen h-full dark:bg-gray-100 bg-gray-200 rounded-tl-lg rounded-tr-lg"
     style="border-top-left-radius: 30px; border-top-right-radius: 30px;"
   >
     <div class="mt-[51px]">

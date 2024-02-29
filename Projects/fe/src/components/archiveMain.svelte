@@ -9,6 +9,7 @@
   import Meeting1Image from "../images/총회1.png";
   import Meeting2Image from "../images/총회2.png";
   import Meeting3Image from "../images/총회3.png";
+  import { darkMode } from "../store";
 
   import emblaCarouselSvelte from "embla-carousel-svelte";
   import Autoplay from "embla-carousel-autoplay";
@@ -248,30 +249,57 @@
       <div
         class="w-[35px] h-[35px] rounded-full border border-[#2c2c2c] dark:border-[#d9d9d9] flex justify-center items-center"
       >
-        <svg
-          width="18"
-          height="20"
-          viewBox="0 0 18 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-4 h-[18px]"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <path
-            d="M5.00005 16.0001C5.00005 18.4149 6.79091 19.0001 9.00005 19.0001C12.7587 19.0001 14 16.5001 11.5 11.5001C8.00005 16.0001 7.50005 9.00006 8.00005 7.00006C6.50005 10.0001 5.00005 12.8178 5.00005 16.0001Z"
-            stroke="#2C2C2C"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-          <path
-            d="M9 19C14.0495 19 17 16.0956 17 11.125C17 6.15444 9 1 9 1C9 1 1 6.15444 1 11.125C1 16.0956 3.95054 19 9 19Z"
-            stroke="#2C2C2C"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-        </svg>
+        {#if $darkMode}
+          <svg
+            width="18"
+            height="20"
+            viewBox="0 0 18 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-[18px]"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <path
+              d="M5.00005 16.0001C5.00005 18.4149 6.79091 19.0001 9.00005 19.0001C12.7587 19.0001 14 16.5001 11.5 11.5001C8.00005 16.0001 7.50005 9.00006 8.00005 7.00006C6.50005 10.0001 5.00005 12.8178 5.00005 16.0001Z"
+              stroke="#D9D9D9"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M9 19C14.0495 19 17 16.0956 17 11.125C17 6.15444 9 1 9 1C9 1 1 6.15444 1 11.125C1 16.0956 3.95054 19 9 19Z"
+              stroke="#D9D9D9"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        {:else}
+          <svg
+            width="18"
+            height="20"
+            viewBox="0 0 18 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-[18px]"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <path
+              d="M5.00005 16.0001C5.00005 18.4149 6.79091 19.0001 9.00005 19.0001C12.7587 19.0001 14 16.5001 11.5 11.5001C8.00005 16.0001 7.50005 9.00006 8.00005 7.00006C6.50005 10.0001 5.00005 12.8178 5.00005 16.0001Z"
+              stroke="#2C2C2C"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M9 19C14.0495 19 17 16.0956 17 11.125C17 6.15444 9 1 9 1C9 1 1 6.15444 1 11.125C1 16.0956 3.95054 19 9 19Z"
+              stroke="#2C2C2C"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        {/if}
       </div>
     </div>
 

@@ -17,80 +17,8 @@
       <div
         class="flex justify-between items-center w-screen relative overflow-hidden px-5 py-[11px]"
       >
-        <svg
-          width="27"
-          height="28"
-          viewBox="0 0 27 28"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="flex-grow-0 flex-shrink-0 w-[27px] h-[27px] invisible"
-          preserveAspectRatio="none"
-        >
-          <circle cx="13.5" cy="14" r="13.5" fill="black"></circle>
-          <path
-            d="M13.5001 17.5454C15.4582 17.5454 17.0455 15.958 17.0455 14C17.0455 12.0419 15.4582 10.4545 13.5001 10.4545C11.542 10.4545 9.95462 12.0419 9.95462 14C9.95462 15.958 11.542 17.5454 13.5001 17.5454Z"
-            stroke="white"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-          <path
-            d="M19.409 14H19.9999"
-            stroke="white"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-          <path
-            d="M13.5 8.09091V7.5"
-            stroke="white"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-          <path
-            d="M13.5 20.5V19.9091"
-            stroke="white"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-          <path
-            d="M18.2273 18.7273L17.6364 18.1364"
-            stroke="white"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-          <path
-            d="M18.2273 9.27271L17.6364 9.86361"
-            stroke="white"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-          <path
-            d="M8.7728 18.7273L9.36371 18.1364"
-            stroke="white"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-          <path
-            d="M8.7728 9.27271L9.36371 9.86361"
-            stroke="white"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-          <path
-            d="M7 14H7.59091"
-            stroke="white"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-        </svg>
+        <div class="w-[27px] h-[28px]"></div>
+
         <Link to="/">
           <p class="flex-grow-0 flex-shrink-0 text-3xl text-left">
             <span
@@ -102,25 +30,7 @@
             >
           </p>
         </Link>
-        <button on:click={closeMenu}>
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 22 22"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-[18px] h-[18px] flex-grow-0 flex-shrink-0"
-            preserveAspectRatio="xMidYMid meet"
-          >
-            <path
-              d="M2 20L11 11M11 11L20 2M11 11L2 2M11 11L20 20"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </svg>
-        </button>
+        <div class="w-[22px] h-[22px]"></div>
       </div>
     </header>
     <!-- 메뉴 로고, 닫기 버튼 -->

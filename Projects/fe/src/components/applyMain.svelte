@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="flex justify-start items-center relative gap-1">
+<div class="flex justify-center items-center relative gap-1 ml-[-170px]">
   <p
     class="font-['Helvetica95_Black'] font-bold flex-grow-0 flex-shrink-0 text-[22px] text-left text-black dark:text-white"
   >
