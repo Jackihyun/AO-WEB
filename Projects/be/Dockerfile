@@ -1,6 +1,7 @@
 FROM node:16.20.1
 WORKDIR /Projects/be
-COPY . /app
+COPY package.json .
 RUN npm i
+COPY . .
 EXPOSE 3000
 CMD [ "node", "index" ]
