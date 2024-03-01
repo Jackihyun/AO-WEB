@@ -804,53 +804,59 @@
   </div>
 </div>
 
-<div class="w-64 h-[106px] relative ml-[60px] mt-[29px]">
-  <div class="w-64 h-[25px]">
-    <p
-      class="w-[102px] h-[22px] absolute left-0 top-0 text-[13px] font-['PRETENDARD-MEDIUM'] text-left text-black dark:text-neutral-50"
-    >
-      Mentor &#x26; infra.
-    </p>
-    <p
-      class="w-[135px] h-[22px] absolute left-[159px] top-[3px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
-    >
-      천제희 Cheon Jehee
-    </p>
-  </div>
-  <div class="w-64 h-[35px] absolute left-0 top-7">
-    <p
-      class="w-[81px] h-[22px] absolute left-0 top-0 text-[13px] font-['PRETENDARD-MEDIUM'] text-left text-black dark:text-neutral-50"
-    >
-      Frontend.
-    </p>
-    <p
-      class="w-[135px] h-[22px] absolute left-[159px] top-[3px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black"
-    >
-      <span
-        class="w-[135px] h-[22px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
-        >박기현 Park Kihyun</span
-      ><br /><span
-        class="w-[135px] h-[22px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
-        >유용석 Yoo Yongseok</span
+<div class="px-[15%] justify-center flex">
+  <div
+    class="flex flex-col justify-center items-center w-64 h-[106px] relative mt-[47px] gap-[5px]"
+  >
+    <div class="flex justify-left items-center w-64 h-[25px]">
+      <p
+        class="w-[135px] text-[13px] mr-[57px] justify-left font-['PRETENDARD-MEDIUM'] text-left text-black dark:text-neutral-50"
       >
-    </p>
-  </div>
-  <div class="w-64 h-9 absolute left-0 top-[70px]">
-    <p
-      class="w-[81px] h-[22px] absolute left-0 top-0 text-[13px] font-['PRETENDARD-MEDIUM'] text-left text-black dark:text-neutral-50"
-    >
-      Backend.
-    </p>
-    <p
-      class="w-[135px] h-[22px] absolute left-[159px] top-[3px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black"
-    >
-      <span
-        class="w-[135px] h-[22px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
-        >송정민 Song Jeongmin</span
-      ><br /><span
-        class="w-[135px] h-[22px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
-        >정익재 Jeong Ikjae</span
+        Mentor &#x26; infra.
+      </p>
+      <p
+        class="w-[135px] h-[22px] flex text-[10px] justify-left items-center font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
       >
-    </p>
+        천제희 Cheon Jehee
+      </p>
+    </div>
+
+    <div class="w-64 h-[35px] flex justify-left items-center">
+      <p
+        class="w-[135px] h-[22px] text-[13px] flex justify-left font-['PRETENDARD-MEDIUM'] text-left text-black dark:text-neutral-50"
+      >
+        Frontend.
+      </p>
+      <p
+        class="w-[135px] ml-[57px] h-[22px] flex flex-col justify-start text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black"
+      >
+        <span
+          class="w-auto text-[10px] mt-[1px] flex justify-left font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
+          >박기현 Park Kihyun</span
+        ><span
+          class="w-auto text-[10px] mt-[1px] flex justify-left font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
+          >유용석 Yoo Yongseok</span
+        >
+      </p>
+    </div>
+
+    <div class="flex w-64 h-9 justify-left items-center">
+      <p
+        class="w-[135px] h-[22px] text-[13px] font-['PRETENDARD-MEDIUM'] text-left text-black dark:text-neutral-50"
+      >
+        Backend.
+      </p>
+      <p
+        class="flex flex-col ml-[57px] justify-start w-[135px] h-[22px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black"
+      >
+        <span
+          class="w-auto h-[22px] text-[10px] mt-[1px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
+          >송정민 Song Jeongmin</span
+        ><span
+          class="w-auto h-[22px] text-[10px] mt-[1px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
+          >정익재 Jeong Ikjae</span
+        >
+      </p>
+    </div>
   </div>
 </div>
