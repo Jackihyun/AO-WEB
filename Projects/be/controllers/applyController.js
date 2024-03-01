@@ -33,17 +33,24 @@ const postApply = asyncHandler(async (req, res) => {
         }
         
         // 중복지원 확인
-        const existingApplyer = await Applyer.findOne({ $or: [{ id }, { phoneNum }] });
-        if (existingApplyer) {
+        // 학번 중복 확인
+        const existingApplyerWithId = await Applyer.findOne({ id });
+        if (existingApplyerWithId) {
             errors.stuIdErrorMessage = "중복된 학번입니다.";
+        }
+
+        // 전화번호 중복 확인
+        const existingApplyerWithPhoneNum = await Applyer.findOne({ phoneNum });
+        if (existingApplyerWithPhoneNum) {
             errors.phoneNumErrorMessage = "중복된 전화번호입니다.";
         }
+
 
         // 에러가 하나라도 존재하면 400 반환
         if (Object.keys(errors).length !== 0) {
             return res.status(400).json(errors);
         }
-
+        
         // DB에 저장
         const applyer = await Applyer.create({
             id, name, phoneNum, aWord
