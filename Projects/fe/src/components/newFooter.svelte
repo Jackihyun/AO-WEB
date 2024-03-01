@@ -4,7 +4,7 @@
   import { Link } from "svelte-routing";
 </script>
 
-<div class="w-screen h-[137px] bg-white dark:bg-black text-left">
+<div class="w-screen h-[138px] bg-white dark:bg-black text-left">
   <Link to="/">
     <p
       class="text-xl font-['Montserrat'] font-black text-black dark:text-white mt-[25px] ml-[19px] mb-[6px]"
