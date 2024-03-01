@@ -250,27 +250,34 @@
 
     {#if $checkNum == 1}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px]  mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px] top-[-7px] mr-[-80px]"
       >
-        <div
-          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
-        >
-          <p
+      <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[13px] font-bold text-left text-black"
           >
             배종찬
           </p>
+        <div
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
+        >
+          
           <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
           >
-            AO 스터디 회장
+            회장님
           </p>
-        </div>
+          <p
+          class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
+        >
+          인스타ID : bnadznohz 
+        </p>
         <p
           class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
         >
-          010-4939-1971
+           Tel : 010-4939-1971
         </p>
+        </div>
+        
       </div>
 
       <div
@@ -302,25 +309,27 @@
       <div
         class="flex flex-col justify-center items-start relative gap-[18px]  mr-[-80px]"
       >
-        <div
-          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
-        >
-          <p
+      <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[13px] font-bold text-left text-black"
           >
             박세진
           </p>
+        <div
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
+        >
+          
           <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
           >
-            (전) AO 스터디 회장
+            코딩얼굴마담
           </p>
-        </div>
-        <p
+          <p
           class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
         >
-          010-3023-9006
+          인스타ID : re_alworld
         </p>
+        </div>
+        
       </div>
 
       <div
@@ -354,25 +363,27 @@
       <div
         class="flex flex-col justify-center items-start relative gap-[18px] top-[-30px] mr-[-80px]"
       >
-        <div
-          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
-        >
-          <p
+      <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[13px] font-bold text-left text-black"
           >
             천제희
           </p>
+        <div
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
+        >
+          
           <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
           >
-            AO 스터디 회장 오른팔
+            떨거지 교육
           </p>
-        </div>
-        <p
+          <p
           class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
         >
-          010-????-????
+          인스타ID : jeheecheon
         </p>
+        </div>
+        
       </div>
 
       <div
@@ -398,25 +409,27 @@
       <div
         class="flex flex-col justify-center items-start relative gap-[18px] top-[-30px] mr-[-80px]"
       >
-        <div
-          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
-        >
-          <p
+      <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[13px] font-bold text-left text-black"
           >
             신초은
           </p>
+        <div
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
+        >
+          
           <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
           >
-            부원1
+            고민상담
           </p>
-        </div>
-        <p
+          <p
           class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
         >
-          010-????-????
+          인스타ID : ch01_63
         </p>
+        </div>
+        
       </div>
 
       <div
@@ -443,25 +456,27 @@
       <div
         class="flex flex-col justify-center items-start relative gap-[18px]  mr-[-80px]"
       >
-        <div
-          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
-        >
-          <p
+      <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[13px] font-bold text-left text-black"
           >
             최윤아
           </p>
+        <div
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
+        >
+          
           <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
           >
-            부원2
+            코드킹메이커
           </p>
-        </div>
-        <p
+          <p
           class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
         >
-          010-????-????
+          인스타ID : yuna_co_2
         </p>
+        </div>
+        
       </div>
 
       <div
@@ -630,27 +645,34 @@
 
     {#if $checkNum == 1}
       <div
-        class="flex flex-col justify-center items-start relative gap-[18px] mr-[-80px]"
+        class="flex flex-col justify-center items-start relative gap-[18px] top-[-7px] mr-[-80px]"
       >
-        <div
-          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
-        >
-          <p
+      <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[13px] font-bold text-left text-black"
           >
             배종찬
           </p>
+        <div
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
+        >
+          
           <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
           >
-            AO 스터디 회장
+            회장님
           </p>
-        </div>
+          <p
+          class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
+        >
+          인스타ID : bnadznohz
+        </p>
         <p
           class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
         >
-          010-4939-1971
+           Tel : 010-4939-1971
         </p>
+        </div>
+     
       </div>
 
       <div
@@ -682,25 +704,27 @@
       <div
         class="flex flex-col justify-center items-start relative gap-[18px]  mr-[-80px]"
       >
-        <div
-          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
-        >
-          <p
+      <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[13px] font-bold text-left text-black"
           >
             박세진
           </p>
+        <div
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
+        >
+          
           <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
           >
-            (전) AO 스터디 회장
+            코딩얼굴마담
           </p>
-        </div>
-        <p
+          <p
           class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
         >
-          010-3023-9006
+          인스타ID : re_alworld
         </p>
+        </div>
+        
       </div>
 
       <div
@@ -734,25 +758,27 @@
       <div
         class="flex flex-col justify-center items-start relative gap-[18px] top-[-30px] mr-[-80px]"
       >
-        <div
-          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
-        >
-          <p
+      <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[13px] font-bold text-left text-black"
           >
             천제희
           </p>
+        <div
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
+        >
+          
           <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
           >
-            AO 스터디 회장 오른팔
+            떨거지 교육
           </p>
-        </div>
-        <p
+          <p
           class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
         >
-          010-????-????
+          인스타ID : jeheecheon
         </p>
+        </div>
+        
       </div>
 
       <div
@@ -778,25 +804,27 @@
       <div
         class="flex flex-col justify-center items-start relative gap-[18px] top-[-30px] mr-[-80px]"
       >
-        <div
-          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
-        >
-          <p
+      <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[13px] font-bold text-left text-black"
           >
             신초은
           </p>
+        <div
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
+        >
+          
           <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
           >
-            부원1
+            고민상담
           </p>
-        </div>
-        <p
+          <p
           class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
         >
-          010-????-????
+          인스타ID : ch01_63
         </p>
+        </div>
+        
       </div>
 
       <div
@@ -823,25 +851,27 @@
       <div
         class="flex flex-col justify-center items-start relative gap-[18px]  mr-[-80px]"
       >
-        <div
-          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
-        >
-          <p
+      <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[13px] font-bold text-left text-black"
           >
             최윤아
           </p>
+        <div
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative"
+        >
+          
           <p
             class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
           >
-            부원2
+            코드킹메이커
           </p>
-        </div>
-        <p
+          <p
           class="flex-grow-0 flex-shrink-0 w-[109px] text-[10px] font-medium text-left text-[#747474]"
         >
-          010-????-????
+          인스타ID : yuna_co_2
         </p>
+        </div>
+        
       </div>
 
       <div
@@ -908,7 +938,7 @@
       <p
         class="flex-grow-0 flex-shrink-0 w-[109px] text-[9px] font-medium text-center text-[#8a8a8a] dark:text-neutral-200"
       >
-        (전) AO 스터디 회장
+        코딩얼굴마담
       </p>
     </div>
   </div>
@@ -938,7 +968,7 @@
       <p
         class="flex-grow-0 flex-shrink-0 w-[109px] text-[9px] font-medium text-center text-[#8a8a8a] dark:text-neutral-200"
       >
-        AO 스터디 회장 오른팔
+        떨거지 교육
       </p>
     </div>
   </div>
@@ -967,7 +997,7 @@
       <p
         class="flex-grow-0 flex-shrink-0 w-[109px] text-[9px] font-medium text-center text-[#8a8a8a] dark:text-neutral-200"
       >
-        AO 스터디 회장
+        회장님
       </p>
     </div>
   </div>
@@ -999,7 +1029,7 @@
       <p
         class="flex-grow-0 flex-shrink-0 w-[109px] text-[9px] font-medium text-center text-[#8a8a8a] dark:text-neutral-200"
       >
-        부원1
+        고민상담
       </p>
     </div>
   </div>
@@ -1028,7 +1058,7 @@
       <p
         class="flex-grow-0 flex-shrink-0 w-[109px] text-[9px] font-medium text-center text-[#8a8a8a] dark:text-neutral-200"
       >
-        부원2
+        코드킹메이커
       </p>
     </div>
   </div>
