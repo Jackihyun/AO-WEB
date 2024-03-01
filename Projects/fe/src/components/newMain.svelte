@@ -95,7 +95,7 @@
     let scale = 1;
 
     if (scrollY > startZoomScrollPosition) {
-      if (this.scrollY > startZoomScrollPosition + 45) {
+      if (scrollY > startZoomScrollPosition + 45) {
         isZoom = true;
       }
       scale += (scrollY - startZoomScrollPosition) / 100; // 스크롤에 따라 scale이 증가
@@ -117,13 +117,13 @@
         if (scrollY > 1000) {
           changeBack.style.backgroundColor = "#FF4A3F";
         } else {
-          changeBack.style.backgroundColor = "";
+          changeBack.style.backgroundColor = " ";
         }
       } else {
         if (scrollY > 1000) {
           changeBack.style.backgroundColor = "#684DEF";
         } else {
-          changeBack.style.backgroundColor = "";
+          changeBack.style.backgroundColor = " ";
         }
       }
     });
@@ -417,7 +417,7 @@
   id="zoomCircleTarget"
   class="{isZoom
     ? ''
-    : 'invisible'} absolute transition-transform origin-center ease left-[50%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0 {isZoom
+    : 'invisible'} absolute transition-transform origin-center duration-[1.5s] ease left-[50%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0 {isZoom
     ? 'data-scroll in'
     : 'data-scroll out'}"
 ></div>
