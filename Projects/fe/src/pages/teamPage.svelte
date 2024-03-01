@@ -5,6 +5,7 @@
   import NewFooter from "../components/newFooter.svelte";
 </script>
 
+<div class="fixed -z-10 bg-white dark:bg-black w-screen h-screen"></div>
 <div
   class="bg-white dark:bg-black relative overflow-hidden flex flex-col h-full"
 >
@@ -19,3 +20,4 @@
   </div>
   <NewFooter />
 </div>
+<div class="fixed -z-10 bg-white dark:bg-black w-screen h-screen"></div>

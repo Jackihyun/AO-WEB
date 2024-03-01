@@ -22,6 +22,7 @@
   onMount(() => {});
 </script>
 
+<div class="fixed -z-10 bg-white dark:bg-black w-screen h-screen"></div>
 <div class="bg-white dark:bg-black h-screen">
   <div class=" mb-[52px]">
     <ApplyHeader />
@@ -38,3 +39,4 @@
     <CompleteModal />
   </div>
 </div>
+<div class="fixed -z-10 bg-white dark:bg-black w-screen h-screen"></div>
