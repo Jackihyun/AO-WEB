@@ -267,7 +267,8 @@
         >
           010-4939-1971
         </p>
-        <p
+        <a
+          href="https://www.instagram.com/bnadgnohz"
           class=" flex justify-center items-center flex-grow-0 flex-shrink-0 w-auto text-[10px] font-['PRETENDARD-MEDIUM'] text-left text-[#747474]"
         >
           <svg
@@ -299,8 +300,8 @@
               stroke-linejoin="round"
             ></path>
           </svg>
-          <span class="ml-[2.5px]">bnadznohz</span>
-        </p>
+          <span class="ml-[2.5px]">bnadgnohz</span>
+        </a>
       </div>
     </div>
 
@@ -338,7 +339,8 @@
         >
           코딩얼굴마담
         </p>
-        <p
+        <a
+          href="https://www.instagram.com/re_alworld"
           class="mt-[6px] flex justify-center items-center flex-grow-0 flex-shrink-0 w-auto text-[10px] font-['PRETENDARD-MEDIUM'] text-left text-[#747474]"
         >
           <svg
@@ -371,7 +373,7 @@
             ></path>
           </svg>
           <span class="ml-[2.5px]">re_alworld</span>
-        </p>
+        </a>
       </div>
     </div>
 
@@ -404,9 +406,10 @@
         <p
           class="flex-grow-0 flex-shrink-0 w-auto text-[10px] font-['PRETENDARD-MEDIUM'] text-left text-[#747474]"
         >
-          떨거지교육
+          AO GPT
         </p>
-        <p
+        <a
+          href="https://www.instagram.com/jeheecheon"
           class="mt-[6px] flex justify-center items-center flex-grow-0 flex-shrink-0 w-auto text-[10px] font-['PRETENDARD-MEDIUM'] text-left text-[#747474]"
         >
           <svg
@@ -439,7 +442,7 @@
             ></path>
           </svg>
           <span class="ml-[2.5px]">jeheecheon</span>
-        </p>
+        </a>
       </div>
     </div>
 
@@ -472,7 +475,8 @@
         >
           고민상담사
         </p>
-        <p
+        <a
+          href="https://www.instagram.com/ch01_63"
           class="mt-[6px] flex justify-center items-center flex-grow-0 flex-shrink-0 w-auto text-[10px] font-['PRETENDARD-MEDIUM'] text-left text-[#747474]"
         >
           <svg
@@ -505,7 +509,7 @@
             ></path>
           </svg>
           <span class="ml-[2.5px]">cho01_63</span>
-        </p>
+        </a>
       </div>
     </div>
 
@@ -541,7 +545,8 @@
         >
           코드킹메이커
         </p>
-        <p
+        <a
+          href="https://www.instagram.com/yuna_co_2"
           class="mt-[6px] flex justify-center items-center flex-grow-0 flex-shrink-0 w-auto text-[10px] font-['PRETENDARD-MEDIUM'] text-left text-[#747474]"
         >
           <svg
@@ -574,12 +579,12 @@
             ></path>
           </svg>
           <span class="ml-[2.5px]">yuna_co_2</span>
-        </p>
+        </a>
       </div>
     </div>
 
     <div
-      class="flex flex-col justify-center items-center w-[87%] relative overflow-hidden px-[20px] py-[28px] rounded-[20px] bg-white top-[25px]"
+      class="flex flex-col justify-center items-center w-[87%] relative overflow-hidden px-[13px] py-[28px] rounded-[20px] bg-white top-[25px]"
       style="box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);"
     >
       <p
@@ -656,7 +661,7 @@
       <p
         class="flex-grow-0 flex-shrink-0 w-[71px] text-[9px] font-['PRETENDARD-MEDIUM'] text-center text-[#8a8a8a] dark:text-[#ccc]"
       >
-        떨거지교육
+        AO GPT
       </p>
     </div>
   </div>

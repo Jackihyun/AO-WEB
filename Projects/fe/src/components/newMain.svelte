@@ -2,45 +2,157 @@
   import { Link } from "svelte-routing";
   import { darkMode } from "../store";
   import Aosimbol from "../images/AO simbol.png";
+  import ScrollOut from "scroll-out";
+  import { onMount } from "svelte";
+  import "../App.css";
+
+  let ischeck = false;
+  let ischek2 = false;
+  let ischek3 = false;
+  let ischek4 = false;
+  let ischek5 = false;
+  let ischek6 = false;
+  let isFinish = false;
+  let isZoom = false;
 
   // 스크롤 이벤트에 반응하여 요소 이동
   window.addEventListener("scroll", function () {
     var scrollValue = window.scrollY; // 스크롤 위치
+    var currentPos;
+    var stopPositions = [
+      840, 840, 840, 720, 720, 720, 900, 900, 900, 900, 780, 780, 780, 660, 660,
+      660, 960, 960, 960,
+    ];
+    var stopPositionsX = [
+      -35, -35, -35, -10, -10, -10, 15, 15, 15, 15, 30, 30, 30, 10, 10, 10, 10,
+      10, 10,
+    ];
+    var startPositionsX = [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    ];
 
-    var stopPositions = [480, 360, 540, 420, 300, 600];
-    //var stopPositionsX = [-35, -10, 15, 30, 10, 30];
-    //var startPositionsX = [0, 0, 0, 0, 0, 0];
-
-    var content = document.querySelector(".content"); // 콘텐츠 부분 선택
+    const content = document.querySelector(".content"); // 콘텐츠 부분 선택
+    const zoomTarget = document.getElementById("zoomTarget");
+    const zoomCircleTarget = document.getElementById("zoomCircleTarget");
+    const changeBack = document.getElementById("change");
 
     // 각 글자에 대한 참조를 가져옵니다.
     var textElements = [
       document.getElementById("scrollingTextF"),
+      document.getElementById("scrollingTextF2"),
+      document.getElementById("scrollingTextF3"),
+
       document.getElementById("scrollingTextI"),
+      document.getElementById("scrollingTextI2"),
+      document.getElementById("scrollingTextI3"),
+
       document.getElementById("scrollingTextR"),
+      document.getElementById("scrollingTextR2"),
+      document.getElementById("scrollingTextR3"),
+      document.getElementById("scrollingTextR4"),
+
       document.getElementById("scrollingTextE"),
+      document.getElementById("scrollingTextE2"),
+      document.getElementById("scrollingTextE3"),
+
       document.getElementById("scrollingTextA"),
+      document.getElementById("scrollingTextA2"),
+      document.getElementById("scrollingTextA3"),
+
       document.getElementById("scrollingTextO"),
+      document.getElementById("scrollingTextO2"),
+      document.getElementById("scrollingTextO3"),
     ];
 
+    if (scrollValue >= 845) {
+      isFinish = true;
+    } else {
+      isFinish = false;
+    }
+
+    currentPos = scrollValue * 1.2;
     textElements.forEach(function (textElement, index) {
       if (textElement) {
         // null 체크
-        if (scrollValue < stopPositions[index]) {
+        if (currentPos < stopPositions[index]) {
           textElement.style.top = scrollValue + "px";
+          //ischek = false; ischek2 = false; ischek3 = false; ischek4 = false; ischek5 = false; ischek6 = false;
+          ischeck = false;
           //textElement.style.right = startPositionsX[index] + "px";
         } else {
-          textElement.style.top = stopPositions[index] + "px";
-          //textElement.style.right = stopPositionsX[index] + "px";
+          // textElement.style.top = stopPositions[index] + "px";
+          textElement.style.top = startPositionsX[index] + "px";
+          //ischek = true; ischek2 = true; ischek3 = true; ischek4 = true; ischek5 = true; ischek6 = true;
+          ischeck = true;
+          // textElement.style.right = stopPositionsX[index] + "px";
+        }
+      }
+    });
+
+    const startZoomScrollPosition = 900; // 확대가 시작되는 스크롤 위치
+    const maxScale = 1000; // 최대 확대 배율
+
+    let scale = 1;
+
+    if (scrollY > startZoomScrollPosition) {
+      if (this.scrollY > startZoomScrollPosition + 45) {
+        isZoom = true;
+      }
+      scale += (scrollY - startZoomScrollPosition) / 100; // 스크롤에 따라 scale이 증가
+      scale = Math.min(scale, maxScale); // scale 값을 maxScale로 제한
+    } else if (scrollY > startZoomScrollPosition + 50) {
+      zoomCircleTarget.style.transform = `scale(200)`;
+    } else {
+      isZoom = false;
+      zoomCircleTarget.style.transform = "scale(0)";
+      zoomTarget.style.transform = "scale(0)";
+    }
+
+    zoomTarget.style.transform = `scale(${scale})`;
+
+    let isDarkMode = false;
+    darkMode.subscribe((value) => {
+      isDarkMode = value;
+      if (isDarkMode === true) {
+        if (scrollY > 1000) {
+          changeBack.style.backgroundColor = "#FF4A3F";
+        } else {
+          changeBack.style.backgroundColor = "";
+        }
+      } else {
+        if (scrollY > 1000) {
+          changeBack.style.backgroundColor = "#684DEF";
+        } else {
+          changeBack.style.backgroundColor = "";
         }
       }
     });
   });
+  // 페이지 로드 후 ScrollOut 초기화
+  // document.addEventListener('DOMContentLoaded', function() {
+  //     // ScrollOut 라이브러리를 사용하여 스크롤 이벤트 처리
+  //     ScrollOut({
+  //         targets: '#scrollElement', // 스크롤 이벤트를 적용할 요소 선택자
+  //         onShown: function(element) {
+  //             element.classList.add('opacity-100', 'translate-y-0', 'scale-100'); // 화면에 나타날 때 추가할 테일윈드 클래스
+  //             element.classList.remove('opacity-0', 'translate-y-full', 'scale-90'); // 화면에 나타날 때 제거할 테일윈드 클래스
+  //         },
+  //         onHidden: function(element) {
+  //             element.classList.remove('opacity-100', 'translate-y-0', 'scale-100'); // 화면에서 사라질 때 제거할 테일윈드 클래스
+  //             element.classList.add('opacity-0', 'translate-y-full', 'scale-90'); // 화면에서 사라질 때 추가할 테일윈드 클래스
+  //         }
+  //     });
+  // });
+  ScrollOut({});
 </script>
 
 <div class="flex-col">
   <div class="flex justify-center items-center whitespace-nowrap w-screen">
-    <div class="flex animate-marquee whitespace-nowrap w-[100%]">
+    <div
+      class="flex {ischeck
+        ? ' '
+        : 'animate-marquee'} whitespace-nowrap w-[100%]"
+    >
       <p
         id="first"
         class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white"
@@ -56,7 +168,7 @@
         class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white"
       >
         &lt;PROGRAMMING C<span
-          id="scrollingTextO"
+          id="scrollingTextO2"
           class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F]"
           >O</span
         >DE
@@ -66,7 +178,7 @@
         class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white"
       >
         &lt;PROGRAMMING C<span
-          id="scrollingTextO"
+          id="scrollingTextO3"
           class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F]"
           >O</span
         >DE
@@ -75,7 +187,11 @@
   </div>
 
   <div class="flex justify-center items-center whitespace-nowrap">
-    <div class="flex animate-marquee2 whitespace-nowrap w-[100%]">
+    <div
+      class="flex {ischeck
+        ? ' '
+        : 'animate-marquee2'} whitespace-nowrap w-[100%]"
+    >
       <p
         class="text-[40px] mr-4 font-['5MAL6LAMPEN'] text-left text-black dark:text-white whitespace-nowrap"
       >
@@ -90,7 +206,7 @@
       >
         BACKEND
         <span
-          id="scrollingTextR"
+          id="scrollingTextR2"
           class=" relative text-[#684DFF] dark:text-[#FF4A3F]">R</span
         >UNNING DEV
       </p>
@@ -99,7 +215,7 @@
       >
         BACKEND
         <span
-          id="scrollingTextR"
+          id="scrollingTextR3"
           class=" relative text-[#684DFF] dark:text-[#FF4A3F]">R</span
         >UNNING DEV
       </p>
@@ -108,7 +224,7 @@
       >
         BACKEND
         <span
-          id="scrollingTextR"
+          id="scrollingTextR4"
           class=" relative text-[#684DFF] dark:text-[#FF4A3F]">R</span
         >UNNING DEV
       </p>
@@ -116,7 +232,11 @@
   </div>
 
   <div class="flex justify-center items-center whitespace-nowrap">
-    <div class="flex animate-marquee3 whitespace-nowrap w-[100%]">
+    <div
+      class="flex {ischeck
+        ? ' '
+        : 'animate-marquee3'} whitespace-nowrap w-[100%]"
+    >
       <p
         class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white mr-4"
       >
@@ -131,7 +251,7 @@
       >
         AO
         <span
-          id="scrollingTextF"
+          id="scrollingTextF2"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">F</span
         >RONTEND'CLASS'
       </p>
@@ -140,14 +260,18 @@
       >
         AO
         <span
-          id="scrollingTextF"
+          id="scrollingTextF3"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">F</span
         >RONTEND'CLASS'
       </p>
     </div>
   </div>
   <div class="flex justify-center items-center whitespace-nowrap">
-    <div class="flex animate-marquee4 whitespace-nowrap w-[100%]">
+    <div
+      class="flex {ischeck
+        ? ' '
+        : 'animate-marquee4'} whitespace-nowrap w-[100%]"
+    >
       <p
         class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[20px] mr-[12.77px]"
       >
@@ -160,7 +284,7 @@
         class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[20px] mr-[12.77px]"
       >
         CREATING D<span
-          id="scrollingTextE"
+          id="scrollingTextE2"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">E</span
         >VELOPING
       </p>
@@ -168,7 +292,7 @@
         class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[20px] mr-[12.77px]"
       >
         CREATING D<span
-          id="scrollingTextE"
+          id="scrollingTextE3"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">E</span
         >VELOPING
       </p>
@@ -176,7 +300,11 @@
   </div>
 
   <div class="flex justify-center items-center whitespace-nowrap">
-    <div class="flex animate-marquee5 whitespace-nowrap w-[100%]">
+    <div
+      class="flex {ischeck
+        ? ' '
+        : 'animate-marquee5'} whitespace-nowrap w-[100%]"
+    >
       <p
         class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[30.97px] mr-[13.98px]"
       >
@@ -191,7 +319,7 @@
       >
         WEB
         <span
-          id="scrollingTextI"
+          id="scrollingTextI2"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">I</span
         >NTERACTION/&gt;
       </p>
@@ -200,7 +328,7 @@
       >
         WEB
         <span
-          id="scrollingTextI"
+          id="scrollingTextI3"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">I</span
         >NTERACTION/&gt;
       </p>
@@ -208,7 +336,11 @@
   </div>
 
   <div class="flex justify-center items-center whitespace-nowrap">
-    <div class="flex animate-marquee6 whitespace-nowrap w-[100%]">
+    <div
+      class="flex {ischeck
+        ? ' '
+        : 'animate-marquee6'} whitespace-nowrap w-[100%]"
+    >
       <p
         class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[25px] mr-[15.77px]"
       >
@@ -221,7 +353,7 @@
         class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[25px] mr-[15.77px]"
       >
         MJUSTUDY LE<span
-          id="scrollingTextA"
+          id="scrollingTextA2"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">A</span
         >RNING
       </p>
@@ -229,7 +361,7 @@
         class="text-[40px] font-['5MAL6LAMPEN'] text-left text-black dark:text-white ml-[25px] mr-[15.77px]"
       >
         MJUSTUDY LE<span
-          id="scrollingTextA"
+          id="scrollingTextA3"
           class=" text-[#684DFF] dark:text-[#FF4A3F] relative">A</span
         >RNING
       </p>
@@ -237,7 +369,11 @@
   </div>
 
   <div class="flex justify-center items-center ml-[15px] whitespace-nowrap">
-    <div class="flex animate-marquee7 whitespace-nowrap w-[100%] gap-4">
+    <div
+      class="flex {ischeck
+        ? ' '
+        : 'animate-marquee7'} whitespace-nowrap w-[100%] gap-4"
+    >
       <p
         class="text-[40px] font-['5MAL6LAMPEN'] ml-[4px] text-left text-black dark:text-white"
       >
@@ -267,17 +403,33 @@
   </div>
 </div>
 
-<div class="flex-col justify-center">
-  <div
-    id="zoomTarget"
-    class="relative inline-block w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full"
-  ></div>
-</div>
-
 <div class="mb-[600px]"></div>
+<div id="zoomTarget">
+  <div
+    class=" transition-transform ease origin-center sticky flex font-['5MAL6LAMPEN'] justify-center items-center text-[#684DEF] dark:text-[#FF4A3F] text-[40px] data-scroll {isFinish
+      ? 'data-scroll in'
+      : 'data-scroll out'}"
+  >
+    F I R E A O
+  </div>
+</div>
+<div
+  id="zoomCircleTarget"
+  class="{isZoom
+    ? ''
+    : 'invisible'} absolute transition-transform origin-center ease left-[50%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0 {isZoom
+    ? 'data-scroll in'
+    : 'data-scroll out'}"
+></div>
+
 <!-- 밑에 내용들 -->
 <div
-  class="content flex flex-col bg-[#684DEF] dark:bg-[#FF4A3F] w-full h-auto text-white dark:text-black mt-96 mx-auto"
+  id="change"
+  class=" pb-[400px] {isZoom ? 'data-scroll in' : 'data-scroll out'}"
+></div>
+
+<div
+  class="content flex flex-col bg-[#684DEF] dark:bg-[#FF4A3F] w-full h-auto text-white dark:text-black mx-auto"
 >
   <div class="pl-[46px] mb-[100px]">
     <span
@@ -540,5 +692,21 @@
 
   .animate-marquee7 {
     animation: marquee 40s linear infinite;
+  }
+
+  .data-scroll {
+    opacity: 0;
+    will-change: transform, scale, opacity;
+    transform: translateY(6rem) scale(0.93);
+    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .data-scroll.in {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  .data-scroll.out {
+    opacity: 0;
   }
 </style>

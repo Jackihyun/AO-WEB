@@ -2,6 +2,7 @@
   import { Link } from "svelte-routing";
   export let menuVisible = false;
   import { fade } from "svelte/transition";
+  import { darkMode } from "../store";
 
   function closeMenu() {
     menuVisible = false;
@@ -55,6 +56,65 @@
       <!-- ... 나머지 메뉴 항목 ... -->
     </div>
 
+    <div class="absolute w-full bottom-[80px]">
+      <Link to="/apply" class="flex justify-center items-center z-50">
+        <div
+          class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[200px] gap-1 p-2.5 rounded-[100px] active:scale-95 bg-white dark:bg-black"
+        >
+          <p
+            class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
+          >
+            <span
+              class="font-['Montserrat'] font-black flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
+              >FIRE AO
+            </span>
+            <span
+              class="font-['PRETENDARD-BOLD'] flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
+              >지원하러 가기</span
+            >
+          </p>
+          {#if $darkMode}
+            <svg
+              width="13"
+              height="12"
+              viewBox="0 0 13 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="flex-grow-0 flex-shrink-0"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M7.15643 1.6792L11.9377 6.00022L7.15643 10.3212M11.2736 6.00022L1.57831 6.00022"
+                stroke="#FF4A3F"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          {:else}
+            <svg
+              width="13"
+              height="12"
+              viewBox="0 0 13 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="flex-grow-0 flex-shrink-0"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M7.15643 1.6792L11.9377 6.00022L7.15643 10.3212M11.2736 6.00022L1.57831 6.00022"
+                stroke="#684DFF"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          {/if}
+        </div>
+      </Link>
+    </div>
     <p
       class="absolute bottom-0 w-full text-[13px] font-['PRETENDARD-REGULAR'] mx-[67px]= mb-[23px] text-center text-neutral-200"
     >
