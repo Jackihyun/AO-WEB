@@ -763,9 +763,9 @@
     Developers of AO WEB
   </p>
   <p
-    class="w-auto text-base font-['PRETENDARD-BOLD'] ml-[31px] text-left text-[#848484] dark:text-[#CCC]"
+    class="w-auto text-[14px] font-['PRETENDARD-BOLD'] ml-[31px] text-left  text-[#848484] dark:text-[#CCC]"
   >
-    Team name.
+    Team. 프링글스 양파맛 좋아합니다 
   </p>
 </div>
 <div class="flex justify-center items-center mt-[15px] gap-[12px]">
