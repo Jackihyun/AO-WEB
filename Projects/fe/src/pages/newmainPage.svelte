@@ -7,8 +7,10 @@
 <div
   class="bg-white dark:bg-black overflow-y-auto flex flex-col min-h-screen h-auto"
 >
-  <NewHeader />
-  <main class="mt-[35px] flex-grow">
+  <div class="fixed top-0 left-0 z-[1000]">
+    <NewHeader />
+  </div>
+  <main class="pt-[95.67px] flex-grow">
     <NewMain />
   </main>
   <NewFooter />

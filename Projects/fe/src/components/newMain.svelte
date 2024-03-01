@@ -5,7 +5,7 @@
   import ScrollOut from "scroll-out";
   import { onMount } from "svelte";
   import "../App.css";
-    import TypeIt from "typeit";
+  import TypeIt from "typeit";
 
   let ischeck = false;
   let isFinish = false;
@@ -22,10 +22,10 @@
   let isActivity6 = false;
   let isActivity7 = false;
   let isViewBtn = false;
-  let observer; // IntersectionObserver 변수
+  let observer; 
 
-// 페이지 로드 시 실행되는 함수
-function setupObserver() {
+
+ function setupObserver() {
     observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         // 요소가 화면에 나타나면 TypeIt 효과 적용
@@ -50,10 +50,33 @@ function setupObserver() {
           }
           if (entry.target.id === "up3") {
             setTimeout(() => {
-              isSimbolUp = true;
+                isSimbolUp = true;
             }, 3500);
-            // 다른 setTimeout 함수들 추가
-          }
+            setTimeout(() => {
+                isActivity = true;
+            }, 4000);
+            setTimeout(() => {
+                isActivity2 = true;
+            }, 4500);
+            setTimeout(() => {
+                isActivity3 = true;
+            }, 5000);
+            setTimeout(() => {
+                isActivity4 = true;
+            }, 5500);
+            setTimeout(() => {
+                isActivity5 = true;
+            }, 6000);
+            setTimeout(() => {
+                isActivity6 = true;
+            }, 6500);
+            setTimeout(() => {
+                isActivity7 = true;
+            }, 7000);
+            setTimeout(() => {
+                isViewBtn = true;
+            }, 7500);
+        }
           observer.unobserve(entry.target);
         }
       });
@@ -87,6 +110,7 @@ function setupObserver() {
   // 페이지가 이동되기 전에 IntersectionObserver 해제
   window.addEventListener("beforeunload", removeObserver);
 
+
   // 스크롤 이벤트에 반응하여 요소 이동
   window.addEventListener("scroll", function () {
     var scrollValue = window.scrollY; // 스크롤 위치
@@ -105,6 +129,8 @@ function setupObserver() {
 
     const content = document.querySelector(".content"); // 콘텐츠 부분 선택
     const zoomTarget = document.getElementById("zoomTarget");
+    const zoomCircleTarget = document.getElementById("zoomCircleTarget");
+    const changeBack = document.getElementById("change");
 
     // 각 글자에 대한 참조를 가져옵니다.
     var textElements = [
@@ -158,35 +184,45 @@ function setupObserver() {
     const maxScale = 1000; // 최대 확대 배율
 
     let scale = 1;
+
     if (scrollY > startZoomScrollPosition) {
-      // 스크롤 위치에 따라 scale 값 조절
-      zoomTarget.style.transform =
-        "translateY(${scrollY - startZoomScrollPosition} * 100px)";
+      if (scrollY > startZoomScrollPosition + 45) {
+        isZoom = true;
+      }
       scale += (scrollY - startZoomScrollPosition) / 100; // 스크롤에 따라 scale이 증가
       scale = Math.min(scale, maxScale); // scale 값을 maxScale로 제한
+      if(scrollY > startZoomScrollPosition + 50){
+      zoomCircleTarget.style.transform = 'scale(200)';
+      }
     } else {
-      zoomTarget.style.transform = "translateY(0px)";
+      isZoom = false;
+      if(zoomCircleTarget != null) zoomCircleTarget.style.transform = "scale(0)"; 
+      if(zoomTarget != null) zoomTarget.style.transform = "scale(0)";     
     }
-    zoomTarget.style.transform = `scale(${scale})`;
 
-    // if (!isZoom && scrollValue > startZoomScrollPosition) {
-    //   isZoom = true; // 확대 중임을 표시
+    if(zoomTarget != null) zoomTarget.style.transform = `scale(${scale})`;
 
-    //     // 확대 효과 적용
-    //     let scale = 1 + (scrollValue - startZoomScrollPosition) / 100;
-    //     scale = Math.min(scale, maxScale); // 최대 확대 배율 제한
-
-    //     // 확대 효과 적용된 요소에 스타일 적용
-    //     zoomTarget.style.transform = `scale(${scale})`;
-
-    //     // 스크롤 이동 막기
-    //     window.scrollTo(0, startZoomScrollPosition);
-    // } else {
-    //   isZoom = false; // 확대 종료
-    // }
+    let isDarkMode = false;
+    if(changeBack != null){
+    darkMode.subscribe((value) => {
+      isDarkMode = value;
+      if (isDarkMode === true) {
+        if (scrollY > 1000) {
+          changeBack.style.backgroundColor = "#FF4A3F";
+        } else {
+          changeBack.style.backgroundColor = "";
+        }
+      } else {
+        if (scrollY > 1000) {
+          changeBack.style.backgroundColor = "#684DEF";
+        } else {
+          changeBack.style.backgroundColor = "";
+        }
+      }
+    });
+  }
   });
 
-  
   ScrollOut({});
 </script>
 
@@ -448,20 +484,37 @@ function setupObserver() {
 </div>
 
 <div class="mb-[600px]"></div>
-
 <div id="zoomTarget">
-<div 
-  class=" transition-transform ease origin-center sticky flex font-['5MAL6LAMPEN'] justify-center items-center text-[#684DEF] dark:text-[#FF4A3F] text-[40px] data-scroll {isFinish
-    ? 'data-scroll in'
-    : 'data-scroll out'}"
->
-  F I R E A O
+  <div
+    class=" transition-transform ease origin-center sticky flex font-['5MAL6LAMPEN'] justify-center items-center text-[#684DEF] dark:text-[#FF4A3F] text-[40px] data-scroll {isFinish
+      ? 'data-scroll in'
+      : 'data-scroll out'}"
+  >
+    F I R E A O
+  </div>
 </div>
-</div>
+
+<div
+  id="zoomCircleTarget"
+  class="{isZoom ? ' ': 'invisible'} absolute transition-transform origin-center ease left-[50%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0 
+    data-scroll {isZoom ? 'data-scroll in' : 'data-scroll out'}"
+></div>
+
+<div
+  id="zoomCircleTarget"
+  class="{isZoom ? ' ': 'invisible'} absolute transition-transform origin-center ease left-[50%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0 
+    data-scroll {isZoom ? 'data-scroll in' : 'data-scroll out'}"
+></div>
+
 
 <!-- 밑에 내용들 -->
 <div
-  class="content flex flex-col bg-[#684DEF] dark:bg-[#FF4A3F] w-full h-auto text-white dark:text-black mt-[500px] mx-auto"
+  id="change"
+  class=" pb-[400px] {isZoom ? 'data-scroll in' : 'data-scroll out'}"
+></div>
+
+<div
+  class="content flex flex-col bg-[#684DEF] dark:bg-[#FF4A3F] w-full h-auto text-white dark:text-black mx-auto"
 >
   <div class="pl-[46px] mb-[100px] {isUp ? '' : "invisible"} data-scroll {isUp
     ? 'data-scroll in'
