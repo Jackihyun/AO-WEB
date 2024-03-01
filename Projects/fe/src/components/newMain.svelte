@@ -207,13 +207,13 @@
     darkMode.subscribe((value) => {
       isDarkMode = value;
       if (isDarkMode === true) {
-        if (scrollY > 1000) {
+        if (scrollY > 980) {
           changeBack.style.backgroundColor = "#FF4A3F";
         } else {
           changeBack.style.backgroundColor = "";
         }
       } else {
-        if (scrollY > 1000) {
+        if (scrollY > 980) {
           changeBack.style.backgroundColor = "#684DEF";
         } else {
           changeBack.style.backgroundColor = "";
@@ -226,8 +226,8 @@
   ScrollOut({});
 </script>
 
-<div class="flex-col">
-  <div class="flex justify-center items-center whitespace-nowrap w-screen">
+<div class="flex-col overflow-x-hidden ">
+  <div class="flex justify-center items-center whitespace-nowrap w-screen ">
     <div
       class="flex {ischeck
         ? ' '
@@ -235,21 +235,21 @@
     >
       <p
         id="first"
-        class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white"
+        class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white "
       >
         &lt;PROGRAMMING C<span
           id="scrollingTextO"
-          class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F]"
+          class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F] "
           >O</span
         >DE
       </p>
       <p
         id="second"
-        class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white"
+        class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white "
       >
         &lt;PROGRAMMING C<span
           id="scrollingTextO2"
-          class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F]"
+          class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F] "
           >O</span
         >DE
       </p>
@@ -278,7 +278,7 @@
         BACKEND
         <span
           id="scrollingTextR"
-          class=" relative text-[#684DFF] dark:text-[#FF4A3F]">R</span
+          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible">R</span
         >UNNING DEV
       </p>
       <p
@@ -287,7 +287,7 @@
         BACKEND
         <span
           id="scrollingTextR2"
-          class=" relative text-[#684DFF] dark:text-[#FF4A3F]">R</span
+          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible">R</span
         >UNNING DEV
       </p>
       <p
@@ -296,7 +296,7 @@
         BACKEND
         <span
           id="scrollingTextR3"
-          class=" relative text-[#684DFF] dark:text-[#FF4A3F]">R</span
+          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible">R</span
         >UNNING DEV
       </p>
       <p
@@ -305,7 +305,7 @@
         BACKEND
         <span
           id="scrollingTextR4"
-          class=" relative text-[#684DFF] dark:text-[#FF4A3F]">R</span
+          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible">R</span
         >UNNING DEV
       </p>
     </div>
@@ -323,7 +323,7 @@
         AO
         <span
           id="scrollingTextF"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">F</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">F</span
         >RONTEND'CLASS'
       </p>
       <p
@@ -332,7 +332,7 @@
         AO
         <span
           id="scrollingTextF2"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">F</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">F</span
         >RONTEND'CLASS'
       </p>
       <p
@@ -341,7 +341,7 @@
         AO
         <span
           id="scrollingTextF3"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">F</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">F</span
         >RONTEND'CLASS'
       </p>
     </div>
@@ -357,7 +357,7 @@
       >
         CREATING D<span
           id="scrollingTextE"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">E</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">E</span
         >VELOPING
       </p>
       <p
@@ -365,7 +365,7 @@
       >
         CREATING D<span
           id="scrollingTextE2"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">E</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">E</span
         >VELOPING
       </p>
       <p
@@ -373,7 +373,7 @@
       >
         CREATING D<span
           id="scrollingTextE3"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">E</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">E</span
         >VELOPING
       </p>
     </div>
@@ -391,7 +391,7 @@
         WEB
         <span
           id="scrollingTextI"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">I</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">I</span
         >NTERACTION/&gt;
       </p>
       <p
@@ -400,7 +400,7 @@
         WEB
         <span
           id="scrollingTextI2"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">I</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">I</span
         >NTERACTION/&gt;
       </p>
       <p
@@ -409,7 +409,7 @@
         WEB
         <span
           id="scrollingTextI3"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">I</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">I</span
         >NTERACTION/&gt;
       </p>
     </div>
@@ -426,7 +426,7 @@
       >
         MJUSTUDY LE<span
           id="scrollingTextA"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">A</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">A</span
         >RNING
       </p>
       <p
@@ -434,7 +434,7 @@
       >
         MJUSTUDY LE<span
           id="scrollingTextA2"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">A</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">A</span
         >RNING
       </p>
       <p
@@ -442,7 +442,7 @@
       >
         MJUSTUDY LE<span
           id="scrollingTextA3"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative">A</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">A</span
         >RNING
       </p>
     </div>
@@ -481,9 +481,11 @@
       </p>
     </div>
   </div>
+  <div class="mb-[600px] "></div>
 </div>
 
-<div class="mb-[600px]"></div>
+
+
 <div id="zoomTarget">
   <div
     class=" transition-transform ease origin-center sticky flex font-['5MAL6LAMPEN'] justify-center items-center text-[#684DEF] dark:text-[#FF4A3F] text-[40px] data-scroll {isFinish
@@ -835,6 +837,7 @@
   .cursordel {
     cursor: false;
   }
+
 
   
   /* #zoomTarget {
