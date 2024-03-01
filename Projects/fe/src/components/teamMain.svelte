@@ -479,7 +479,7 @@
         <p
           class="flex-grow-0 flex-shrink-0 w-auto text-[10px] font-['PRETENDARD-MEDIUM'] text-left text-[#747474]"
         >
-          고민상담사
+          코드킹메이커
         </p>
         <a
           href="https://www.instagram.com/ch01_63"
@@ -549,7 +549,7 @@
         <p
           class="flex-grow-0 flex-shrink-0 w-auto text-[10px] font-['PRETENDARD-MEDIUM'] text-left text-[#747474]"
         >
-          코드킹메이커
+          고민상담사
         </p>
         <a
           href="https://www.instagram.com/yuna_co_2"
@@ -723,7 +723,7 @@
       <p
         class="flex-grow-0 flex-shrink-0 w-[71px] text-[9px] font-['PRETENDARD-MEDIUM'] text-center text-[#8a8a8a] dark:text-[#CCC]"
       >
-        고민상담사
+        코드킹메이커
       </p>
     </div>
   </div>
@@ -750,7 +750,7 @@
       <p
         class="flex-grow-0 flex-shrink-0 w-[71px] text-[9px] font-['PRETENDARD-MEDIUM'] text-center text-[#8a8a8a] dark:text-[#CCC]"
       >
-        코드킹메이커
+        고민상담사
       </p>
     </div>
   </div>
