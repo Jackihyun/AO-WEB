@@ -49,6 +49,7 @@
     stuIdErrorMessage = "";
     nameErrorMessage = "";
     phoneErrorMessage = "";
+    awordErrorMessage = "";
     fetch("/api/apply", {
       method: "POST",
       headers: {
