@@ -22,10 +22,10 @@
         <Link to="/">
           <p class="flex-grow-0 flex-shrink-0 text-3xl text-left">
             <span
-              class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-white"
+              class="font-['Montserrat'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-white"
               >Fire
             </span><span
-              class="font-['Helvetica95_Black'] flex-grow-0 flex-shrink-0 text-3xl text-left text-white"
+              class="font-['Montserrat'] flex-grow-0 flex-shrink-0 text-3xl font-black text-left text-white"
               >AO</span
             >
           </p>
@@ -39,24 +39,24 @@
     <div class="flex flex-col items-start justify-start h-full ml-[18px]">
       <Link
         to="/about"
-        class="w-[95%] font-['Helvetica_Bold'] text-2xl border-t-0 border-r-0 border-b border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
+        class="w-[95%] font-['PRETENDARD-REGULAR'] text-2xl border-t-0 border-r-0 border-b border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
         ><p class="active:font-semibold">About AO</p>
       </Link>
       <Link
         to="/archive"
-        class="w-[95%] font-['Helvetica_Bold'] text-2xl border-t-0 border-r-0 border-b-0 border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
+        class="w-[95%] font-['PRETENDARD-REGULAR'] text-2xl border-t-0 border-r-0 border-b-0 border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
         ><p class="active:font-semibold">Archive AO</p>
       </Link>
       <Link
-        to="/contact"
-        class="w-[95%] font-['Helvetica_Bold'] text-2xl border-t border-r-0 border-b border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
-        ><p class="active:font-semibold">Contact</p>
+        to="/team"
+        class="w-[95%] font-['PRETENDARD-REGULAR'] text-2xl border-t border-r-0 border-b border-l-0 border-[#FFFFFF] pl-[33px] py-[30px]"
+        ><p class="active:font-semibold">AO Team</p>
       </Link>
       <!-- ... 나머지 메뉴 항목 ... -->
     </div>
 
     <p
-      class="absolute bottom-0 w-full text-[13px] font-['Helvetica_Light'] mx-[67px]= mb-[23px] text-center text-neutral-200"
+      class="absolute bottom-0 w-full text-[13px] font-['PRETENDARD-REGULAR'] mx-[67px]= mb-[23px] text-center text-neutral-200"
     >
       ⓒ Fire AO. 2024 All rights reserved
     </p>
