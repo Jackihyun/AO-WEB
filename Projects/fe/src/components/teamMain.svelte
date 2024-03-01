@@ -11,6 +11,10 @@
   import JhIcon from "../images/ao천제희아바타.jpg";
   import CeIcon from "../images/ao신초은아바타.jpg";
   import YnIcon from "../images/ao최윤아아바타.jpg";
+  import Aokh from "../images/박기현사진.jpg";
+  import Aoys from "../images/유용석사진.jpg";
+  import Aojm from "../images/송정민사진.jpg";
+  import Aoij from "../images/정익재사진.jpg";
   import { darkMode } from "../store";
   //import { checkNum , changeValue, changeValue2, changeValue3, changeValue4, changeValue5} from "../store";
   import { checkNum } from "../store";
@@ -80,9 +84,12 @@
     isFlipped = false;
   }
 
+  function reset(){
+    JcChangeImg();
+  }
   onMount(() => {
     // 페이지가 로드될 때 애니메이션 CSS를 추가
-
+    reset();
     const style = document.createElement("style");
     style.textContent = `
       @keyframes rotate {
@@ -265,7 +272,7 @@
         <p
           class="mt-[6px] flex-grow-0 flex-shrink-0 w-auto text-[10px] font-['PRETENDARD-MEDIUM'] text-left text-[#747474]"
         >
-           Tel : 010-4939-1971
+          010-4939-1971
         </p>
         <a
           href="https://www.instagram.com/bnadgnohz"
@@ -750,59 +757,99 @@
   </div>
 </div>
 
-<div class="flex mt-[71px]">
+<div class="flex-col mt-[71px]">
   <p
     class="w-auto text-base font-['PRETENDARD-SEMIBOLD'] ml-[31px] text-left text-black dark:text-white"
   >
-    AO Web Developers
+    Developers of AO WEB
   </p>
+  <p
+    class="w-auto text-base font-['PRETENDARD-BOLD'] ml-[31px] text-left text-[#848484] dark:text-[#CCC]"
+  >
+    Team name.
+  </p>
+</div>
+<div class="flex justify-center items-center mt-[15px] gap-[12px]">
+  <!-- 만든사람1 -->
+  <div>
+    <img
+      src={Aokh}
+      alt="박기현사진"
+      class="w-[71px] h-[71px] rounded-[100px] object-cover border-solid border-2 border-[#EEE]"
+      style="box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.2);"
+    />
+  </div>
+  <div>
+    <img
+      src={Aoys}
+      alt="유용석사진"
+      class="w-[71px] h-[71px] rounded-[100px] object-cover border-solid border-2 border-[#EEE]"
+      style="box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.2);"
+    />
+  </div>
+  <div>
+    <img
+      src={Aojm}
+      alt="송정민사진"
+      class="w-[71px] h-[71px] rounded-[100px] object-cover border-solid border-2 border-[#EEE]"
+      style="box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.2);"
+    />
+  </div>
+  <div>
+    <img
+      src={Aoij}
+      alt="정익재사진"
+      class="w-[71px] h-[71px] rounded-[100px] object-cover border-solid border-2 border-[#EEE]"
+      style="box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.2);"
+    />
+  </div>
 </div>
 
 <div class="w-64 h-[106px] relative ml-[60px] mt-[29px]">
   <div class="w-64 h-[25px]">
     <p
-      class="w-[102px] h-[22px] absolute left-0 top-0 text-[13px] font-medium text-left text-black dark:text-neutral-50"
+      class="w-[102px] h-[22px] absolute left-0 top-0 text-[13px] font-['PRETENDARD-MEDIUM'] text-left text-black dark:text-neutral-50"
     >
       Mentor &#x26; infra.
     </p>
     <p
-      class="w-[135px] h-[22px] absolute left-[159px] top-[3px] text-[10px] font-light text-left text-black dark:text-neutral-200"
+      class="w-[135px] h-[22px] absolute left-[159px] top-[3px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
     >
       천제희 Cheon Jehee
     </p>
   </div>
   <div class="w-64 h-[35px] absolute left-0 top-7">
     <p
-      class="w-[81px] h-[22px] absolute left-0 top-0 text-[13px] font-medium text-left text-black dark:text-neutral-50"
+      class="w-[81px] h-[22px] absolute left-0 top-0 text-[13px] font-['PRETENDARD-MEDIUM'] text-left text-black dark:text-neutral-50"
     >
       Frontend.
     </p>
     <p
-      class="w-[135px] h-[22px] absolute left-[159px] top-[3px] text-[10px] font-light text-left text-black"
+      class="w-[135px] h-[22px] absolute left-[159px] top-[3px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black"
     >
       <span
-        class="w-[135px] h-[22px] text-[10px] font-light text-left text-black dark:text-neutral-200"
+        class="w-[135px] h-[22px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
         >박기현 Park Kihyun</span
       ><br /><span
-        class="w-[135px] h-[22px] text-[10px] font-light text-left text-black dark:text-neutral-200"
+        class="w-[135px] h-[22px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
         >유용석 Yoo Yongseok</span
       >
     </p>
   </div>
   <div class="w-64 h-9 absolute left-0 top-[70px]">
     <p
-      class="w-[81px] h-[22px] absolute left-0 top-0 text-[13px] font-medium text-left text-black dark:text-neutral-50"
+      class="w-[81px] h-[22px] absolute left-0 top-0 text-[13px] font-['PRETENDARD-MEDIUM'] text-left text-black dark:text-neutral-50"
     >
       Backend.
     </p>
     <p
-      class="w-[135px] h-[22px] absolute left-[159px] top-[3px] text-[10px] font-light text-left text-black"
+      class="w-[135px] h-[22px] absolute left-[159px] top-[3px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black"
     >
       <span
-        class="w-[135px] h-[22px] text-[10px] font-light text-left text-black dark:text-neutral-200"
+        class="w-[135px] h-[22px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
         >송정민 Song Jeongmin</span
       ><br /><span
-        class="w-[135px] h-[22px] text-[10px] font-light text-left text-black dark:text-neutral-200"
+        class="w-[135px] h-[22px] text-[10px] font-['PRETENDARD-LIGHT'] text-left text-black dark:text-neutral-200"
         >정익재 Jeong Ikjae</span
       >
     </p>

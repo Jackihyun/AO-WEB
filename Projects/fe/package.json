@@ -22,8 +22,7 @@
     "embla-carousel-autoplay": "^8.0.0-rc23",
     "embla-carousel-svelte": "^8.0.0",
     "scroll-out": "^2.2.12",
-    "svelte-routing": "^2.11.0",
-    "typeit": "^8.8.3"
+    "svelte-routing": "^2.11.0"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "4.6.1"

@@ -500,11 +500,11 @@
     data-scroll {isZoom ? 'data-scroll in' : 'data-scroll out'}"
 ></div>
 
-<div
+<!-- <div
   id="zoomCircleTarget"
   class="{isZoom ? ' ': 'invisible'} absolute transition-transform origin-center ease left-[50%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0 
     data-scroll {isZoom ? 'data-scroll in' : 'data-scroll out'}"
-></div>
+></div> -->
 
 
 <!-- 밑에 내용들 -->
