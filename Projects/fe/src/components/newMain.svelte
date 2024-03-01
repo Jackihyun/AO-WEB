@@ -191,8 +191,9 @@
       }
       scale += (scrollY - startZoomScrollPosition) / 100; // 스크롤에 따라 scale이 증가
       scale = Math.min(scale, maxScale); // scale 값을 maxScale로 제한
-      if (scrollY > startZoomScrollPosition + 50) {
-        zoomCircleTarget.style.transform = "scale(107.5)";
+      if(scrollY > startZoomScrollPosition + 50){
+      zoomCircleTarget.style.transform = 'scale(94)';
+      
       }
     } else {
       isZoom = false;
