@@ -51,7 +51,7 @@
           if (entry.target.id === "up3") {
             setTimeout(() => {
                 isSimbolUp = true;
-            }, 3500);
+            }, 3000);
             setTimeout(() => {
                 isActivity = true;
             }, 4000);
@@ -192,12 +192,14 @@
       scale += (scrollY - startZoomScrollPosition) / 100; // 스크롤에 따라 scale이 증가
       scale = Math.min(scale, maxScale); // scale 값을 maxScale로 제한
       if(scrollY > startZoomScrollPosition + 50){
-      zoomCircleTarget.style.transform = 'scale(200)';
+      zoomCircleTarget.style.transform = 'scale(107.5)';
+      
       }
-    } else {
+    } else {  
       isZoom = false;
       if(zoomCircleTarget != null) zoomCircleTarget.style.transform = "scale(0)"; 
       if(zoomTarget != null) zoomTarget.style.transform = "scale(0)";     
+      
     }
 
     if(zoomTarget != null) zoomTarget.style.transform = `scale(${scale})`;
@@ -215,6 +217,7 @@
       } else {
         if (scrollY > 980) {
           changeBack.style.backgroundColor = "#684DEF";
+          //backgroundColor = "#684DEF";
         } else {
           changeBack.style.backgroundColor = "";
         }
@@ -486,33 +489,29 @@
 
 
 
-<div id="zoomTarget">
+<!-- <div id="zoomTarget"> -->
   <div
     class=" transition-transform ease origin-center sticky flex font-['5MAL6LAMPEN'] justify-center items-center text-[#684DEF] dark:text-[#FF4A3F] text-[40px] data-scroll {isFinish
       ? 'data-scroll in'
-      : 'data-scroll out'}"
+      : 'data-scroll out'} "
   >
     F I R E A O
   </div>
-</div>
+<!-- </div> -->
 
-<div
-  id="zoomCircleTarget"
-  class="{isZoom ? ' ': 'invisible'} absolute transition-transform origin-center ease left-[50%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0 
-    data-scroll {isZoom ? 'data-scroll in' : 'data-scroll out'}"
-></div>
 
-<!-- <div
-  id="zoomCircleTarget"
-  class="{isZoom ? ' ': 'invisible'} absolute transition-transform origin-center ease left-[50%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0 
-    data-scroll {isZoom ? 'data-scroll in' : 'data-scroll out'}"
-></div> -->
+  <div
+    id="zoomCircleTarget"
+    class="{isZoom ? '' : 'invisible'} absolute transition-transform origin-center ease left-[49.5%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0 
+      data-scroll {isZoom ? 'data-scroll in' : 'data-scroll out'}"
+  ></div>
+
 
 
 <!-- 밑에 내용들 -->
 <div
   id="change"
-  class=" pb-[400px] {isZoom ? 'data-scroll in' : 'data-scroll out'}"
+  class=" pb-[400px]  {isZoom ? 'data-scroll in ' : 'data-scroll out'}"
 ></div>
 
 <div
@@ -837,6 +836,7 @@
   .cursordel {
     cursor: false;
   }
+
 
 
   
