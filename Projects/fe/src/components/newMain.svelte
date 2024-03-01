@@ -229,8 +229,8 @@
   ScrollOut({});
 </script>
 
-<div class="flex-col overflow-x-hidden ">
-  <div class="flex justify-center items-center whitespace-nowrap w-screen ">
+<div class="flex-col overflow-x-hidden">
+  <div class="flex justify-center items-center whitespace-nowrap w-screen">
     <div
       class="flex {ischeck
         ? ' '
@@ -238,21 +238,21 @@
     >
       <p
         id="first"
-        class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white "
+        class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white"
       >
         &lt;PROGRAMMING C<span
           id="scrollingTextO"
-          class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F] "
+          class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F]"
           >O</span
         >DE
       </p>
       <p
         id="second"
-        class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white "
+        class=" text-[40px] font-['5MAL6LAMPEN'] mr-4 text-left text-black dark:text-white"
       >
         &lt;PROGRAMMING C<span
           id="scrollingTextO2"
-          class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F] "
+          class="transition duration-150 ease-in-out relative text-[#684DFF] dark:text-[#FF4A3F]"
           >O</span
         >DE
       </p>
@@ -281,7 +281,8 @@
         BACKEND
         <span
           id="scrollingTextR"
-          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible">R</span
+          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible"
+          >R</span
         >UNNING DEV
       </p>
       <p
@@ -290,7 +291,8 @@
         BACKEND
         <span
           id="scrollingTextR2"
-          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible">R</span
+          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible"
+          >R</span
         >UNNING DEV
       </p>
       <p
@@ -299,7 +301,8 @@
         BACKEND
         <span
           id="scrollingTextR3"
-          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible">R</span
+          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible"
+          >R</span
         >UNNING DEV
       </p>
       <p
@@ -308,7 +311,8 @@
         BACKEND
         <span
           id="scrollingTextR4"
-          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible">R</span
+          class=" relative text-[#684DFF] dark:text-[#FF4A3F] overflow-visible"
+          >R</span
         >UNNING DEV
       </p>
     </div>
@@ -326,7 +330,8 @@
         AO
         <span
           id="scrollingTextF"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">F</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >F</span
         >RONTEND'CLASS'
       </p>
       <p
@@ -335,7 +340,8 @@
         AO
         <span
           id="scrollingTextF2"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">F</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >F</span
         >RONTEND'CLASS'
       </p>
       <p
@@ -344,7 +350,8 @@
         AO
         <span
           id="scrollingTextF3"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">F</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >F</span
         >RONTEND'CLASS'
       </p>
     </div>
@@ -360,7 +367,8 @@
       >
         CREATING D<span
           id="scrollingTextE"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">E</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >E</span
         >VELOPING
       </p>
       <p
@@ -368,7 +376,8 @@
       >
         CREATING D<span
           id="scrollingTextE2"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">E</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >E</span
         >VELOPING
       </p>
       <p
@@ -376,7 +385,8 @@
       >
         CREATING D<span
           id="scrollingTextE3"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">E</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >E</span
         >VELOPING
       </p>
     </div>
@@ -394,7 +404,8 @@
         WEB
         <span
           id="scrollingTextI"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">I</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >I</span
         >NTERACTION/&gt;
       </p>
       <p
@@ -403,7 +414,8 @@
         WEB
         <span
           id="scrollingTextI2"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">I</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >I</span
         >NTERACTION/&gt;
       </p>
       <p
@@ -412,7 +424,8 @@
         WEB
         <span
           id="scrollingTextI3"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">I</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >I</span
         >NTERACTION/&gt;
       </p>
     </div>
@@ -429,7 +442,8 @@
       >
         MJUSTUDY LE<span
           id="scrollingTextA"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">A</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >A</span
         >RNING
       </p>
       <p
@@ -437,7 +451,8 @@
       >
         MJUSTUDY LE<span
           id="scrollingTextA2"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">A</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >A</span
         >RNING
       </p>
       <p
@@ -445,7 +460,8 @@
       >
         MJUSTUDY LE<span
           id="scrollingTextA3"
-          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible">A</span
+          class=" text-[#684DFF] dark:text-[#FF4A3F] relative overflow-visible"
+          >A</span
         >RNING
       </p>
     </div>
@@ -484,7 +500,7 @@
       </p>
     </div>
   </div>
-  <div class="mb-[600px] "></div>
+  <div class="mb-[600px]"></div>
 </div>
 
 
@@ -507,7 +523,6 @@
   ></div>
 
 
-
 <!-- 밑에 내용들 -->
 <div
   id="change"
@@ -517,18 +532,26 @@
 <div
   class="content flex flex-col bg-[#684DEF] dark:bg-[#FF4A3F] w-full h-auto text-white dark:text-black mx-auto"
 >
-  <div class="pl-[46px] mb-[100px] {isUp ? '' : "invisible"} data-scroll {isUp
-    ? 'data-scroll in'
-    : 'data-scroll out'}">
-    <span id="up1"
-      class="font-['PRETENDARD-BLACK'] text-3xl text-left text-white dark:text-black "
+  <div
+    class="pl-[46px] mb-[100px] {isUp ? '' : 'invisible'} data-scroll {isUp
+      ? 'data-scroll in'
+      : 'data-scroll out'}"
+  >
+    <span
+      id="up1"
+      class="font-['PRETENDARD-BLACK'] text-3xl text-left text-white dark:text-black"
       >Welcome to</span
-    ><br /><span id="up2"
-      class="font-['PRETENDARD-BLACK'] text-3xl text-left text-white dark:text-black "
+    ><br /><span
+      id="up2"
+      class="font-['PRETENDARD-BLACK'] text-3xl text-left text-white dark:text-black"
       >Fire AO!</span
     >
-    <p id="get1"
-      class="mt-[14px] flex-grow-0 flex-shrink-0 text-xl text-left cursordel {isTextTy ? '' : "invisible"}">
+    <p
+      id="get1"
+      class="mt-[14px] flex-grow-0 flex-shrink-0 text-xl text-left cursordel {isTextTy
+        ? ''
+        : 'invisible'}"
+    >
       <span
         class="font-['PRETENDARD-BLACK'] flex-grow-0 flex-shrink-0 text-xl text-center text-white dark:text-black"
         >Alpha</span
@@ -543,18 +566,25 @@
         >까지!</span
       >
     </p>
-    <span id="get2"
-      class="font-['PRETENDARD-SEMIBOLD'] text-[13px] text-left text-white dark:text-black {isVision ? " " : "invisible"}"
+    <span
+      id="get2"
+      class="font-['PRETENDARD-SEMIBOLD'] text-[13px] text-left text-white dark:text-black {isVision
+        ? ' '
+        : 'invisible'}"
     >
       대학 생활의 처음부터 끝까지 함께해 줄 Fire AO입니다.
     </span>
   </div>
 
   <!-- 로고부터 위에 소개글 -->
-  <div id="up3"
-    class="flex flex-col justify-center items-center mb-[59px] {isSimbolUp ? '' : "invisible"} data-scroll {isSimbolUp
+  <div
+    id="up3"
+    class="flex flex-col justify-center items-center mb-[59px] {isSimbolUp
+      ? ''
+      : 'invisible'} data-scroll {isSimbolUp
       ? 'data-scroll in'
-      : 'data-scroll out'}">
+      : 'data-scroll out'}"
+  >
     <img
       src={Aosimbol}
       alt="AO 심볼로고"
@@ -573,12 +603,15 @@
       >처음부터 끝까지 함께하겠다는 의미를 담고 있습니다.</span
     >
   </div>
-  
+
   <!-- 주요활동 내용 -->
-  <div 
-      class="ml-[24px] px-[8px] {isActivity ? '' : "invisible"} data-scroll {isActivity
-        ? 'data-scroll in'
-        : 'data-scroll out'}">
+  <div
+    class="ml-[24px] px-[8px] {isActivity
+      ? ''
+      : 'invisible'} data-scroll {isActivity
+      ? 'data-scroll in'
+      : 'data-scroll out'}"
+  >
     <span
       class="font-['Montserrat'] font-black text-[30px] mb-[10px] text-lfet text-white dark:text-black"
     >
@@ -590,184 +623,197 @@
     >
   </div>
 
-  <div  class ="{isActivity2 ? '' : "invisible"} data-scroll {isActivity2
-    ? 'data-scroll in'
-    : 'data-scroll out'}">
-  <div 
-      class="ml-[24px] px-[8px] mt-[46px] ">
-    <p 
-      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black "
-    >
-      1. 스터디 활동
-    </p>
+  <div
+    class="{isActivity2 ? '' : 'invisible'} data-scroll {isActivity2
+      ? 'data-scroll in'
+      : 'data-scroll out'}"
+  >
+    <div class="ml-[24px] px-[8px] mt-[46px]">
+      <p
+        class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
+      >
+        1. 스터디 활동
+      </p>
+      <p
+        class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
+      >
+        알고리즘, 책 스터디등
+      </p>
+    </div>
     <p
-      class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
-    >
-      알고리즘, 책 스터디등
-    </p>
+      class="mx-[16px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
+    ></p>
   </div>
-  <p
-    class="mx-[16px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
-  ></p>
-</div>
 
-  <div  class="{isActivity3 ? '' : "invisible"} data-scroll {isActivity3
-    ? 'data-scroll in'
-    : 'data-scroll out'}">
-  <div class="ml-[24px] px-[8px] mt-[17px]">
+  <div
+    class="{isActivity3 ? '' : 'invisible'} data-scroll {isActivity3
+      ? 'data-scroll in'
+      : 'data-scroll out'}"
+  >
+    <div class="ml-[24px] px-[8px] mt-[17px]">
+      <p
+        class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
+      >
+        2. 세미나
+      </p>
+      <p
+        class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
+      >
+        개발 관련 주제 선정 후 발표 (2주에 한 번)
+      </p>
+    </div>
     <p
-      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
-    >
-      2. 세미나
-    </p>
-    <p
-      class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
-    >
-      개발 관련 주제 선정 후 발표 (2주에 한 번)
-    </p>
+      class="mx-[16px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
+    ></p>
   </div>
-  <p
-    class="mx-[16px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
-  ></p>
-</div>
 
-  <div  class="{isActivity4 ? '' : "invisible"} data-scroll {isActivity4
-    ? 'data-scroll in'
-    : 'data-scroll out'}">
-  <div class="ml-[24px] px-[8px] mt-[17px]">
+  <div
+    class="{isActivity4 ? '' : 'invisible'} data-scroll {isActivity4
+      ? 'data-scroll in'
+      : 'data-scroll out'}"
+  >
+    <div class="ml-[24px] px-[8px] mt-[17px]">
+      <p
+        class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
+      >
+        3. 프로젝트
+      </p>
+      <p
+        class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
+      >
+        직접 앱이나 웹을 멘토링 받으면서 만들어보기<br />(2학기)
+      </p>
+    </div>
     <p
-      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
-    >
-      3. 프로젝트
-    </p>
-    <p
-      class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
-    >
-      직접 앱이나 웹을 멘토링 받으면서 만들어보기<br />(2학기)
-    </p>
+      class="mx-[16px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
+    ></p>
   </div>
-  <p
-    class="mx-[16px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
-  ></p>
-</div>
 
-  <div  class="{isActivity5 ? '' : "invisible"} data-scroll {isActivity5
-  ? 'data-scroll in'
-  : 'data-scroll out'}">
-  <div class="ml-[24px] px-[8px] mt-[17px] mb-[17px]">
+  <div
+    class="{isActivity5 ? '' : 'invisible'} data-scroll {isActivity5
+      ? 'data-scroll in'
+      : 'data-scroll out'}"
+  >
+    <div class="ml-[24px] px-[8px] mt-[17px] mb-[17px]">
+      <p
+        class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
+      >
+        4. 학기 별 개강 파티 및 종강 파티
+      </p>
+    </div>
     <p
-      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
-    >
-      4. 학기 별 개강 파티 및 종강 파티
-    </p>
+      class="mx-[16px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
+    ></p>
   </div>
-  <p
-    class="mx-[16px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
-  ></p>
-</div>
 
-<div  class="{isActivity6 ? '' : "invisible"} data-scroll {isActivity6
-  ? 'data-scroll in'
-  : 'data-scroll out'}">
-  <div class="ml-[24px] px-[8px] mt-[17px]">
+  <div
+    class="{isActivity6 ? '' : 'invisible'} data-scroll {isActivity6
+      ? 'data-scroll in'
+      : 'data-scroll out'}"
+  >
+    <div class="ml-[24px] px-[8px] mt-[17px]">
+      <p
+        class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
+      >
+        5. MT
+      </p>
+      <p
+        class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
+      >
+        4월 중순 쯤 AO 전체 MT 진행
+      </p>
+    </div>
     <p
-      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
-    >
-      5. MT
-    </p>
-    <p
-      class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
-    >
-      4월 중순 쯤 AO 전체 MT 진행
-    </p>
+      class="mx-[16px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
+    ></p>
   </div>
-  <p
-    class="mx-[16px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
-  ></p>
-</div>
 
-<div class="{isActivity7 ? '' : "invisible"} data-scroll {isActivity7
-  ? 'data-scroll in'
-  : 'data-scroll out'}">
-  <div class="ml-[24px] px-[8px] mt-[17px]">
+  <div
+    class="{isActivity7 ? '' : 'invisible'} data-scroll {isActivity7
+      ? 'data-scroll in'
+      : 'data-scroll out'}"
+  >
+    <div class="ml-[24px] px-[8px] mt-[17px]">
+      <p
+        class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
+      >
+        6. 총회
+      </p>
+      <p
+        class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
+      >
+        11월 말 쯤 AO 선배님들과의 총회 진행
+      </p>
+    </div>
     <p
-      class="font-['PRETENDARD-BOLD'] text-[20px] text-left text-white dark:text-black"
-    >
-      6. 총회
-    </p>
-    <p
-      class="ml-[20px] font-['PRETENDARD-LIGHT'] mb-[17px] text-[14px] text-left"
-    >
-      11월 말 쯤 AO 선배님들과의 총회 진행
-    </p>
+      class="mx-[16px] mb-[66px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
+    ></p>
   </div>
-  <p
-    class="mx-[16px] mb-[66px] h-[0.7px] border border-[#FFF] dark:border-[#000] border-solid rounded-sm"
-  ></p>
-</div>
 
   <!-- 지원하러가기 버튼 -->
-  <div class="{isViewBtn ? '' : "invisible"} data-scroll {isViewBtn
-    ? 'data-scroll in'
-    : 'data-scroll out'}">
-  <Link to="/apply" class="flex justify-center items-center mb-[149px]">
-    <div
-      class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[200px] gap-1 p-2.5 rounded-[100px] active:scale-95 bg-white dark:bg-black"
-    >
-      <p
-        class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
+  <div
+    class="{isViewBtn ? '' : 'invisible'} data-scroll {isViewBtn
+      ? 'data-scroll in'
+      : 'data-scroll out'}"
+  >
+    <Link to="/apply" class="flex justify-center items-center mb-[149px]">
+      <div
+        class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[200px] gap-1 p-2.5 rounded-[100px] active:scale-95 bg-white dark:bg-black"
       >
-        <span
-          class="font-['Montserrat'] font-black flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
-          >FIRE AO
-        </span>
-        <span
-          class="font-['PRETENDARD-BOLD'] flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
-          >지원하러 가기</span
+        <p
+          class="flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
         >
-      </p>
-      {#if $darkMode}
-        <svg
-          width="13"
-          height="12"
-          viewBox="0 0 13 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="flex-grow-0 flex-shrink-0"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M7.15643 1.6792L11.9377 6.00022L7.15643 10.3212M11.2736 6.00022L1.57831 6.00022"
-            stroke="#FF4A3F"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-        </svg>
-      {:else}
-        <svg
-          width="13"
-          height="12"
-          viewBox="0 0 13 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="flex-grow-0 flex-shrink-0"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M7.15643 1.6792L11.9377 6.00022L7.15643 10.3212M11.2736 6.00022L1.57831 6.00022"
-            stroke="#684DFF"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-        </svg>
-      {/if}
-    </div>
-  </Link>
-</div>
+          <span
+            class="font-['Montserrat'] font-black flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
+            >FIRE AO
+          </span>
+          <span
+            class="font-['PRETENDARD-BOLD'] flex-grow-0 flex-shrink-0 text-[13px] text-center text-[#684dff] dark:text-[#FF4A3F]"
+            >지원하러 가기</span
+          >
+        </p>
+        {#if $darkMode}
+          <svg
+            width="13"
+            height="12"
+            viewBox="0 0 13 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M7.15643 1.6792L11.9377 6.00022L7.15643 10.3212M11.2736 6.00022L1.57831 6.00022"
+              stroke="#FF4A3F"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        {:else}
+          <svg
+            width="13"
+            height="12"
+            viewBox="0 0 13 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M7.15643 1.6792L11.9377 6.00022L7.15643 10.3212M11.2736 6.00022L1.57831 6.00022"
+              stroke="#684DFF"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        {/if}
+      </div>
+    </Link>
+  </div>
 </div>
 
 <style>

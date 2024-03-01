@@ -83,7 +83,7 @@
     isFlipped = false;
   }
 
-  function reset(){
+  function reset() {
     JcChangeImg();
   }
   onMount(() => {
