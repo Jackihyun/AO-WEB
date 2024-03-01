@@ -882,11 +882,4 @@
   .cursordel {
     cursor: false;
   }
-
-
-
-  
-  /* #zoomTarget {
-    transition: transform 0.5s ease; 
-  } */
 </style>
