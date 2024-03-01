@@ -880,13 +880,4 @@
   .cursordel {
     cursor: false;
   }
-
-  /* .aoDown {
-    transform:translate-y-(400px);
-    
-  } */
-
-  /* #zoomTarget {
-    transition: transform 0.5s ease; 
-  } */
 </style>
