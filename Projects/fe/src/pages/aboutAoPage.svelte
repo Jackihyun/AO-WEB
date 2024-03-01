@@ -9,11 +9,13 @@
   import NewFooter from "../components/newFooter.svelte";
 </script>
 
-<NewHeader />
 <div
-  class="bg-white dark:bg-black relative overflow-hidden flex flex-col min-h-screen"
+  class=" bg-white dark:bg-black relative overflow-hidden flex flex-col min-h-screen"
 >
-  <div class="flex-grow mb-[10px]">
+  <div class="fixed top-0 left-0 z-[1000]">
+    <NewHeader />
+  </div>
+  <div class="pt-[93.67px] flex-grow mb-[10px]">
     <AboutAoIntro1 />
   </div>
   <div

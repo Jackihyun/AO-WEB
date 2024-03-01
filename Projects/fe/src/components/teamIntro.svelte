@@ -2,7 +2,7 @@
   import "../App.css";
 </script>
 
-<div class="flex flex-col justify-center w-auto h-auto ml-[31px] mt-[33px]">
+<div class="flex flex-col justify-center w-auto h-auto ml-[31px]">
   <p
     class="flex-grow-0 flex-shrink-0 text-2xl font-['Montserrat'] font-bold text-left text-[#0d0d0d] dark:text-neutral-200"
   >
