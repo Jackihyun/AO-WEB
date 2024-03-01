@@ -33,7 +33,6 @@
       showImg = AoJc;
     } else if (showImg == Aosj) {
       showImg = SjIcon;
-      JCIcon;
     } else if (showImg == SjIcon) {
       showImg = Aosj;
     } else if (showImg == Aojh) {
@@ -84,9 +83,12 @@
     isFlipped = false;
   }
 
+  function reset() {
+    JcChangeImg();
+  }
   onMount(() => {
     // 페이지가 로드될 때 애니메이션 CSS를 추가
-
+    reset();
     const style = document.createElement("style");
     style.textContent = `
       @keyframes rotate {
