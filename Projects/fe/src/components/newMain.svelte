@@ -12,7 +12,7 @@
   let isZoom = false;
   let isVision = false;
   let isUp = false;
-  let isSimbolUp = false
+  let isSimbolUp = false;
   let isTextTy = false;
   let isActivity = false;
   let isActivity2 = false;
@@ -22,12 +22,11 @@
   let isActivity6 = false;
   let isActivity7 = false;
   let isViewBtn = false;
-  let observer; 
+  let observer;
 
-
- function setupObserver() {
+  function setupObserver() {
     observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         // 요소가 화면에 나타나면 TypeIt 효과 적용
         if (entry.isIntersecting) {
           if (entry.target.id === "up1" || entry.target.id === "up2") {
@@ -36,47 +35,48 @@
           }
           if (entry.target.id === "get1") {
             isTextTy = true;
-            new TypeIt('#get1', {
-              speed: 40, cursor: false
+            new TypeIt("#get1", {
+              speed: 40,
+              cursor: false,
             })
               .exec(() => {
                 isVision = true;
-                new TypeIt('#get2', {
-                  speed: 40, cursor: false
-                })
-                  .go();
+                new TypeIt("#get2", {
+                  speed: 40,
+                  cursor: false,
+                }).go();
               })
               .go();
           }
           if (entry.target.id === "up3") {
             setTimeout(() => {
-                isSimbolUp = true;
+              isSimbolUp = true;
             }, 3000);
             setTimeout(() => {
-                isActivity = true;
+              isActivity = true;
             }, 4000);
             setTimeout(() => {
-                isActivity2 = true;
+              isActivity2 = true;
             }, 4500);
             setTimeout(() => {
-                isActivity3 = true;
+              isActivity3 = true;
             }, 5000);
             setTimeout(() => {
-                isActivity4 = true;
+              isActivity4 = true;
             }, 5500);
             setTimeout(() => {
-                isActivity5 = true;
+              isActivity5 = true;
             }, 6000);
             setTimeout(() => {
-                isActivity6 = true;
+              isActivity6 = true;
             }, 6500);
             setTimeout(() => {
-                isActivity7 = true;
+              isActivity7 = true;
             }, 7000);
             setTimeout(() => {
-                isViewBtn = true;
+              isViewBtn = true;
             }, 7500);
-        }
+          }
           observer.unobserve(entry.target);
         }
       });
@@ -109,7 +109,6 @@
 
   // 페이지가 이동되기 전에 IntersectionObserver 해제
   window.addEventListener("beforeunload", removeObserver);
-
 
   // 스크롤 이벤트에 반응하여 요소 이동
   window.addEventListener("scroll", function () {
@@ -191,39 +190,38 @@
       }
       scale += (scrollY - startZoomScrollPosition) / 100; // 스크롤에 따라 scale이 증가
       scale = Math.min(scale, maxScale); // scale 값을 maxScale로 제한
-      if(scrollY > startZoomScrollPosition + 50){
-      zoomCircleTarget.style.transform = 'scale(107.5)';
-      
+      if (scrollY > startZoomScrollPosition + 50) {
+        zoomCircleTarget.style.transform = "scale(94)";
       }
-    } else {  
+    } else {
       isZoom = false;
-      if(zoomCircleTarget != null) zoomCircleTarget.style.transform = "scale(0)"; 
-      if(zoomTarget != null) zoomTarget.style.transform = "scale(0)";     
-      
+      if (zoomCircleTarget != null)
+        zoomCircleTarget.style.transform = "scale(0)";
+      if (zoomTarget != null) zoomTarget.style.transform = "scale(0)";
     }
 
-    if(zoomTarget != null) zoomTarget.style.transform = `scale(${scale})`;
+    if (zoomTarget != null) zoomTarget.style.transform = `scale(${scale})`;
 
     let isDarkMode = false;
-    if(changeBack != null){
-    darkMode.subscribe((value) => {
-      isDarkMode = value;
-      if (isDarkMode === true) {
-        if (scrollY > 980) {
-          changeBack.style.backgroundColor = "#FF4A3F";
+    if (changeBack != null) {
+      darkMode.subscribe((value) => {
+        isDarkMode = value;
+        if (isDarkMode === true) {
+          if (scrollY > 980) {
+            changeBack.style.backgroundColor = "#FF4A3F";
+          } else {
+            changeBack.style.backgroundColor = "";
+          }
         } else {
-          changeBack.style.backgroundColor = "";
+          if (scrollY > 980) {
+            changeBack.style.backgroundColor = "#684DEF";
+            //backgroundColor = "#684DEF";
+          } else {
+            changeBack.style.backgroundColor = "";
+          }
         }
-      } else {
-        if (scrollY > 980) {
-          changeBack.style.backgroundColor = "#684DEF";
-          //backgroundColor = "#684DEF";
-        } else {
-          changeBack.style.backgroundColor = "";
-        }
-      }
-    });
-  }
+      });
+    }
   });
 
   ScrollOut({});
@@ -503,30 +501,28 @@
   <div class="mb-[600px]"></div>
 </div>
 
-
-
 <!-- <div id="zoomTarget"> -->
-  <div
-    class=" transition-transform ease origin-center sticky flex font-['5MAL6LAMPEN'] justify-center items-center text-[#684DEF] dark:text-[#FF4A3F] text-[40px] data-scroll {isFinish
-      ? 'data-scroll in'
-      : 'data-scroll out'} "
-  >
-    F I R E A O
-  </div>
+<div
+  class=" transition-transform ease origin-center sticky flex font-['5MAL6LAMPEN'] justify-center items-center text-[#684DEF] dark:text-[#FF4A3F] text-[40px] data-scroll {isFinish
+    ? 'data-scroll in'
+    : 'data-scroll out'} "
+>
+  F I R E A O
+</div>
 <!-- </div> -->
 
-
-  <div
-    id="zoomCircleTarget"
-    class="{isZoom ? '' : 'invisible'} absolute transition-transform origin-center ease left-[49.5%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0 
+<div
+  id="zoomCircleTarget"
+  class="{isZoom
+    ? ''
+    : 'invisible'} absolute transition-transform origin-center ease left-[49.5%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0
       data-scroll {isZoom ? 'data-scroll in' : 'data-scroll out'}"
-  ></div>
-
+></div>
 
 <!-- 밑에 내용들 -->
 <div
   id="change"
-  class=" pb-[400px]  {isZoom ? 'data-scroll in ' : 'data-scroll out'}"
+  class=" pb-[400px] {isZoom ? 'data-scroll in ' : 'data-scroll out'}"
 ></div>
 
 <div
@@ -882,11 +878,4 @@
   .cursordel {
     cursor: false;
   }
-
-
-
-  
-  /* #zoomTarget {
-    transition: transform 0.5s ease; 
-  } */
 </style>
