@@ -1,7 +1,8 @@
 <script>
   import { Link } from "svelte-routing";
   import { darkMode } from "../store";
-  import Aosimbol from "../images/AO simbol.png";
+  import Aosimbol from "../images/AOsimbol.png";
+
   import ScrollOut from "scroll-out";
   import { onMount } from "svelte";
   import "../App.css";
@@ -179,28 +180,29 @@
       }
     });
 
-    const startZoomScrollPosition = 900; // 확대가 시작되는 스크롤 위치
-    const maxScale = 1000; // 최대 확대 배율
+    // const startZoomScrollPosition = 900; // 확대가 시작되는 스크롤 위치
+    // const maxScale = 1000; // 최대 확대 배율
 
-    let scale = 1;
+    // let scale = 1;
 
-    if (scrollY > startZoomScrollPosition) {
-      if (scrollY > startZoomScrollPosition + 45) {
-        isZoom = true;
-      }
-      scale += (scrollY - startZoomScrollPosition) / 100; // 스크롤에 따라 scale이 증가
-      scale = Math.min(scale, maxScale); // scale 값을 maxScale로 제한
-      if (scrollY > startZoomScrollPosition + 50) {
-        zoomCircleTarget.style.transform = "scale(94)";
-      }
-    } else {
-      isZoom = false;
-      if (zoomCircleTarget != null)
-        zoomCircleTarget.style.transform = "scale(0)";
-      if (zoomTarget != null) zoomTarget.style.transform = "scale(0)";
-    }
+    // if (scrollY > startZoomScrollPosition) {
+    //   if (scrollY > startZoomScrollPosition + 45) {
+    //     isZoom = true;
+    //   }
+    //   scale += (scrollY - startZoomScrollPosition) / 100; // 스크롤에 따라 scale이 증가
+    //   scale = Math.min(scale, maxScale); // scale 값을 maxScale로 제한
+    //   if(scrollY > startZoomScrollPosition + 50){
+    //   zoomCircleTarget.style.transform = 'scale(94)';
 
-    if (zoomTarget != null) zoomTarget.style.transform = `scale(${scale})`;
+    //   }
+    // } else {
+    //   isZoom = false;
+    //   if (zoomCircleTarget != null)
+    //     zoomCircleTarget.style.transform = "scale(0)";
+    //   if (zoomTarget != null) zoomTarget.style.transform = "scale(0)";
+    // }
+
+    // if (zoomTarget != null) zoomTarget.style.transform = `scale(${scale})`;
 
     let isDarkMode = false;
     if (changeBack != null) {
@@ -503,7 +505,7 @@
 
 <!-- <div id="zoomTarget"> -->
 <div
-  class=" transition-transform ease origin-center sticky flex font-['5MAL6LAMPEN'] justify-center items-center text-[#684DEF] dark:text-[#FF4A3F] text-[40px] data-scroll {isFinish
+  class=" mt-[200px] transition-transform ease origin-center sticky flex font-['5MAL6LAMPEN'] justify-center items-center text-[#684DEF] dark:text-[#FF4A3F] text-[40px] data-scroll {isFinish
     ? 'data-scroll in'
     : 'data-scroll out'} "
 >
@@ -511,13 +513,13 @@
 </div>
 <!-- </div> -->
 
-<div
+<!-- <div
   id="zoomCircleTarget"
   class="{isZoom
     ? ''
     : 'invisible'} absolute transition-transform origin-center ease left-[49.5%] w-1 h-1 bg-[#684DEF] dark:bg-[#FF4A3F] rounded-full m-0
       data-scroll {isZoom ? 'data-scroll in' : 'data-scroll out'}"
-></div>
+></div> -->
 
 <!-- 밑에 내용들 -->
 <div
@@ -526,12 +528,12 @@
 ></div>
 
 <div
-  class="content flex flex-col bg-[#684DEF] dark:bg-[#FF4A3F] w-full h-auto text-white dark:text-black mx-auto"
+  class="rounded-tr-[280px] rounded-tl-[280px] content flex flex-col bg-[#684DEF] dark:bg-[#FF4A3F] w-full h-auto text-white dark:text-black mx-auto"
 >
   <div
-    class="pl-[46px] mb-[100px] {isUp ? '' : 'invisible'} data-scroll {isUp
-      ? 'data-scroll in'
-      : 'data-scroll out'}"
+    class="pl-[46px] mb-[100px] mt-20 {isUp
+      ? ''
+      : 'invisible'} data-scroll {isUp ? 'data-scroll in ' : 'data-scroll out'}"
   >
     <span
       id="up1"
