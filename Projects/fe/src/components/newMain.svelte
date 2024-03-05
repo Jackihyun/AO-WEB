@@ -193,7 +193,7 @@
     //   scale = Math.min(scale, maxScale); // scale 값을 maxScale로 제한
     //   if(scrollY > startZoomScrollPosition + 50){
     //   zoomCircleTarget.style.transform = 'scale(94)';
-      
+
     //   }
     // } else {
     //   isZoom = false;
@@ -528,12 +528,12 @@
 ></div>
 
 <div
-  class="content flex flex-col bg-[#684DEF] dark:bg-[#FF4A3F] w-full h-auto text-white dark:text-black mx-auto"
+  class="rounded-tr-[280px] rounded-tl-[280px] content flex flex-col bg-[#684DEF] dark:bg-[#FF4A3F] w-full h-auto text-white dark:text-black mx-auto"
 >
   <div
-    class="pl-[46px] mb-[100px] mt-20 {isUp ? '' : 'invisible'} data-scroll {isUp
-      ? 'data-scroll in '
-      : 'data-scroll out'}"
+    class="pl-[46px] mb-[100px] mt-20 {isUp
+      ? ''
+      : 'invisible'} data-scroll {isUp ? 'data-scroll in ' : 'data-scroll out'}"
   >
     <span
       id="up1"

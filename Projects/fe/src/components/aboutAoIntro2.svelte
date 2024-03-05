@@ -1,5 +1,5 @@
 <script>
-  import Aosimbol from "../images/AOsimbol.png";
+  import Aosimbol from "../images/AOSimbol.png";
 </script>
 
 <div class="flex flex-col justify-center items-center mb-[43px]">
