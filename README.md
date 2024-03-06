@@ -21,5 +21,5 @@ AO 프로젝트 2팀
 <br/>
 
 #### Menu
-<img src="https://github.com/Jackihyun/AO-WEB/assets/93994971/37caeb59-1d77-44a0-9c78-bfc10e45b00d" width="30%" height="30%"/>
+<img src="https://github.com/Jackihyun/AO-WEB/assets/93994971/5788c9ad-d172-4674-b958-102006589f16" width="30%" height="30%"/>
 
